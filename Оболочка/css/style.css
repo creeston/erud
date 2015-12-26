@@ -3,6 +3,25 @@ h1 {  text-align: center;  font-family: Times New Roman, serif;    font-size: 25
 h2 { text-align: center; font-family: Times New Roman, serif; font-size: 180%;  font-weight: bold;} /*Стиль для параграфов */
 .picture { text-align: center; } /*Стиль для одиночных изображений-формул */
 .text{ font-family: Times New Roman, serif; font-size: 130%;       text-indent: 3em; text-align: justify; }
+
+caption {
+	caption-side: right;
+	text-align: right;
+	padding: 0 0 13px 0;
+	font-weight: bold;
+	font-size: small;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+	padding: 1px 5px;
+	text-align: center;
+	border: 1px solid black;
+}
+
 /*Прочее */
 h5 { font-family: Arial, Helvetica, sans-serif; color: Black;  font-size: 200%;   }
 var {
