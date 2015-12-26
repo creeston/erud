@@ -1,0 +1,561 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+<h3>Тема 9. Линейные евклидовы пространства</h3>
+<h4>9.1. Определение евклидова пространства</h4>
+<p>
+ <strong>Определение 9.1.</strong> Линейное пространство V называется евклидовым, если каждой паре векторов x, y из V поставлено в соответствие действительное число (x, y), называемое скалярным произведением, удовлетворяющее следующим аксиомам: 
+</p>
+<p>
+<span style="font-size:14pt; letter-spacing:-0.4pt">1°. (</span><strong><span style="font-size:14pt; letter-spacing:-0.4pt">x</span></strong><span style="font-size:14pt; letter-spacing:-0.4pt">, </span><strong><span style="font-size:14pt; letter-spacing:-0.4pt">y</span></strong><span style="font-size:14pt; letter-spacing:-0.4pt">) = (</span><strong><span style="font-size:14pt; letter-spacing:-0.4pt">y</span></strong><span style="font-size:14pt; letter-spacing:-0.4pt">, </span><strong><span style="font-size:14pt; letter-spacing:-0.4pt">x</span></strong><span style="font-size:14pt; letter-spacing:-0.4pt">), </span><img src="../../images/lk9/9_1/9_1.001.jpg" width="17" height="19" alt="" /><strong><span style="font-size:14pt; letter-spacing:-0.4pt">x</span></strong><span style="font-size:14pt; letter-spacing:-0.4pt">, </span><strong><span style="font-size:14pt; letter-spacing:-0.4pt">y</span></strong><img src="../../images/lk9/9_1/9_1.002.jpg" width="13" height="16" alt="" /><span style="font-size:14pt; letter-spacing:-0.4pt">V</span><span style="font-size:14pt; letter-spacing:-0.4pt">.</span>
+</p>
+<p>
+<span style="font-size:14pt">2°. (</span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt"> </span><span style="font-size:14pt">+</span><span style="font-size:14pt"> </span><strong><span style="font-size:14pt; ">y</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">z</span></strong><span style="font-size:14pt">) = (</span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">z</span></strong><span style="font-size:14pt">) + (</span><strong><span style="font-size:14pt; ">y</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">z</span></strong><span style="font-size:14pt">), </span><img src="../../images/lk9/9_1/9_1.003.jpg" width="17" height="19" alt="" /><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">y</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">z</span></strong><img src="../../images/lk9/9_1/9_1.002.jpg" width="13" height="16" alt="" /><span style="font-size:14pt; ">V</span><span style="font-size:14pt">.</span>
+</p>
+<p>
+<span style="font-size:14pt">3°. </span><span style="font-size:14pt">(</span><img src="../../images/lk9/9_1/9_1.004.jpg" width="17" height="16" alt="" /><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">y</span></strong><span style="font-size:14pt">) = </span><img src="../../images/lk9/9_1/9_1.005.jpg" width="17" height="16" alt="" /><span style="font-size:14pt">(</span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">y</span></strong><span style="font-size:14pt">), </span><img src="../../images/lk9/9_1/9_1.006.jpg" width="17" height="19" alt="" /><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">y</span></strong><img src="../../images/lk9/9_1/9_1.002.jpg" width="13" height="16" alt="" /><span style="font-size:14pt; ">V</span><span style="font-size:14pt">, </span><img src="../../images/lk9/9_1/9_1.007.jpg" width="45" height="20" alt="" /><strong><span style="font-size:14pt; ">R</span></strong><span style="font-size:14pt">.</span>
+</p>
+<p>
+<span style="font-size:14pt">4°. (</span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">)</span><img src="../../images/lk9/9_1/9_1.008.jpg" width="28" height="20" alt="" /><span style="font-size:14pt">, </span><img src="../../images/lk9/9_1/9_1.009.jpg" width="17" height="19" alt="" /><strong><span style="font-size:14pt; ">x</span></strong><img src="../../images/lk9/9_1/9_1.002.jpg" width="13" height="16" alt="" /><span style="font-size:14pt; ">V</span><span style="font-size:14pt">; (</span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">, </span><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt">) = 0 </span><img src="../../images/lk9/9_1/9_1.010.jpg" width="25" height="17" alt="" /><strong><span style="font-size:14pt; ">x</span></strong><span style="font-size:14pt"> = </span><strong><span style="font-size:14pt; ">0</span></strong><span style="font-size:14pt">.</span>
+</p>
+<p>
+ В дальнейшем, если не оговорено особо, будут рассматриваться евклидовы пространства конечной размерности n. 
+</p>
+<p>
+ Приведем примеры конкретных евклидовых пространств. 
+</p>
+<p>
+<strong>Пример 1.</strong> Рассмотрим пространство R<sup>3</sup> свободных векторов, в котором скалярное произведение двух векторов x и y определяется, как в §2.4. Оно удовлетворяет аксиомам 1°–4°. Поэтому R<sup>3</sup> – евклидово пространство.
+</p>
+<p>
+ <strong>Пример 2.</strong> Пусть е<sup>1</sup>, е<sup>2</sup>,..., е<sup>n</sup> – базис линейного пространства V. Для любых векторов x и y этого пространства, заданных разложениями вида (8.7) 
+</p>
+<p>
+ x = x<sub>1</sub>е<sup>1</sup> + x<sub>2</sub>е<sup>2</sup> +... + x<sub>n</sub>е<sup>n</sup> = (x<sub>1</sub>, x<sub>2</sub>,…, x<sub>n</sub>), 
+</p>
+<p>
+ y = y<sub>1</sub>е<sup>1</sup> + y<sub>2</sub>е<sup>2</sup> +... + y<sub>n</sub>е<sup>n</sup> = (y<sub>1</sub>, y<sub>2</sub>,…, y<sub>n</sub>), 
+</p>
+<p>
+ введем скалярное произведение по формуле 
+</p>
+<p>
+<img src="../../images/lk9/9_1/9_1.011.jpg" width="232" height="52" alt="" />
+</p>
+<p>
+ В частности, в линейном пространстве R<sup>n</sup> формула (9.1) также определяет скалярное произведение, превращая его тем самым в евклидово пространство R<sup>n</sup>. 
+</p>
+<p>
+Проверка справедливости аксиом 1°–4° не представляет труда. Следовательно, линейное пространство V, а значит, и R<sup>n</sup> со скалярным произведением, заданным формулой (9.1), является евклидовым.
+</p>
+<p>
+ Из аксиом 2° и 3° скалярного произведения следует, что если y = <img src="../../images/lk9/9_1/9_1.012.jpg" width="21" height="24" alt="" />y<sup>1</sup> + + <img src="../../images/lk9/9_1/9_1.013.jpg" width="23" height="24" alt="" />y<sup>2</sup> +... + <img src="../../images/lk9/9_1/9_1.014.jpg" width="23" height="24" alt="" />y<sup>n</sup>, где <img src="../../images/lk9/9_1/9_1.012.jpg" width="21" height="24" alt="" />,<img src="../../images/lk9/9_1/9_1.013.jpg" width="23" height="24" alt="" />,...,<img src="../../images/lk9/9_1/9_1.014.jpg" width="23" height="24" alt="" /> – числа из R, а y<sup>1</sup>, y<sup>2</sup>,…, y<sup>n</sup> – векторы из V, то 
+</p>
+<p>
+<img src="../../images/lk9/9_1/1.png"/>
+</p>
+
+
+<p>&nbsp;</p>
+<h4>9.2. Неравенство Коши – Буняковского</h4>
+
+<p>
+Покажем, что для любых двух векторов x и y евклидова пространства справедливо неравенство
+</p>
+
+<p>
+|(x, y)|<img src="../../images/lk9/9.2/9.2.001.jpg" width="15" height="18" alt="" /><img src="../../images/lk9/9.2/9.2.002.jpg" width="127" height="31" alt="" />,                                     (9.2)
+</p>
+
+<p>
+называемое неравенством Коши – Буняковского, причем знак равенства в нем имеет место только в том случае, если векторы x и y линейно зависимы.
+</p>
+
+<p>
+В самом деле, если x = 0 или y = 0, то неравенство (9.2) очевидно, поэтому будем считать, что, например, y <img src="../../images/lk9/9.2/9.2.003.jpg" width="16" height="16" alt="" /> 0. Рассмотрим вектор z = x +<img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" />y
+, где <img src="../../images/lk9/9.2/9.2.005.jpg" width="16" height="20" alt="" />
+ – любое действительное число. Поскольку (z, z) <img src="../../images/lk9/9.2/9.2.006.jpg" width="28" height="20" alt="" />
+, то имеем
+</p>
+
+<p>
+(z, z) = (x + <img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" />y, x + <img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" />y) = (x, x) + 2<img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" />(x, y) + <img src="../../images/lk9/9.2/9.2.007.jpg" width="22" height="23" alt="" />(y, y)<img src="../../images/lk9/9.2/9.2.008.jpg" width="28" height="20" alt="" />.                (9.3)
+</p>
+
+<p>
+При <img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" /> = – (x, y)/(y, y) из неравенства (9.3) получим
+</p>
+
+<p>
+<img src="../../images/lk9/9.2/9.2.009.jpg" width="270" height="48" alt="" />,
+</p>
+
+<p>
+или
+</p>
+
+<p>
+<img src="../../images/lk9/9.2/9.2.011.jpg" width="299" height="47" alt="" />
+</p>
+
+<p>
+что равносильно неравенству (9.2).
+</p>
+
+<p>
+Знак равенства в (9.2) возможен тогда и только тогда, когда (z, z) = 0 <img src="../../images/lk9/9.2/9.2.012.jpg" width="26" height="18" alt="" /> <img src="../../images/lk9/9.2/9.2.012.jpg" width="26" height="18" alt="" />z = x +<img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" />y< = 0 <img src="../../images/lk9/9.2/9.2.012.jpg" width="26" height="18" alt="" />x = –<img src="../../images/lk9/9.2/9.2.004.jpg" width="16" height="20" alt="" />y, т. е. когда векторы x и y линейно зависимы.
+</p>
+
+<p>
+Из определения скалярного произведения в R<sup>n</sup> (формула (9.1)) следует, что в R
+<sup>n</sup> неравенство Коши – Буняковского принимает вид
+</p>
+
+<p>
+<img src="../../images/lk9/9.2/9.2.013.jpg" width="175" height="51" alt="" />.
+</p>
+
+    <p>&nbsp;</p>
+
+    <h4>9.3.Норма вектора. Расстояние между векторами</h4>
+
+    <p><strong>Определение9.2.</strong> Определим <i>норму</i> (или <i>длину</i>) <i>вектора</i> ||<i>x</i>|| в евклидовом пространстве <i>V</i> равенством</p>
+
+    <p><img border="0" width="105" height="31" src="../../images/lk9/9.3.files/image001.jpg"></p>
+
+    <p>которое в R<i><sup>n</sup></i>, согласно формуле (9.1) имеет вид</p>
+
+    <p><i><img border="0" width="36" height="27" src="../../images/lk9/9.3.files/image002.jpg"><img border="0" width="197" height="51" src="../../images/lk9/9.3.files/image003.jpg"></i>. (9.4)</p>
+
+    <p>Введенное таким образом понятие нормы вектора обобщает понятие длины вектора в пространстве R<sup>3</sup>.</p>
+
+    <p>Перечислим свойства нормы вектора, непосредственно вытекающие из ее определения:</p>
+
+    <p>1°. <i><img border="0" width="53" height="28" src="../../images/lk9/9.3.files/image004.jpg"></i>, <img border="0" width="61" height="24" src="../../images/lk9/9.3.files/image005.jpg">; <i><img border="0" width="40" height="28" src="../../images/lk9/9.3.files/image006.jpg"></i>0<img border="0" width="25" height="17" src="../../images/lk9/9.3.files/image007.jpg"><i>x</i> = 0.</p>
+
+    <p>2°. <img border="0" width="107" height="28" src="../../images/lk9/9.3.files/image008.jpg"><img border="0" width="61" height="24" src="../../images/lk9/9.3.files/image005.jpg">, <i><img border="0" width="45" height="20" src="../../images/lk9/9.3.files/image009.jpg"></i>R. В самом деле,</p>
+
+    <p><img border="0" width="293" height="31" src="../../images/lk9/9.3.files/image010.jpg">.</p>
+
+    <p>3°. Норма удовлетворяет <i>неравенству</i> <i>треугольника</i> (<i>неравенству Минковского</i>*)</p>
+
+    <p><img border="0" width="140" height="28" src="../../images/lk9/9.3.files/image011.jpg"><img border="0" width="35" height="24" src="../../images/lk9/9.3.files/image012.jpg"><img border="0" width="49" height="24" src="../../images/lk9/9.3.files/image013.jpg">  (9.5)</p>
+
+    <p>Действительно, используя неравенство Коши – Буняковского, получаем</p>
+
+    <p><img border="0" width="652" height="32" src="../../images/lk9/9.3.files/image014.jpg">что равносильно неравенству (9.5).</p>
+
+    <p><strong>Определение9.3.</strong> <i>Расстоянием</i> между векторами <i>x</i> и <i>y</i> евклидова пространства <i>V</i> назовем величину</p>
+
+    <p><img border="0" width="265" height="31" src="../../images/lk9/9.3.files/image015.jpg">  (9.6)</p>
+
+    <p>В пространстве R<i><sup>n</sup></i> расстояние между векторами <i>x</i> = (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>,…, <i>x<sub>n</sub></i>) и <i>y</i>= =(<i>y</i><sub>1</sub>, <i>y</i><sub>2</sub>,…, <i>y<sub>n</sub></i>), согласно формулам (9.4) и (9.6), определяется равенством</p>
+
+    <p><img border="0" width="75" height="24" src="../../images/lk9/9.3.files/image016.jpg"><img border="0" width="307" height="31" src="../../images/lk9/9.3.files/image017.jpg">. (9.7)</p>
+
+    <p>Расстояние <img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image018.jpg">обладает следующими свойствами:</p>
+
+    <p>1°. <img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image018.jpg"><img border="0" width="28" height="20" src="../../images/lk9/9.3.files/image019.jpg">, <img border="0" width="17" height="19" src="../../images/lk9/9.3.files/image020.jpg"><i>x</i>, <i>y</i><img border="0" width="13" height="16" src="../../images/lk9/9.3.files/image021.jpg"><i>V</i>; <img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image018.jpg">= 0<img border="0" width="25" height="17" src="../../images/lk9/9.3.files/image007.jpg"><i>x</i> = <i>y</i>. Действительно,</p>
+
+    <p><img border="0" width="75" height="24" src="../../images/lk9/9.3.files/image022.jpg"><img border="0" width="152" height="31" src="../../images/lk9/9.3.files/image023.jpg"><img border="0" width="89" height="24" src="../../images/lk9/9.3.files/image024.jpg"><img border="0" width="25" height="17" src="../../images/lk9/9.3.files/image007.jpg"><i>x</i> <img border="0" width="15" height="12" src="../../images/lk9/9.3.files/image025.jpg"><i>y</i>.</p>
+
+    <p>2°. <img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image018.jpg">=<img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image026.jpg">. Это свойство вытекает из того, что</p>
+
+    <p><img border="0" width="143" height="28" src="../../images/lk9/9.3.files/image027.jpg">.</p>
+
+    <p>3°. Расстояние <img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image018.jpg">удовлетворяет <i>неравенству треугольника</i></p>
+
+    <p><img border="0" width="60" height="24" src="../../images/lk9/9.3.files/image018.jpg"><img border="0" width="144" height="24" src="../../images/lk9/9.3.files/image028.jpg"><img border="0" width="17" height="19" src="../../images/lk9/9.3.files/image020.jpg"><i>x</i>, <i>y</i>, <i>z</i><img border="0" width="13" height="16" src="../../images/lk9/9.3.files/image021.jpg"><i>V</i>.</p>
+
+    <p>В самом деле, в силу свойства 3° нормы имеем</p>
+
+    <p><img border="0" width="462" height="28" src="../../images/lk9/9.3.files/image029.jpg"></p>
+
+<p>&nbsp;</p>
+<h4>9.4. Угол между векторами. Ортогональность векторов</h4>
+<p>
+	Из неравенства Коши – Буняковского для ненулевых векторов получаем
+</p>
+<p>
+	<img src="../../images/lk9/9.4/9.4.001.jpg" width="363" height="28" alt="" />,
+</p>
+<p>
+	или
+</p>
+<p>
+	<img src="../../images/lk9/9.4/9.4.002.jpg" width="138" height="47" alt="" />
+</p>
+
+<p>
+	Отсюда следует, что существует, и притом единственное, значение угла &#966;,<img src="../../images/lk9/9.4/9.4.003.jpg" width="61" height="23" alt="" />, для которого
+</p>
+<p>
+	<img src="../../images/lk9/9.4/9.4.004.jpg" width="129" height="47" alt="" />                                               (9.8)
+</p>
+
+<p>
+	<strong>Определение 9.4.</strong> Назовем углом между векторами x и y евклидова пространства V угол &#966;, косинус которого определяется соотношением (9.8). Введенное понятие угла между векторами обобщает понятие угла между векторами в R<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.2pt; vertical-align:super">3.
+</p>
+
+<p>
+	Если е<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">l</span>, е<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">2</span>,..., е<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">n</span> – базисные векторы пространства R<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">n</span>, то направляющие косинусы вектора x = (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span>, x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span>,…, x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">n</span>) определим соотношениями
+</p>
+<p>
+	<img src="../../images/lk9/9.4/9.4.005.jpg" width="157" height="47" alt="" /><img src="../../images/lk9/9.4/9.4.006.jpg" width="31" height="47" alt="" /> i = 1, 2,…, n,
+</p>
+
+<p>
+	где <img src="../../images/lk9/9.4/9.4.007.jpg" width="61" height="27" alt="" /> – угол между векторами x и e<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">i</span> из R<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">n</span>.
+</p>
+<p>
+	Легко проверить,что <img src="../../images/lk9/9.4/9.4.008.jpg" width="116" height="52" alt="" /> = 1.
+</p>
+<p>
+	Умножив ненулевой вектор x на число 1/||x||, получим нормированный вектор x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">0</span>, длина которого равна единице, т. е.
+</p>
+<p>
+	<img src="../../images/lk9/9.4/9.4.009.jpg" width="487" height="53" alt="" />.
+</p>
+
+<p>
+	Отсюда следует, что координатами вектора единичной длины, как и в R<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">3</span>, служат направляющие косинусы этого вектора.
+</p>
+
+<p>
+	<strong>Определение 9.5.</strong> Два вектора x и y из V называются ортогональными, если их скалярное произведение равно нулю, т. е.
+</p>
+<p>
+	<img src="../../images/lk9/9.4/9.4.010.jpg" width="152" height="24" alt="" />
+</p>
+<p>
+	Как и в R<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.4pt; vertical-align:super">3</span>, считается, что нулевой вектор ортогонален любому вектору x из V.
+</p>
+<p>
+	Из определения косинуса угла между векторами в евклидовом пространстве следует, что для того, чтобы ненулевые векторы x и y были ортогональны, необходимо и достаточно, чтобы cos(x,y)=0. Введенное понятие ортогональности в евклидовом пространстве соответствует обычному понятию перпендикулярности в R<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.4pt; vertical-align:super">3.
+</p>
+<p>
+	Отметим, что ортогональность векторов x и y в R<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">n</span> равносильна выполнению равенства
+</p>
+
+<p>
+	<img src="../../images/lk9/9.4/9.4.011.jpg" width="301" height="52" alt="" />.
+</p>
+
+
+
+<p>&nbsp;</p><h4>9.5. Ортогональный базис</h4>
+
+<p>
+Попарно ортогональные векторы в евклидовом 
+пространстве V обладают одним важным свойством.
+</p>
+<p>
+Покажем, что система попарно ортогональных векторов 
+<img src=../../images/lk9/p9.5/9.5_1.PNG>
+</p>
+<p>
+не содержащая нулевого вектора, линейно независима. Убедимся, что равенство
+<img src=../../images/lk9/p9.5/9.5_2.PNG>
+возможно лишь при <img src=../../images/lk9/p9.5/9.5_3.PNG>
+</p>
+<p>
+В самом деле, скалярно умножим обе части этого равенства на
+<img src=../../images/lk9/p9.5/9.5_4.PNG> и, учитывая, что
+<img src=../../images/lk9/p9.5/9.5_5.PNG> получим
+<img src=../../images/lk9/p9.5/9.5_6.PNG>
+Так как <img src=../../images/lk9/p9.5/9.5_7.PNG>
+то из последнего равенства имеем <img src=../../images/lk9/p9.5/9.5_8.PNG>
+</p>
+<p>
+<strong>Определение 9.6.</strong> Если число попарно ортогональных ненулевых векторов равно n где n – размерность пространства, 
+то они образуют базис евклидова пространства, называемый <i>ортогональным базисом.</i> 
+Если же нормы векторов ортогонального базиса равны единице, то базис называется <i>ортонормированным.</i>
+</p>
+<p>
+Таким образом, базис из векторов <img src=../../images/lk9/p9.5/9.5_9.PNG>
+называется ортонормированным, если <img class="centr" src=../../images/lk9/p9.5/9.5_10.PNG>
+Здесь &delta;<i><sub>ij</sub> – символ Кронекера </i>
+</p>
+<p>
+Докажем следующее утверждение.
+</p>
+<p>
+<strong>Теоремa 9.1.</strong> Во всяком n-мерном евклидовом пространстве существует ортонормированный базис.
+</p>
+<p>
+<strong>Доказательство.</strong> Пусть <img src=../../images/lk9/p9.5/9.5_11.PNG>
+– произвольный базис пространства V. Положим
+<img src=../../images/lk9/p9.5/9.5_12.PNG> Пусть далее 
+<img src=../../images/lk9/p9.5/9.5_13.PNG> где число &lambda; <sub>1</sub>
+подберем так, чтобы векторы v<sup>2</sup> и u<sup>1</sup> были ортогональны, т. е.
+<img class="centr" src=../../images/lk9/p9.5/9.5_15.PNG>
+</p>
+<p>
+Так как <img src=../../images/lk9/p9.5/9.5_16.PNG>  то отсюда находим, что
+<img class="centr" src=../../images/lk9/p9.5/9.5_17.PNG>
+</p>
+<p>
+При этом значении <img src=../../images/lk9/p9.5/9.5_18.PNG>
+ортогонален u<sub>1</sub>. Нормируя v<sub>2</sub>, получаем, что векторы
+<img src=../../images/lk9/p9.5/9.5_19.PNG>
+образуют ортонормированную пару. Далее, полагая 
+<img src=../../images/lk9/p9.5/9.5_20.PNG>
+и подбирая &lambda; <sub>1</sub> и &lambda; <sub>2</sub> так, чтобы выполнялись условия
+<img src=../../images/lk9/p9.5/9.5_21.PNG> с учетом ортонормированности векторов u<sup>1</sup> и u<sup>2</sup>, получаем
+<img class="centr" src=../../images/lk9/p9.5/9.5_22.PNG>
+Откуда <img src=../../images/lk9/p9.5/9.5_23.PNG>
+</p>
+<p>
+Пронормировав v<sup>3</sup>, получим вектор <img src=../../images/lk9/p9.5/9.5_24.PNG>
+который вместе с u<sup>1</sup> и u<sup>2</sup> образует систему трех ортонормированных векторов. 
+Продолжив этот процесс, после n шагов получим n ортонормированных векторов
+<img src=../../images/lk9/p9.5/9.5_25.PNG>
+которые образуют ортонормированный базис.•
+</p>
+<p>
+Указанный в теореме 9.1 алгоритм построения ортонормированного базиса 
+называется <i>процессом ортогонализации Грама – Шмидта </i>, который, учитывая его сложность, рассмотрим более подробно
+</p>
+<p>
+Пусть <img src=../../images/lk9/p9.5/9.5_26.PNG>
+– произвольные линейно независимые векторы. Тогда ортонормированная система векторов
+<img src=../../images/lk9/p9.5/9.5_27.PNG> получается по следующей схеме:
+<img class="centr" src=../../images/lk9/p9.5/9.5_28.PNG>
+</p>
+<p>
+<strong>Пример 3.</strong> Ортонормировать векторы
+<img src=../../images/lk9/p9.5/9.5_29.PNG>
+<img src=../../images/lk9/p9.5/9.5_30.PNG>
+со скалярным произведением, заданным формулой (9.1).
+</p>
+<p>
+<strong>Решение.</strong> По методу Грама – Шмидта получаем
+<img src=../../images/lk9/p9.5/9.5_31.PNG>
+<img class="centr" src=../../images/lk9/p9.5/9.5_32.PNG>
+Легко увидеть, что полученные векторы u<sup>1</sup>,u<sup>2</sup>,u<sup>3</sup> ортонормированны.•
+</p>
+<p>
+Найдем выражение скалярного произведения в координатах для векторов 
+x и y, заданных в произвольном ортонормированном базисе евклидова пространства V.
+Пусть <img src=../../images/lk9/p9.5/9.5_33.PNG> – ортонормированный базис пространства V и 
+<img src=../../images/lk9/p9.5/9.5_35.PNG>
+векторы из V. Тогда в силу аксиом 2° и 3° из 9.1 получим
+<img class="centr" src=../../images/lk9/p9.5/9.5_36.PNG>
+Итак, в <i>ортонормированном базисе скалярное произведение двух векторов равно сумме произведений одноименных координат этих векторов. </i>
+Выясним смысл координат произвольного вектора x в ортонормированном базисе.
+</p>
+<p>
+<strong>Теоремa 9.2.</strong> Координаты вектора в ортонормированном базисе равны скалярному
+произведению этого вектора на соответствующие базисные векторы.
+</p>
+<p>
+<strong>Доказательство.</strong> Пусть <img src=../../images/lk9/p9.5/9.5_37.PNG>
+ортонормированный базис и x = 
+<img src=../../images/lk9/p9.5/9.5_38.PNG>
+– произвольный вектор. Умножив обе части этого равенства скалярно на вектор
+<img src=../../images/lk9/p9.5/9.5_39.PNG>
+<img class="centr" src=../../images/lk9/p9.5/9.5_40.PNG>
+Отсюда получаем
+<img class="centr" src=../../images/lk9/p9.5/9.5_41.PNG>
+</p>
+<p>
+<img src=../../images/lk9/p9.5/9.5_42.PNG> скалярное произведение 
+<img src=../../images/lk9/p9.5/9.5_43.PNG> естественно назвать <i>проекцией вектора x на вектор u<sup><i>i</i></sup></i>.
+</p>
+<p>
+Таким образом, <i>координаты вектора x в ортонормированном базисе равны его проекциям на соответствующие базисные векторы.</i>
+Итак, формула <img class="centr" src=../../images/lk9/p9.5/9.5_44.PNG>
+представляет собой разложение произвольного вектора x в ортонормированном базисе <img src=../../images/lk9/p9.5/9.5_45.PNG> евклидова пространства.
+</p>
+
+<p>&nbsp;</p><h4>9.6. Ортогональное дополнение</h4>
+
+<p>
+<strong>Определение 9.7.</strong> Вектор x евклидова пространства V называется <i>ортогональным подпространству</i> 
+<img src=../../images/lk9/p9.6/9.6_1.PNG> если он ортогонален любому вектору из L, т. е.
+<img class="centr"src=../../images/lk9/p9.6/9.6_2.PNG>
+</p>
+<p>
+Если подпространство L порождено векторами <img src=../../images/lk9/p9.6/9.6_3.PNG> т. е. является линейной оболочкой этих векторов:
+<img class="centr"src=../../images/lk9/p9.6/9.6_4.PNG> то
+<img class="centr"src=../../images/lk9/p9.6/9.6_5.PNG>
+</p>
+<p>
+Последнее соотношение в R<sup>3</sup> выражает тот известный из элементарной геометрии факт, 
+что вектор перпендикулярен плоскости тогда и только тогда, 
+когда он перпендикулярен любым двум неколлинеарным векторам этой плоскости.
+</p>
+<p>
+<strong>Определение 9.8.</strong> Два подпространства L и М пространства V называются <i>ортогональными</i>, 
+если любой вектор подпространства L ортогонален любому вектору подпространства М, т. е.
+<img class="centr"src=../../images/lk9/p9.6/9.6_6.PNG>
+Если при этом пространства L и М дополнительны друг к другу в V ,т. е.
+<img src=../../images/lk9/p9.6/9.6_7.PNG> , то М называется <i>ортогональным дополнением</i> к L и обозначается
+<img src=../../images/lk9/p9.6/9.6_8.PNG>
+</p>
+<p>
+Из теоремы 8.5 вытекает следующая теорема.
+</p>
+<p>
+<strong>Теоремa 9.3.</strong> Евклидово пространство V является прямой суммой подпространства L и его ортогонального дополнения, т. е.
+<img class="centr"src=../../images/lk9/p9.6/9.6_9.PNG> причём
+<img class="centr"src=../../images/lk9/p9.6/9.6_10.PNG>
+</p>
+<p>
+
+</p>
+
+
+<p>&nbsp;</p><h4>9.7. Аффинное пространство. Координаты точки</h4>
+
+<p>
+Пусть имеется линейное пространство V и множество U элементов произвольной природы, называемых <i>точками</i> и обозначаемых прописными 
+латинскими буквами, причем каждой упорядоченной паре точек М и N поставлен в соответствие единственный вектор 
+<img src=../../images/lk9/p9.7/9.7_1.PNG> При этом будем писать <img src=../../images/lk9/p9.7/9.7_2.PNG>
+Предполагается, что соответствие между точками и векторами удовлетворяет аксиомам:
+</p>
+<p>
+1°. Для каждой точки <img src=../../images/lk9/p9.7/9.7_2.PNG> и любого вектора <img src=../../images/lk9/p9.7/9.7_3.PNG>
+существует единственная точка <img src=../../images/lk9/p9.7/9.7_4.PNG> , такая, что 
+<img src=../../images/lk9/p9.7/9.7_5.PNG>
+</p>
+<p>
+2°. Для любых трех точек  <img src=../../images/lk9/p9.7/9.7_6.PNG> справедливо соотношение
+<img class="centr" src=../../images/lk9/p9.7/9.7_7.PNG>
+</p>
+<p>
+3°. Для точек <img src=../../images/lk9/p9.7/9.7_8.PNG> справедливо соотношение
+<img src=../../images/lk9/p9.7/9.7_9.PNG> (точки совпадают).
+</p>
+<p>
+<strong>Определение 9.9.</strong> Множество U, удовлетворяющее аксиомам 1°–3°, называется <i>аффинным пространством</i>,
+связанным с линейным пространством V.
+</p>
+<p>
+Аффинное пространство называется <i>n-мерным</i>, если n-мерно соответствующее ему линейное пространство.
+</p>
+<p>
+<strong>Теоремa 9.4.</strong> Для любой точки <img src=../../images/lk9/p9.7/9.7_10.PNG> справедливо соотношение
+<img src=../../images/lk9/p9.7/9.7_11.PNG> Для любых двух точек <img src=../../images/lk9/p9.7/9.7_12.PNG>
+справедливо соотношение <img src=../../images/lk9/p9.7/9.7_13.PNG> 
+</p>
+<p>
+<strong>Доказательство.</strong> Из аксиомы 2° при  <img src=../../images/lk9/p9.7/9.7_14.PNG>
+<img src=../../images/lk9/p9.7/9.7_15.PNG> Далее, из этой же аксиомы при <img src=../../images/lk9/p9.7/9.7_16.PNG>
+<img src=../../images/lk9/p9.7/9.7_17.PNG>
+</p>
+<p>
+Пусть U – аффинное пространство. Выберем в нем какую-нибудь точку O и назовем ее <i>началом координат</i>. Тогда для любого вектора
+<img src=../../images/lk9/p9.7/9.7_18.PNG> в силу аксиомы 1° найдется единственная точка М, такая, что
+<img src=../../images/lk9/p9.7/9.7_19.PNG> Тем самым устанавливается взаимно однозначное соответствие между 
+всеми точками М из U и векторами <img src=../../images/lk9/p9.7/9.7_20.PNG> Вектор
+<img src=../../images/lk9/p9.7/9.7_21.PNG> называется <i>радиус-вектором</i> точки 
+<img src=../../images/lk9/p9.7/9.7_22.PNG>
+</p>
+<p>
+Пусть <img src=../../images/lk9/p9.7/9.7_23.PNG> – некоторый базис пространства V и вектор
+<img src=../../images/lk9/p9.7/9.7_24.PNG> имеет в этом базисе координаты 
+<img src=../../images/lk9/p9.7/9.7_25.PNG> Эти же координаты припишем и соответствующей вектору
+x точке М, и будем обозначать <img src=../../images/lk9/p9.7/9.7_26.PNG>
+</p>
+<p>
+Итак, каждой точке n-мерного аффинного пространства в заданном базисе однозначно соответствует совокупность n чисел
+<img src=../../images/lk9/p9.7/9.7_27.PNG> называемых ее <i>координатами</i>.
+</p>
+<p>
+<img src=../../images/lk9/p9.7/9.7_28.PNG>  – две точки аффинного пространства U, то в силу аксиомы 2° и формул (8.6) имеем
+<img class="centr" src=../../images/lk9/p9.7/9.7_29.PNG>
+т. е. координаты вектора MN равны разностям соответствующих координат его конца N и начала М. Тогда согласно формуле (8.7) имеем
+<img class="centr" src=../../images/lk9/p9.7/9.7_30.PNG>
+</p>
+<p>
+Заметим, что если векторы пространства V назвать точками пространства U и каждой упорядоченной паре точек x и у из V 
+поставить в соответствие вектор  y – x, то, очевидно, линейное пространство V можно рассматривать как аффинное.
+</p>
+<p>
+<strong>Определение 9.10.</strong> <i>Расстоянием </i> <img src=../../images/lk9/p9.7/9.7_31.PNG> между двумя точками М и N 
+аффинного пространства называется длина вектора <img src=../../images/lk9/p9.7/9.7_32.PNG>
+В силу формул (9.4) и (9.9) имеем <img class="centr" src=../../images/lk9/p9.7/9.7_33.PNG>
+что для точек x и y евклидова пространства R<sup>n</sup> совпадает с формулой (9.7).
+</p>
+
+<p>&nbsp;</p><h4>9.8. Прямая и гиперплоскость в R<sup>n</sup></h4>
+</p>
+<p>
+<strong>Определение 9.11.</strong> Будем говорить, что векторы a и b <i>параллельны</i>, если угол между ними равен 0 или &pi;.
+</p>
+<p>
+Пусть <img src=../../images/lk9/p9.8/9.8_1.PNG> Тогда, как и в случае пространства R<sup>3</sup>, легко получить, что
+<img class="centr" src=../../images/lk9/p9.8/9.8_2.PNG>
+</p>
+<p>
+т. е. два вектора a и b в пространстве R<sup>n</sup> параллельны тогда и только тогда, когда их координаты пропорциональны.
+</p>
+<p>
+Пусть <img src=../../images/lk9/p9.8/9.8_3.PNG>
+некоторая точка в соответствующем аффинном пространстве R<sup>n</sup>. Для любого <img src=../../images/lk9/p9.8/9.8_4.PNG>
+вектор ta параллелен a. В силу аксиомы 1° аффинного пространства найдется единственная точка 
+<img src=../../images/lk9/p9.8/9.8_5.PNG> Это соотношение называется <i>векторным параметрическим уравнением прямой</i> в пространстве R<sup>n</sup>, 
+которое в координатной форме запишется следующим образом:
+<img class="centr" src=../../images/lk9/p9.8/9.8_6.PNG>
+</p>
+<p>
+Исключив параметр t из системы уравнений (9.10), получим <i>канонические уравнения прямой</i> в пространстве R<sup>n</sup>:
+<img class="centr" src=../../images/lk9/p9.8/9.8_7.PNG>
+</p>
+<p>
+<strong>Определение 9.12.</strong> Совокупность всех векторов, проходящих через точку M0, ортогональных вектору a, называется
+<i>гиперплоскостью</i> Н в R<sup>n</sup> (плоскостью при n = 3).
+Пусть c – произвольный вектор, ортогональный a. По аксиоме 1° аффинного пространства существует единственная точка N, такая, что
+<img src=../../images/lk9/p9.8/9.8_8.PNG> Из условия ортогональности получаем
+<img class="centr" src=../../images/lk9/p9.8/9.8_9.PNG>
+где x и x<sup>0</sup> – радиус-векторы точек N и M<sub>0</sub> соответственно. 
+Перепишем полученное равенство в координатной форме. Имеем
+<img class="centr" src=../../images/lk9/p9.8/9.8_10.PNG>
+Это уравнение и есть искомое уравнение гиперплоскости Н, которое при n = 3 превращается в <i>уравнение плоскости</i>
+<img src=../../images/lk9/p9.8/9.8_11.PNG> проходящей через точку
+<img src=../../images/lk9/p9.8/9.8_12.PNG> перпендикулярно вектору
+<img src=../../images/lk9/p9.8/9.8_13.PNG>
+</p>
+
+
+
+
+
+
+
+</div>
+<p></p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var>(С)  БГУИР</var></td>
+  </tr>
+</table>
+</BODY></HTML>

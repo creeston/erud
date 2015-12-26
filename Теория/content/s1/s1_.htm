@@ -1,0 +1,152 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"], ["__","__"]]}
+  });
+</script>
+<script type="text/javascript" src="../../../Оболочка/mathjax/MathJax.js"></script>
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<style type="text/css">
+  div.style1 {
+    font-family: "Times New Roman";
+    font-size: 14pt;
+  }
+</style>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+<center><span style="font-size: 16pt; font-weight: bold;">Основные обозначения</span></center>
+<br>$|A|$ – определитель матрицы $A$
+<br>$M_{ij}$ – минор, соответствующий элементу $a_{\textit{ij}}$ матрицы $A$
+<br>$A_{\textit{ij}}$ – алгебраическое дополнение элемента $a_{\textit{ij}}$ матрицы $A$
+<br>$\bullet$ – окончание примера
+<br><img src="../../images/s2/2.png"/> – окончание доказательства утверждения
+<br>$\boldsymbol{a}$ или $\overrightarrow{a}$ – вектор
+<br>$\bf 0$ или $\overrightarrow{0}$ – нулевой вектор
+<br>$\overrightarrow{AB}$ – вектор как направленный от точки $A$ к точке $B$ отрезок
+<br>$|\boldsymbol{a}|$ или $\Big|\overrightarrow{a}\Big|$, или $\bigg|\overrightarrow{AB}\bigg|$ – длина вектора
+<br>$&#955;\boldsymbol{a}$ или $&#955;\overrightarrow{a}$ – произведение вектора на число $&#955;$
+<br>$|&#955;|$ – модуль числа $&#955;$
+<br>$-\boldsymbol{a}$ или $-\overrightarrow{a}$ - противоположный вектор
+<br>$\boldsymbol{a} + \boldsymbol{b}$ или $\overrightarrow{a} + \overrightarrow{b}$ – сумма векторов
+<br>$\boldsymbol{a} - \boldsymbol{b}$ или $\overrightarrow{a} - \overrightarrow{b}$ – разность векторов
+<br>$\boldsymbol{a} \,||\, \boldsymbol{b}$ или $\overrightarrow{\textit{a}} \,||\, \overrightarrow{\textit{b}}$ – векторы коллинеарны (параллельны)
+<br>$\Rightarrow$ – символ следствия (импликации)
+<br>$\overrightarrow{\textit{a}} =(a_{1} ,\, \, a_{2} )$ или $\overrightarrow{\textit{a}}(\textit{a}{}_{1},~\textit{a}{}_{2})$ – вектор $\overrightarrow{\textit{a}}$ имеет координаты $a_1, a_2$ в некотором базисе на плоскости
+<br>$\overrightarrow{\textit{a}} =(a_{1} ,\, \, a_{2} ,\, \, a_{3} )$ или $\overrightarrow{\textit{a}} (\textit{a}{}_{1},~\textit{a}{}_{2},~\textit{a}{}_{3})$ – вектор $\overrightarrow{\textit{a}} $ имеет координаты $a_1, a_2, a_3$ в некотором базисе трехмерного пространства
+<br>$\textit{M}~(\textit{x},~\textit{y},~\textit{z})$ – точка $M$ имеет координаты $x, y, z$ в некотором базисе трехмерного пространства
+<br>$\boldsymbol{i}, \boldsymbol{j}, \boldsymbol{k}$ или $\overrightarrow{\textit{i}} ,\, \overrightarrow{\textit{j}} ,\, \overrightarrow{\textit{k}} $ – декартов прямоугольный базис в трехмерном пространстве
+<br>$\overrightarrow{\textit{a}} \overrightarrow{\textit{b}} $ или $\overrightarrow{\textit{a}} \cdot \overrightarrow{\textit{b}} $, или $(\boldsymbol{a}, \boldsymbol{b})$, или $(\overrightarrow{\textit{a}}, \overrightarrow{\textit{b}})$ – скалярное произведение векторов
+<br>$np_{\overrightarrow{\textit{a}} } \overrightarrow{\textit{b}} $ – проекция вектора $\overrightarrow{\textit{b}}$ на ось вектора $\overrightarrow{\textit{a}}$
+<br>$\boldsymbol{a} \,\bot\, \boldsymbol{b}$ или $\overrightarrow{\textit{a}} \bot \overrightarrow{\textit{b}}$ – векторы ортогональны
+<br>$\Leftrightarrow$ – символ эквивалентности (равносильности)
+<br>$\overrightarrow{\textit{a}} \times \overrightarrow{\textit{b}}$ или $\Big[\overrightarrow{\textit{a}} ,\, \, \overrightarrow{\textit{b}}\Big]$ – векторное произведение векторов $\overrightarrow{\textit{a}}$ и $\overrightarrow{\textit{b}}$
+<br>$\angle \left({\boldsymbol{a}},\, {\boldsymbol{b}}\right)$ или $\angle \left(\overrightarrow{\textit{a}} ,\, \overrightarrow{\textit{b}} \right)$ – угол между векторами
+<br>$\overrightarrow{\textit{a}} \, \overrightarrow{\textit{b}} \, \overrightarrow{\textit{c}}$ или $\left(\overrightarrow{\textit{a}} ,\, \, \overrightarrow{\textit{b}} ,\, \, \overrightarrow{\textit{c}} \right)$ – смешанное произведение векторов $\overrightarrow{\textit{a}}, \overrightarrow{\textit{b}}, \overrightarrow{\textit{c}} $
+<br>$A_{\textrm{m}\times\textrm{n}}$ – прямоугольная матрица порядка $m \times n$
+<br>$O$ – нулевая матрица
+<br>$A + B$ – сумма матриц $A$ и $B$
+<br>&#945;$A$ – произведение матрицы $A$ на число &#945;
+<br>$-A$ – матрица, противоположная матрице $A$
+<br>$A-B$ – разность матриц $A$ и $B$
+<br>$AB$ или $A \cdot B$ – произведение матриц $A$ и $B$
+<br>$E$ – единичная квадратная матрица
+<br>$A^*$ или $A^{\textit{T}}$ – матрица, полученная из вещественной матрицы $A$ транспонированием
+<br>$A^{-1}$ – матрица, обратная матрице $A$
+<br>$\forall$ – квантор общности, означающий слова «любой», «каждый»
+<br>$v \in V$ – элемент $v$ принадлежит множеству $V$
+<br>$\textbf{N}$ – множество натуральных чисел
+<br>$C_{n}^{k}$ – число сочетаний из $n$ элементов по $k$ (биномиальный коэффициент)
+<br>$\textit{r}(A\,)$ – ранг матрицы $A$
+<br>$A \sim B$ или $A \rightarrow B$ – матрица $B$ получена из матрицы $A$ элементарными преобразованиями
+<br>$\boldsymbol{a} = (a_{1}, a_{2}, ..., a_{n}\,)$ или $\overrightarrow{a} =(a_{1} ,\, a_{2} ,...,\, a_{n}\,)$ – $n$-мерный вектор с компонентами (координатами) $a_i, i = 1, ..., n$
+<br>$\textbf{R}$ – множество вещественных чисел
+<br>$\textbf{R}^{n}$ – $n$-мерное вещественное векторное пространство
+<br>$\textit{M}\,(x, y\,)$ – точка $M$ имеет координаты $x, y$ в некотором базисе на плоскости
+<br>$M \in L$ – точка $M$ принадлежит прямой $L$
+<br>$M \not \in L$ – точка $M$ не принадлежит прямой $L$
+<br>$M \in K$ – точка $M$ принадлежит кривой $K$
+<br>$M \not \in K$ – точка $M$ не принадлежит кривой $K$
+<br>&#949; – эксцентриситет эллипса, гиперболы, параболы
+<br>$\textrm{sgn}~x$ – сигнум вещественного $x$
+<br>$\textrm{ch}~x$ – косинус гиперболический $x$
+<br>$\textrm{sh}~x$ – синус гиперболический $x$
+<br>$M \in S$ – точка $M$ принадлежит поверхности $S$
+<br>$\Pi || L$ – плоскость $\Pi$ параллельна прямой $L$
+<br>$\Pi_1 || \Pi_2$ – плоскости $\Pi_1$ и $\Pi_2$ параллельны
+<br>$\Pi_1 \bot \Pi_2$ – плоскости $\Pi_1$ и $\Pi_2$ перпендикулярны
+<br>$M \not \in S$ – точка $M$ не принадлежит поверхности $S$
+<br>$v_1, v_2, \dots, v_{n} \in V$ – элементы $v_1, v_2, \dots, v_{n}$ принадлежат множеству $V$
+<br>$|$ – обозначение слов «такой, что», «такие, что» при описательном задании множеств
+<br>$\&$ – символ конъюнкции, одновременного выполнения условий, означающий логическое «и»
+<br>$[a; b]$ – вещественный отрезок (подмножество $\textbf{R}$, состоящее из всех чисел $r$, таких, что $a \leq r \leq b$)
+<br>$C_{\textit{[a; b]}}$ – множество вещественных непрерывных на отрезке $[a; b]$ функций
+<br>$f: X \rightarrow Y$ – функция $f$ отображает множество $X$ во множество $Y$
+<br>$\textrm{dim}~V$ – размерность линейного векторного пространства $V$
+<br>$W \subset V$ – множество $W$ является подмножеством множества $V$
+<br>$L(\boldsymbol{x}^1, \boldsymbol{x}^2, ..., \boldsymbol{x}^k\,)$ – линейная оболочка, порожденная векторами $\boldsymbol{x}^1, \boldsymbol{x}^2, ..., \boldsymbol{x}^k$
+<br>$V_1 \cap V_2$ – пересечение множеств (или линейных пространств) $V_1$ и $V_2$
+<br>$V_1 + V_2$ – сумма линейных пространств $V_1$ и $V_2$
+<br>$||\boldsymbol{a}||$ – норма вектора $\boldsymbol{a}$
+<br>&#961;$(\boldsymbol{a}, \boldsymbol{b}\,)$ – расстояние между векторами $\boldsymbol{a}$ и $\boldsymbol{b}$
+<br>&#948;$_{ij}$ – символ Кронекера
+<br>$\boldsymbol{a} \bot W$ – вектор $\boldsymbol{a}$ ортогонален подпространству $W$ евклидова пространства
+<br>$V_1 \bot V_2$ – подпространства $V_1$ и $V_2$ евклидова пространства ортогональны
+<br>$V_1 = V_2^{\bot}$  – подпространство $V_1$ является ортогональным дополнением к подпространству $V_2$ в евклидовом пространстве
+<br>$\boldsymbol{a} = \boldsymbol{MN}$ – вектор $\boldsymbol{a}$ имеет начало в точке $M$ и конец в точке $N$ аффинного пространства
+<br>$M(x_1, x_2, ..., x_n\,)$ – точка $M$ имеет координаты $x_1, x_2, ..., x_n$ в некотором базисе аффинного пространства
+<br>&#961;$(M, N)$ – расстояние между точками $M$ и $N$ аффинного пространства
+<br>$\boldsymbol{Ax}$ – образ вектора $\boldsymbol{x}$ при действии линейного оператора $\boldsymbol{A}$
+<br>$\boldsymbol{O}$ – нулевой линейный оператор
+<br>$\boldsymbol{E}$ – тождественный линейный оператор
+<br>$-\boldsymbol{A}$ – линейный оператор, противоположный линейному оператору $\boldsymbol{A}$
+<br>$\textrm{im}\;\boldsymbol{A}$ – область значений (образ) линейного оператора $\boldsymbol{A}$
+<br>$\textrm{ker}\;\boldsymbol{A}$ – ядро линейного оператора $\boldsymbol{A}$
+<br>$\boldsymbol{A} + \boldsymbol{B}$ – сумма линейных операторов $\boldsymbol{A}$ и $\boldsymbol{B}$
+<br>&#945;$\boldsymbol{A}$ – произведение линейного оператора $\boldsymbol{A}$ на число &#945;
+<br>$\boldsymbol{AB}$ – произведение (композиция) линейных операторов $\boldsymbol{A}$ и $\boldsymbol{B}$
+<br>$\boldsymbol{A}^{-1}$ – линейный оператор, обратный линейному оператору $\boldsymbol{A}$
+<br>$\boldsymbol{A}^*$ – линейный оператор, сопряженный линейному оператору $\boldsymbol{A}$
+<br>$A = [a_{ij}]$ – матрица $A$, состоящая из элементов $a_{ij}$
+<br>$\textrm{diag}\; (&#955;_1, &#955;_2, ..., &#955;_n\,)$ – диагональная квадратная матрица порядка $n$ с элементами $&#955;_1, &#955;_2, ..., &#955;_n$ на главной диагонали
+<br>$Q\,(x_1, x_2, ..., x_n\,)$ – квадратичная форма от $n$ переменных $x_1, x_2, ..., x_n$
+
+
+
+
+</div>
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

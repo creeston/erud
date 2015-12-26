@@ -1,0 +1,167 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+<h3>Тема 13. Переход к новому базису</h3>
+<h4>13.1. Преобразование координат вектора при переходе к новому базису</h4>
+	
+<p>
+	Пусть в <b>R</b><sup>n</sup> заданы два <span class=grn>базиса</span> <b>u</b><sup>1</sup>, <b>u</b><sup>2</sup>,…, <b>u</b><sup>n</sup> и <b>v</b><sup>1</sup>, <b>v</b><sup>2</sup>,…, <b>v</b><sup>n</sup>, которые будем называть <i>старым</i> и <i>новым</i> соответственно. Векторы нового базиса однозначно представляются своими <span class=grn>разложениями по векторам</span> старого базиса <b>u</b><sup>1</sup>, <b>u</b><sup>2</sup>,…, <b>u</b><sup>n</sup>:
+</p>
+	
+<p><img src="../../images/lk13/13.1/1.png" ></p>
+	
+<p><strong>Определение 13.1.</strong> Матрица</p>
+
+<p><img src="../../images/lk13/13.1/2.png" ></p>
+	
+<p>называется <i>матрицей перехода</i> от старого базиса <b>u</b><sup>1</sup>, <b>u</b><sup>2</sup>,…, <b>u</b><sup>n</sup> к новому базису <b>v</b><sup>1</sup>, <b>v</b><sup>2</sup>,…, <b>v</b><sup>n</sup>. Из соотношений (13.1) и (13.2) следует, что <i>столбцами матрицы перехода Т являются <span class=grn>координаты</span> новых базисных векторов в старом базисе.</i></p>
+
+<p>Матрица <i>Т</i> является <span class=grn>невырожденной</span>, т. к. в противном случае ее столбцы, а значит, в силу системы (13.1), и векторы <b>v</b><sup>1</sup>, <b>v</b><sup>2</sup>,…, <b>v</b><sup>n</sup> были бы <span class=grn>линейно зависимы</span>, что противоречит их выбору в качестве базисных векторов.</p>
+	
+<p>Таким образом, для матрицы <i>Т</i> существует <span class=grn>обратная матрица</span> <i>Т</i><sup> –1</sup>, которая является, очевидно, матрицей перехода от нового базиса к старому.</p>
+	
+<p>Рассмотрим теперь, как связаны <span class=grn>координаты</span> одного и того же вектора в старом и новом базисах.</p>
+	
+<p>Пусть для вектора <b>x</b> &isin; <b>R</b><sup>n</sup> имеют место <span class=grn>разложения</span></p>
+	
+<p><img src="../../images/lk13/13.1/3.png" ></p>
+	
+<p>Подставив в (13.3) разложения новых базисных векторов из системы (13.1), получим</p>
+	
+<p><img src="../../images/lk13/13.1/4.png" ></p>
+	
+<p>Отсюда в силу единственности <span class=grn>разложения вектора по базису</span> имеем</p>
+	
+<p><img src="../../images/lk13/13.1/5.png" ></p>
+	
+<p>или в развернутом виде</p>
+	
+<p><img src="../../images/lk13/13.1/6.png" ></p>
+	
+<p>Таким образом, старые координаты вектора x получаются из новых его координат по формулам (13.4). Если <b>x</b> = (x<sub>1</sub>, x<sub>2</sub>,…, x<sub>n</sub>) и <img src="../../images/lk13/13.1/x1.png" height=28> , то система (13.4) в матричном виде записывается следующим образом:</p>
+	
+<p><img src="../../images/lk13/13.1/7.png" ></p>
+
+<p>Соотношение (13.5) можно записать и в виде</p>
+	
+<p><img src="../../images/lk13/13.1/8.png" ></p>
+
+<p><strong>Определение 13.2.</strong> Формулы (13.4)–(13.6) называются <i>формулами преобразования координат вектора при переходе к новому базису.</i></p>
+	
+<p><strong>Пример 1.</strong> Пусть вектор <b>x</b> в базисе <b>u</b><sup>1</sup>, <b>u</b><sup>2</sup> имеет координаты (1, – 2), т. е. <b>x</b> = <b>u</b><sup>1</sup> – 2 <b>u</b><sup>2</sup>. Найти координаты этого вектора в базисе <b>v</b><sup>1</sup> = <b>u</b><sup>1</sup>, <b>v</b><sup>2</sup> = <b>u</b><sup>1</sup> + <b>u</b><sup>2</sup>.</p>
+	
+<p><strong>Решение.</strong> Матрица перехода от базиса <b>u</b><sup>1</sup>, <b>u</b><sup>2</sup> к базису <b>v</b><sup>1</sup>, <b>v</b><sup>2</sup> имеет вид</p>
+	
+<p><img src="../../images/lk13/13.1/9.png" ></p>
+	
+<p>Искомые новые координаты <img src="../../images/lk13/13.1/x11.png"  height = 26> , <img src="../../images/lk13/13.1/x22.png" height = 26>  находим по формуле (13.6):</p>
+	
+<p><img src="../../images/lk13/13.1/10.png" ></p>
+	
+<p>т. е. <img src="../../images/lk13/13.1/x11.png" height = 26> = 3,  <img src="../../images/lk13/13.1/x22.png" height = 26> = – 2.•</p>
+		 
+<p>&nbsp;</p>
+<h4>13.2. Преобразование матрицы линейного оператора при переходе к новому базису</h4>
+<p>
+	Выясним, как преобразуется матрица линейного оператора при переходе от одного базиса к другому.
+</p>
+<p>
+	<strong>Теоремa 13.1.</strong> Пусть u<sup>1</sup>, u<sup>2</sup>,…, u<sup>n</sup> и v<sup>1</sup>, v<sup>2</sup>,…, v<sup>n</sup> – два базиса в R<sup>n</sup>, а Т – матрица перехода от старого базиса к новому. Если А – матрица линейного оператора A в базисе u<sup>1</sup>, u<sup>2</sup>,…, u<sup>n</sup>, то матрицей В этого оператора в новом базисе v<sup>1</sup>, v<sup>2</sup>,…, v<sup>n</sup> является матрица
+</p>
+<p>
+	<i>В = Т </i><sup>–1</sup><i>AT</i> (13.7)
+</p>
+<p>
+	<strong>Доказательство.</strong> Пусть y = Аx, &forall;x &isin; R<sup>n</sup>, где векторы x и y рассматриваются в базисе u<sup>1</sup>, u<sup>2</sup>,…, u<sup>n</sup>. Если v<sup>1</sup>, v<sup>2</sup>,…, v<sup>n</sup> – новый базис и Т – матрица перехода, то в силу равенства (13.5) x = Тx' и y = Тy', где x' и y' – векторы x и y в новом базисе v<sup>1</sup>, v<sup>2</sup>,…, v<sup>n</sup>. Подставив x и y в равенство y = Аx, получим равенство
+</p>
+<p>
+	<i>Тy' = АТx'</i> &hArr; <i>y' = Т </i><sup>–1</sup><i>(АТx')</i> &hArr; <i>y' = (Т </i><sup>–1</sup><i>АТ)x'</i>,
+</p>
+<p>
+	справедливое в новом базисе v<sup>1</sup>, v<sup>2</sup>,…, v<sup>n</sup>. Отсюда и следует, что матрица линейного оператора в новом базисе v<sup>1</sup>, v<sup>2</sup>,…, v<sup>n</sup> находится по формуле (13.7)
+</p>
+<p>
+	<strong>Следствие.</strong> Определитель матрицы линейного оператора не зависит от базиса пространства.
+</p>
+<p>
+	<strong>Доказательство.</strong> В самом деле, согласно свойствам определителей, имеем
+</p>
+<p>
+	<img src="../../images/lk13/13/1.png" class="ch_i">
+</p>
+<p>
+	<strong>Определение 13.3.</strong> Матрицы А и В = <i>Т </i><sup>–1</sup><i>AT</i> называются подобными.
+</p>
+<p>
+	Из теоремы 13.1 следует, что подобные матрицы являются матрицами одного и того же линейного оператора A: R<sup>n</sup>&rarr;R<sup>n</sup>, но рассматриваемого в разных базисах с матрицей перехода Т.
+</p>
+<p>
+	<strong>Пример 2.</strong> В базисе u<sup>1</sup>, u<sup>2</sup> оператор A имеет матрицу
+</p>
+<p>
+	<img src="../../images/lk13/13/2.png" height="52px">
+</p>
+<p>
+	Найти матрицу этого оператора в базисе v<sup>1</sup> = u<sup>1</sup> + 2u<sup>2</sup>, v<sup>2</sup> = 2u<sup>1</sup> + 3u<sup>2</sup>.
+</p>
+<p>
+	<strong>Решение.</strong> Определяем матрицу перехода и обратную ей матрицу:
+</p>
+<p>
+	<img src="../../images/lk13/13/3.png" height="52px"> <i style="font-size: 12pt">Т </i><sup>–1</sup> = <img src="../../images/lk13/13/4.png" height="52px">
+</p>
+<p>
+	Тогда искомая матрица, согласно формуле (13.7), имеет вид
+</p>
+<p>
+	<img src="../../images/lk13/13/5.png" height="52px">
+</p>
+<p>
+	Справедлива следующая теорема.
+</p>
+<p>
+	Теоремa 13.2. Собственные значения подобных матриц совпадают.
+</p>
+<p>
+	Доказательство. В самом деле, характеристический многочлен матрицы В равен характеристическому многочлену матрицы А:
+</p>
+<p>
+	<img src="../../images/lk13/13/6.png" class="ch_i">
+</p>
+</div>
+
+
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

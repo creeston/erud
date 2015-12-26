@@ -1,0 +1,707 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | Теория | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+<h3>Глава 3. Линейные векторные пространства</h3>
+<h4>8.1. Определение линейного пространства. Примеры линейных пространств</h4>
+
+<p>
+  В 2.1 определены операция сложения 
+  свободных векторов из R<sup>3</sup> и операция умножения векторов на действительные числа, а также перечислены свойства этих операций. Распространение этих операций и их свойств на множество объектов (элементов) произвольной природы приводит к обобщению понятия линейного пространства геометрических векторов из R<sup>3</sup>, определенного в 2.1. Сформулируем определение линейного векторного пространства.
+</p>
+<p>
+  <strong>Определение 8.1.</strong> Множество <i>V</i> элементов <i>х</i>,   <i>y</i>, <i>z</i>,... называется   <i>линейным векторным пространством</i>, если:
+</p>
+<p>
+  имеется правило, которое каждым двум элементам <i>х</i> и   <i>y</i> из <i>V</i> ставит в соответствие третий элемент из <i>V</i>, называемый   <i>суммой х и y</i> и обозначаемый   <i>х</i> + <i>y</i>;
+</p>
+<p>
+  имеется правило, которое каждому элементу <i>х</i>&isin;<i>V</i> и любому   действительному числу <i>&alpha;</i> ставит в соответствие элемент из <i>V</i>, называемый   <i>произведением элемента х на число &alpha;</i> и   обозначаемый <i>&alpha;х</i>.
+</p>
+<p>
+  При этом сумма любых двух элементов <i>x</i> + <i>y</i>  и произведение <i>&alpha;х</i> любого элемента на любое число   должны удовлетворять следующим требованиям –   <i>аксиомам линейного пространства</i>:
+</p>
+<ol type="1">
+  <li>
+    <i>х</i> + <i>y</i> = 
+	<i>y</i> + <i>х</i> (коммутативность сложения).
+  </li>
+  <li>
+    (<i>x</i> + <i>y</i>) + <i>z</i> = 
+	<i>x</i> + (<i>y</i> + <i>z</i>) 
+	(ассоциативность сложения).
+  </li>
+  <li>
+    Существует элемент 0&isin;<i>V</i>, называемый <i>нулевым</i>, 
+	такой, что 
+	<p>
+	  <i>x</i> + 0 = <i>x</i>, 
+	  &forall;<i>x</i>&isin;<i>V</i>.
+	</p>
+  </li>
+  <li>
+    Для любого <i>x</i>&isin;<i>V</i> существует элемент (– <i>x</i>), 
+	называемый <i>противоположным для <i>x</i></i>, такой, что
+	<p>
+	  <i>x</i> + (– <i>x</i>) = 0.
+	</p>
+  </li>
+  <li>
+    <i>&alpha;</i>(<i>&beta;x</i>) = (<i>&alpha;&beta;</i>)<i>x</i>,  
+	&forall;<i>x</i>&isin;<i>V</i>, &forall;<i>&alpha;, &beta;</i> &isin;R.
+  </li>
+  <li>
+	1&middot;<i>x</i> = <i>x</i>, &forall;<i>x</i>&isin;<i>V</i>.
+  </li>
+  <li>
+    (<i>&alpha;</i> + <i>&beta;</i>)<i>x</i> = <i>&alpha;x</i> + 
+	<i>&beta;x</i>, &forall;<i>x</i>&isin;<i>V</i>, &forall;<i>&alpha;, &beta;</i> 
+	&forall;R.
+  </li>
+  <li>
+	<i>&alpha;</i>(<i>x</i> + <i>y</i>) = 
+	<i>&alpha;x</i> + <i>&alpha;y</i>, 
+	&forall;<i>x, y</i>&isin;<i>V</i>, &forall;<i>&alpha;</i>&isin;R.
+  </li>
+</ol>	
+<p>Элементы линейного пространства будем называть <i>векторами</i> независимо от их природы.</p>
+<p>Из аксиом 1° - 8° следует, что в любом линейном пространстве <i>V</i> справедливы следующие свойства:</p>
+<ol>
+  <li>существует единственный нулевой вектор;</li>
+  <li>
+    для каждого вектора <i>x</i>&isin;<i>V</i> существует единственный 	противоположный вектор (– <i>x</i>)&isin;<i>V</i>, причем 	(– <i>x</i>) = (– l)<i>x</i>;
+  </li>
+  <li>для любого вектора <i>x</i> справедливо равенство 0&middot;<i>x</i> = 0.</li>
+</ol>
+<p>
+  Докажем, например, свойство 1. Допустим, что в пространстве <i>V</i> существуют два 
+  нуля: 0<sub>1</sub> и 0<sub>2</sub>. 
+  Положив в аксиоме 3° <i>x</i> = 0<sub>1</sub>, 
+  0 = 0<sub>2</sub>, получим 
+  0<sub>1</sub> + 0<sub>2</sub> = 
+  0<sub>1</sub>. Аналогично, если <i>x</i> = 
+  0<sub>2</sub>, 0 = 
+  0<sub>1</sub>, то 0<sub>2</sub> + 
+  0<sub>1</sub> = 0<sub>2</sub>. 
+  Учитывая аксиому 1°, получаем 0<sub>1</sub> = 
+  0<sub>2</sub>.	
+</p>
+<p>Доказательство свойств 2 и 3 рекомендуется провести читателю самостоятельно.</p>
+<p>Приведем примеры линейных пространств.</p>
+<ol>
+  <li>
+    <p>
+      Множество действительных чисел образует линейное пространство R. Аксиомы 1°–8° в нем, очевидно, выполняются.
+	</p>
+  </li>
+  <li>
+    <p>
+	  Множество свободных векторов трехмерного пространства, как показано в 2.1, 
+	  также образует линейное пространство, обозначаемое R<sup>3</sup>. 
+	  Нулем этого пространства служит нулевой вектор.
+	</p>
+	<p>
+	  Множество векторов на плоскости и на прямой также являются линейными пространствами. 
+	  Будем обозначать их R<sup>1</sup> и R<sup>2</sup> соответственно.
+	</p>
+  </li>
+  <li>
+    <p>
+	  Обобщением пространств R<sup>1</sup>, R<sup>2</sup> 
+	  и R<sup>3</sup> служит 
+	  пространство R<sup>n</sup>, <i>n</i>&isin;N, 
+	  называемое <i>арифметическим n-мерным пространством</i>, элементами (векторами) 
+	  которого являются упорядоченные совокупности <i>n</i> произвольных действительных чисел 
+	  (<i>x</i><sub>1</sub>,…, <i>x</i><sub>n</sub>), т. е. R<sup>n</sup> = 
+	  {(<i>x</i><sub>1</sub>,…, <i>x</i><sub>n</sub>) | <i>x</i><sub>i</sub>&isin;R, i = 1,…, n}.
+	</p>
+	<p>
+	  Удобно использовать обозначение <i><i>x</i></i> = (<i>x</i><sub>1</sub>,…, <i>x</i><sub>n</sub>), 
+	  при этом <i>x</i><sub>i</sub>. называется <i>i-й координатой (компонентой) вектора x</i>.
+	</p>
+	<p>
+	  Для <i>x</i>, <i>y</i> &isin; R<sup>n</sup> 
+	  и <i>&alpha;</i> &isin; R определим сложение и умножение на число следующими формулами:
+	</p>
+	<p>
+	  <i>х</i> + <i>у</i> = 
+	  (<i>x</i><sub>1</sub> + y<sub>1</sub>,…, <i>x</i><sub>n</sub> + y<sub>n</sub>);
+	</p>
+	<p>
+	  <i>&alpha;х</i> = (<i>&alpha;x</i><sub>n</sub>,..., <i>&alpha;x</i><sub>n</sub>).
+	</p>
+	<p>
+	  Нулевым элементом пространства R<sup>n</sup> является 
+	  вектор 0 = (0,…, 0). Равенство двух векторов 
+	  <i>х</i> = (<i>x</i><sub>1</sub>,…, <i>x</i><sub>n</sub>) 
+	  и <i>у</i> = (<i>y</i><sub>1</sub>,…, <i>y</i><sub>n</sub>) 
+	  из R<sup>n</sup>, по определению, означает равенство 
+	  соответствующих координат, т. е. <i>х</i> = 
+	  <i>y</i> &hArr; <i>x</i><sub>1</sub> = 
+	  <i>y</i><sub>1</sub> &amp;… &amp; <i>x</i><sub>n</sub> = <i>y</i><sub>n</sub>.
+	</p>
+	<p>Выполнение аксиом 1°–8° здесь очевидно.</p>
+  </li>
+  <li>
+    <p>
+	  Пусть <i>C</i><sub>[<i>a</i>; <i>b</i>]</sub> – множество вещественных 
+	  непрерывных на отрезке [<i>a</i>; <i>b</i>] функций <i>f</i>: 
+	  [<i>a</i>; <i>b</i>]&rarr;R.
+	</p>
+	<p>
+	  Суммой функций <i>f</i> и <i>g</i> из <i>C</i><sub>[<i>a</i>; <i>b</i>]</sub> 
+	  называется функция <i>h</i> = <i>f</i> + <i>g</i>, определяемая равенством
+	</p>
+	<p>
+      <i>h</i> = <i>f</i> + <i>g</i> &hArr; <i>h</i>(<i>x</i>) = 
+	  (<i>f</i> + <i>g</i>)(<i>x</i>) = <i>f</i>(<i>х</i>) + 
+	  <i>g</i>(<i>x</i>), &forall; <i>x</i> &isin; [<i>a</i>; <i>b</i>].
+	</p>
+	<p>
+	  Произведение функции <i>f</i> &isin; <i>C</i><sub>[<i>a</i>; <i>b</i>]</sub> 
+	  на число <i>&alpha;</i> &isin; R определяется равенством
+	</p>
+	<p>
+	  <i>u</i> = <i>&alpha;f</i> &hArr; <i>u</i>(<i>х</i>) = (<i>&alpha;f</i>)
+	  (<i>х</i>) = <i>&alpha;f</i>(<i>x</i>), &forall; <i>x</i> &isin; 
+	  [<i>a</i>; <i>b</i>].
+	</p>
+	<p>
+      Так введенные операции сложения двух функций и умножения функции на число 
+	  превращают множество <i>C</i><sub>[<i>a</i>; <i>b</i>]</sub> в линейное 
+	  пространство, векторами которого являются функции. Аксиомы 1°–8° в этом 
+	  пространстве, очевидно, выполняются. Нулевым вектором этого пространства 
+	  является тождественно нулевая функция, а равенство двух функций <i>f</i> 
+	  и <i>g</i> означает, по определению, следующее:
+	</p>
+	<p>
+	  <i>f</i> = <i>g</i> &hArr; <i>f</i>(<i>x</i>) = <i>g</i>(<i>x</i>), 
+	  &forall; <i>x</i> &isin; [<i>a</i>; <i>b</i>].
+	</p>
+  </li>
+</ol>
+
+<p>&nbsp; </p>
+<h4>8.2. Линейная зависимость и независимость векторов</h4>
+<p>
+  <strong>Определение 8.2.</strong> Пусть <i>x</i><sup>1</sup>, 
+  <i>x</i><sup>2</sup>,…, 
+  <i>x</i><sup>n</sup> – векторы линейного пространства <i>V</i> 
+  и <i>&alpha;</i><sub>1</sub>, <i>&alpha;</i><sub>2</sub>,…, 
+  <i>&alpha;</i><sub>n</sub> – произвольные действительные числа. Вектор
+</p>
+<p><img src="../../images/lk8/Тема 8-2/1.png" width="299" height="46"/></p>
+<p>
+  называется <i>линейной комбинацией векторов x</i><sup>1</sup>, 
+  <i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup>, 
+  а числа <i>&alpha;</i><sub>1</sub>, 
+  <i>&alpha;</i><sub>2</sub>,…, <i>&alpha;</i><sub>n</sub> – <i>коэффициентами 
+  линейной комбинации</i>. Говорят, что множество векторов 
+  <i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, 
+  <i>x</i><sup>n</sup> <i>порождает пространство V</i>, если 
+  каждый вектор <i>y</i> из <i>V</i> может быть представлен в 
+  виде (8.1). Векторы <i>x</i><sup>1</sup>, 
+  <i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+  линейного пространства <i>V</i> называются <i>линейно зависимыми</i>, если 
+  существуют числа <i>&alpha;</i><sub>1</sub>, <i>&alpha;</i><sub>2</sub>,…, 
+  <i>&alpha;</i><sub>n</sub>,  ,…,  , не все равные нулю, такие, что
+</p>
+<p>
+  <i>&alpha;</i><sub>1</sub><i>x</i><sup>1</sup> + 
+  <i>&alpha;</i><sub>2</sub><i>x</i><sup>2</sup> +… + 
+  <i>&alpha;</i><sub>n</sub><i>x</i><sup>n</sup> = 
+  0.  (8.2)
+</p>
+<p>
+  Если же равенство (8.2) выполняется лишь в единственном случае, когда 
+  <i>&alpha;</i><sub>1</sub>=<i>&alpha;</i><sub>2</sub>=... = 
+  <i>&alpha;</i><sub>n</sub>= 0, то векторы <i>x</i><sup>1</sup>, 
+  <i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+  называются <i>линейно независимыми</i>.
+</p>
+<p>
+  Понятие линейной зависимости векторов в 
+  R<sup>3</sup> введено в 2.2. Там же показано, что если 
+  векторы линейно зависимы, то один из них является линейной комбинацией остальных 
+  векторов.
+</p>
+<p>Это доказательство дословно переносится на случай любого линейного пространства <i>V</i>.</p>
+<p>
+  Верно и обратное: если один из векторов <i>x</i><sup>1</sup>, 
+  <i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+  является линейной комбинацией остальных, то указанные векторы линейно зависимы.
+</p>
+<p>
+  Действительно, пусть, например, <i>x</i><sup>1</sup>= 
+  <i>&alpha;<sub>2</sub>x</i><sup>2</sup>+ 
+  <i>&alpha;<sub>3</sub>x</i><sup>3</sup>+... + 
+  <i>&alpha;<sub>n</sub>x</i><sup>n</sup>. Тогда (– 1)
+  <i>x</i><sup>1</sup> + 
+  <i>&alpha;<sub>2</sub>x</i><sup>2</sup> +… + 
+  <i>&alpha;<sub>n</sub>x</i><sup>n</sup> = 
+  0. Так как – 1 &ne; 0, то последнее равенство и устанавливает 
+  линейную зависимость векторов <i>x</i><sup>1</sup>, 
+  <i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup>.
+</p>
+<p><strong>Теорема 8.1.</strong> Справедливы следующие утверждения:</p>
+<ol>
+  <li>
+    Если среди векторов x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+	содержится нулевой вектор, то они линейно зависимы.
+  </li>
+  <li>
+	Если среди векторов x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+	имеется <i>k</i> (<i>k</i> < <i>n</i>) линейно зависимых векторов, то и вся 
+	система векторов x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+	линейно зависима.
+  </li>
+  <li>
+	Если векторы <i>x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+	линейно независимы, то и любая часть этой системы векторов линейно независима.
+  </li>
+</ol>
+<p><strong>Доказательство.</strong></p>
+<ol>
+  <li>
+	Если вектор <i>x</i><sup>k</sup> = 0, то 
+	из равенства 0&middot;<i>x</i><sup>1</sup> +... + 
+	0&middot;<i>x</i><sup>k-1</sup> + 
+	1&middot;<i>x</i><sup>k</sup> +… + 
+	0&middot;<i>x</i><sup>n</sup> = 0 вытекает 
+	линейная зависимость векторов <i>x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup>.
+  </li>
+  <li>
+	Пусть векторы <i>x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup><i>k</i></sup>, 
+	<i>k</i> < <i>n</i>, линейно зависимы. Тогда из равенства 
+	<i>&alpha;<sub>1</sub>x</i><sup>1</sup> + 
+	<i>&alpha;<sub>2</sub>x</i><sup>2</sup> +… + 
+	<i>&alpha;<sub><i>k</i></sub>x</i><sup><i>k</i></sup> = 
+	0, в котором среди чисел <i>&alpha;</i><sub>1</sub>, 
+	<i>&alpha;</i><sub>2</sub>,..., <i>&alpha;</i><sub><i>k</i></sub> хотя бы одно 
+	не равно нулю, получим равенство <i>&alpha;<sub>1</sub>x</i><sup>1</sup> + 
+	<i>&alpha;<sub>2</sub>x</i><sup>2</sup> +… + 
+	<i>&alpha;</i><sub><i>k</i></sub>x</i><sup><i>k</i></sup> + 
+	0&middot;<i>x</i><sup><i>k</i>+1</sup> +... + 
+	0&middot;<i>x</i><sup>n</sup> = 0, 
+	которое и означает линейную зависимость всей системы векторов 
+	<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, 
+	<i>x</i><sup>n</sup>.
+  </li>
+  <li>
+	Пусть векторы <i>x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+	линейно независимы. Если бы некоторая часть этих векторов была линейно зависимой, 
+	то на основании утверждения 2 вся система <i>x</i><sup>1</sup>, 
+	<i>x</i><sup>2</sup>,…, <i>x</i><sup>n</sup> 
+	была бы линейно зависимой, что не так. &diams;
+  </li>
+</ol>
+<p>Рассмотрим некоторые примеры, поясняющие понятие линейной зави-симости векторов.</p>
+<p>
+  <strong>Пример 1.</strong> В линейном пространстве R<sup>3</sup> векторы 
+  <i>x</i><sup>1</sup> = (1, – 1, 0), <i>x</i><sup>2</sup> 
+  = (2, 1, 3) и <i>x</i><sup>3</sup> = (14, – 2, 12), очевидно, 
+  линейно зависимы, т. к. имеет место равенство
+</p>
+<p><img src="../../images/lk8/Тема 8-2/2.png" width="156" height="37"/></p>
+<p>
+  <strong>Пример 2.</strong> Три функции <i>f</i><sub>1</sub>(<i>x</i>) = 1, 
+  <i>f</i><sub>2</sub>(<i>x</i>) = cos2<i>х</i>, 
+  <i>f</i><sub>3</sub>(<i>x</i>) = sin<sup>2</sup><i>х</i> в пространстве 
+  <i>C</i><sub>[<i>a</i>; <i>b</i>]</sub>, где [<i>a</i>; <i>b</i>] – произвольный 
+  отрезок, линейно зависимы, поскольку
+</p>
+<p>
+  <i>f</i><sub>1</sub>(<i>x</i>) – <i>f</i><sub>2</sub>(<i>x</i>) – 2<i>f</i><sub>3</sub>
+  (<i>x</i>) = 0, &forall;x&isin;R.•
+</p>
+<p>
+  <strong>Пример 3.</strong> Покажем, что в пространстве <i>C</i><sub>[<i>a</i>; <i>b</i>]</sub> 
+  векторы <i>y</i><sup>1</sup> = 1, 
+  <i>y</i><sup>2</sup> = <i>х</i>, 
+  <i>y</i><sup>3</sup> = <i>x</i><sup>2</sup>,..., 
+  <i>y</i><sup>n+1</sup> = <i>x</i><sup>n</sup>, где <i>n</i> – 
+  любое натуральное число, [<i>a</i>; <i>b</i>] – произвольный отрезок, линейно 
+  независимы. Для этого достаточно убедиться в том, что равенство  
+</p>
+<p>
+  <i>&alpha;</i><sub>1</sub>&middot;1 + <i>&alpha;</i><sub>2</sub><i>x</i> + 
+  <i>&alpha;</i><sub>3</sub><i>x</i><sub>2</sub> +…+ 
+  <i>&alpha;</i><sub><i>n</i>+1</sub><i>x</i><sub><i>n</i></sub> = 0, 
+  &forall;x&isin;R,                             (8.3)
+</p>
+<p>
+  возможно лишь при <i>&alpha;</i><sub>1</sub> = <i>&alpha;</i><sub>2</sub> =... = 
+  <i>&alpha;</i><sub><i>n</i>+1</sub> = 0.
+</p>
+<p>
+  Действительно, полагая в равенстве (8.3) <i>x</i><sup>0</sup> = 0, получаем 
+  <i>&alpha;</i><sub>1</sub> = 0. Тогда находим (<i>&alpha;</i><sub>2</sub> + 
+  <i>&alpha;</i><sub>3</sub><i>x</i> +... + 
+  <i>&alpha;</i><sub><i>n</i>+1</sub><i>x</i><sup><i>n</i>-1</sup>)<i>x</i> = 
+  0, &forall;<i>x</i>&isin;R. Последнее соотношение для всех 
+  <i>х</i> &isin; R возможно, если <i>&alpha;</i><sub>2</sub> + 
+  <i>&alpha;</i><sub>3</sub><i>x</i> +... + 
+  <i>&alpha;</i><sub><i>n</i>+1</sub><i>x</i><sup><i>n</i>-1</sup> = 0. Полагая 
+  здесь снова <i>x</i><sub>0</sub> = 0, получаем <i>&alpha;</i><sub>2</sub> = 0. 
+  Продолжая эти рассуждения, на (<i>n</i> + 1)-м шаге имеем 
+  <i>&alpha;</i><sub><i>n</i>+1</sub> = 0, т. е. равенство (8.3) возможно только 
+  при <i>&alpha;</i><sub>1</sub> = <i>&alpha;</i><sub>2</sub> =... = 
+  <i>&alpha;</i><sub><i>n</i>+1</sub> = 0.•
+</p>
+<p>
+  <strong>Пример 4.</strong> В пространстве R<sup><i>n</i></sup> рассмотрим векторы
+</p>
+<p>
+  <i>e</i><sup>1</sup> = (1, 0,..., 0), 
+  <i>e</i><sup>2</sup> = (0, 1,..., 0),..., 
+  <i>e<sup>n</sup></i> = (0, 0,..., 1).                      (8.4)
+</p>
+<p>
+  Покажем, что они линейно независимы. Действительно, пусть <i>&alpha;</i><sub>1</sub>, 
+  <i>&alpha;</i><sub>2</sub>,..., <i>&alpha;</i><sub><i>n</i></sub> – произвольные 
+  действительные числа. Тогда
+</p>
+<p>
+  <i>&alpha;<sub>1</sub>e</i><sup>1</sup> + 
+  <i>&alpha;<sub>2</sub>e</i><sup>2</sup> +...+ 
+  <i>&alpha;<sub>n</sub>e<sup>n</sup></i> = 0 &hArr;
+  <i>&alpha;</i><sub>1</sub>(1, 0,..., 0) + 
+  <i>&alpha;</i><sub>2</sub>(0, 1,..., 0) +...+ 
+  <i>&alpha;<sub>n</sub></i>(0, 0,..., 1) = (0, 0,..., 0) &hArr; 
+  (<i>&alpha;</i><sub>1</sub>, <i>&alpha;</i><sub>2</sub>,..., 
+  <i>&alpha;<sub>n</sub></i>) = (0, 0,..., 0) &hArr; <i>&alpha;</i><sub>1</sub> 
+  &hArr; <i>&alpha;</i><sub>1</sub> = 0 &amp; <i>&alpha;</i><sub>2</sub> &amp;...
+  <i>&alpha;<sub>n</sub></i> = 0,  
+</p>
+<p>
+  т. е. векторы <i>e</i><sup>1</sup>, 
+  <i>e</i><sup>2</sup>,..., 
+  <i>e</i><sup><i>1</i></sup> линейно независимы.•
+
+<p>&nbsp; </p>
+<h4>8.3. Базис и размерность линейного пространства</h4>
+<p>
+<strong>Определение 8.3.</strong> Совокупность линейно независимых векторов, порождающих линейное пространство V, называют базисом этого пространства. Если u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup> – базис пространства V, то любой вектор х из V может быть представлен в виде линейной комбинации векторов u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup>:
+</p>
+<p>
+x = a<sub>1</sub>u<sup>1</sup> + a<sub>2</sub>u<sup>2</sup> +... +a<sub>n</sub>u<sup>n</sup> = <img src=" ../../images/lk8/8.3/8.3.004.jpg" width="40" height="52" alt="" />u<sup>i</sup>.                              (8.5)</span>
+</p>
+<p>
+В разложении (8.5) числа a<sub>1</sub>, a<sub>2</sub>,..., a<sub>n</sub> называются координатами, или компонентами, вектора х в базисе u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup> – базис пространства V, то любой вектор х из V может быть представлен в виде линейной комбинации векторов u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup>.
+</p>
+<p>
+Докажем единственность представления (8.5). Допустим, что х можно представить еще и в виде х = b<sub>1</sub>u<sup>1</sup> + b<sub>2</sub>u<sup>2</sup> +... + b<sub>n</sub>u<sup>n</sup>. Вычтем это равенство из соотношения (8.5) и получим (a<sub>1</sub> – b<sub>1</sub>)u<sup>1</sup> + (a<sub>2</sub> – b<sub>2</sub>)u<sup>2</sup> +... + (a<sub>n</sub> – b<sub>n</sub>)u<sup>n</sup> = 0. Так как векторы u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup> линейно независимы, то a<sub>i</sub> = b<sub>i</sub>, i = 1, 2,..., n.
+</p>
+
+<p>
+Как и в R<sup>3</sup>, линейные операции над векторами пространства V при заданном базисе приводят к обычным линейным операциям над числами – координатами этих векторов в данном базисе, т.е. если
+</p>
+
+<p>
+x = a<sub>1</sub>u<sup>1</sup> + a<sub>2</sub>u<sup>2</sup> +... +a<sub>n</sub>u<sup>n</sup>,  у = b<sub>1</sub>u<sup>1</sup> + b<sub>2</sub>u<sup>2</sup> +...+ b<sub>n</sub>u<sup>n</sup>,
+</p>
+<p style="text-align:justify; widows:0; orphans:0">
+то
+</p>
+
+<p>
+х + у = (a<sub>1</sub> + b<sub>1</sub>)u<sup>1</sup> + (a<sub>2</sub> + b<sub>2</sub>)u<sup>2</sup> +... + (a<sub>n<sub> + b<sub>n</sub>)u<sup>n</sup>,
+</p>
+
+<p>
+<img src=" ../../images/lk8/8.3/8.3.015.jpg" width="18" height="16" alt="" />x = (<img src=" ../../images/lk8/8.3/8.3.016.jpg" width="30" height="24" alt="" />)u<sup>1</sup> + (<img src=" ../../images/lk8/8.3/8.3.017.jpg" width="31" height="24" alt="" />)u<sup>2</sup>+... + (<img src=" ../../images/lk8/8.3/8.3.018.jpg" width="31" height="24" alt="" />)u<sup>n</sup>.                            (8.6)</span>
+</p>
+
+<p>
+Учитывая взаимнооднозначное соответствие между вектором и его координатами в выбранном базисе u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup>, будем писать
+</p>
+<p>
+x = a<sub>1</sub>u<sup>1</sup> + a<sub>2</sub>u<sup>2</sup> +... +a<sub>n</sub>u<sup>n</sup> <img src=" ../../images/lk8/8.3/8.3.019.jpg" width="26" height="18" alt="" /> х = (a<sub>1</sub>, a<sub>2</sub>,..., a<sub>n</sub>).                (8.7)
+</p>
+
+<p>
+<strong>Теорема 8.2.</strong> Если линейное пространство V имеет базис, состоящий из n элементов, то всякие р векторов из V при р &gt; n линейно зависимы.
+</p>
+
+<p>
+<strong>Доказательство.</strong> Согласно утверждению 2 теоремы 8.1, можно считать, что p = n + 1. Рассмотрим случай, когда пространство  V имеет базис, состоящий из единственного элемента u. Тогда для любых x<sup>1</sup> и x<sup>2</sup> имеем x<sup>1</sup> = a<sup>1</sup>u и x<sup>2</sup> = a<sup>2</sup>u. Если a<sup>1</sup> и a<sup>2</sup> не равны нулю, то a<sup>2</sup>x<sup>1</sup> – a<sup>1</sup>x<sup>2</sup> = 0 и, значит, векторы x<sup>1</sup> и x<sup>2</sup> линейно зависимы. Если же a<sup>1</sup> = 0 или a<sup>2</sup> = 0, то векторы x<sup>1</sup> и x<sup>2</sup> тоже линейно зависимы, т. к. среди них есть нулевой вектор (утверждение 1 теоремы 8.1).
+</p>
+
+<p>
+Дальнейшие рассуждения продолжаем по индукции. Допустим, что в пространстве, базис которого состоит из n – 1 элементов, n векторов линейно зависимы. Рассмотрим пространство V, имеющее базис u<sup>1</sup>, u<sup>2</sup>,..., u<sup>n</sup>. Пусть n + 1 элементов из V имеют вид
+</p>
+<p>
+х<sup>m<sup> = a<sub>m1</suB>u<sup>1</sup> + a<sub>m2</sub>u<sup>2</sup> +... + a<sub>mn</sub><sup>n</sup>, m = 1, 2,..., n + 1.
+</p>
+
+<p>
+Если в этом равенстве все коэффициенты a<sub>mn</sub>, m = 1, 2,..., n, n + 1, равны нулю, то векторы x<sup>1</sup>, x<sup>2</sup>,..., x<sup>n</sup>, x<sup>n+1</sup> принадлежат пространству, порожденному элементами u<sup>1</sup>, u<sup>2</sup>,...,u<sup>n-1</sup>
+. Следовательно, по предположению индукции они линейно зависимы. Пусть теперь хотя бы один из коэффициентов a
+<sub>mn</sub>
+, например a<sub>(n+1)n</sub>, отличен от нуля. Рассмотрим векторы
+</p>
+
+<p>
+у<sup>m</sup> = х<sup>m</sup><img src=" ../../images/lk8/8.3/8.3.020.jpg" width="55" height="46" alt="" />x<sup>n+1</sup>, m = 1, 2, ..., n.
+</p>
+
+<p>
+Коэффициенты при n-м элементе u<sup>n</sup> базиса в разложениях векторов у<sup>m</sup> равны нулю, и, значит, по предположению индукции векторы y<sup>1</sup>, y<sup>2</sup>,..., y<sup>n</sup> линейно зависимы. В таком случае существуют n чисел <img src=" ../../images/lk8/8.3/8.3.021.jpg" width="22" height="24" alt="" />, <img src=" ../../images/lk8/8.3/8.3.022.jpg" width="23" height="24" alt="" />,... <img src=" ../../images/lk8/8.3/8.3.023.jpg" width="23" height="24" alt="" />, не все равные нулю, которые удовлетворяют равенству <img src=" ../../images/lk8/8.3/8.3.021.jpg" width="22" height="24" alt="" />y<sup>1</sup> + <img src=" ../../images/lk8/8.3/8.3.022.jpg" width="23" height="24" alt="" />y<sup>2</sup> +... + <img src=" ../../images/lk8/8.3/8.3.023.jpg" width="23" height="24" alt="" />y<sup>n</sup> = 0. Отсюда следует, что
+</p>
+<p>
+<img src=" ../../images/lk8/8.3/8.3.024.jpg" width="19" height="22" alt="" />x<sup>1</sup> + <img src=" ../../images/lk8/8.3/8.3.025.jpg" width="20" height="22" alt="" />x
+<sup>2</sup> +... + <img src=" ../../images/lk8/8.3/8.3.026.jpg" width="20" height="22" alt="" />x
+<sup>n</sup><img src=" ../../images/lk8/8.3/8.3.027.jpg" width="174" height="46" alt="" />
+x<sup>n+1</sup> = 0.
+</p>
+
+<p>
+А т. к. не все числа <img src=" ../../images/lk8/8.3/8.3.021.jpg" width="22" height="24" alt="" />, <img src=" ../../images/lk8/8.3/8.3.022.jpg" width="23" height="24" alt="" />,..., <img src=" ../../images/lk8/8.3/8.3.023.jpg" width="23" height="24" alt="" /> равны нулю, то векторы x<sup>1</sup>, x<sup>2</sup>,..., x<sup>n</sup>, x<sup>n+1</sup> являются линейно зависимыми.
+</p>
+
+<p>
+<strong>Следствие 1.</strong> Если пространство V имеет базис из n
+< элементов и если р векторов из V линейно независимы, то </span><img src=" ../../images/lk8/8.3/8.3.028.jpg" width="46" height="23" alt="" /><span style="font-size:14pt">.</span>
+</p>
+
+<p>
+<strong>Следствие 2.</strong> Если линейное пространство V имеет некоторый базис из n элементов, то и всякий другой базис пространства V состоит из n элементов.
+</p>
+
+<p>
+<strong>Доказательство.</strong>Если v<sup>1</sup>, v<sup>2</sup>,..., v<sup>p</sup> – другой базис пространства V, то векторы v<sup>1</sup>, v<sup>2</sup>,..., v<sup>p</sup> линейно независимы и по предыдущему следствию <img src=" ../../images/lk8/8.3/8.3.028.jpg" width="46" height="23" alt="" />. Поменяв местами базисы v<sup>1</sup>, v<sup>2</sup>,..., v<sup>p</sup>< и u<sup>1</sup>, u<sup>2</sup>,..., u<sup>p</sup>, получаем, что <img src=" ../../images/lk8/8.3/8.3.029.jpg" width="46" height="23" alt="" />. Значит, р = n.
+</p>
+<p>
+<strong>Определение 8.4.</strong> Если V – линейное пространство с конечным базисом, то число n элементов этого базиса называется размерностью пространства V. Размерность обозначается dim V (от англ. dimension – «размерность»).
+</p>
+
+<p>
+Линейное пространство V называется бесконечномерным, если в нем существует любое число линейно независимых векторов.
+</p>
+
+<p>
+<strong>Теорема 8.3.</strong> Любую систему из k линейно независимых векторов u<sup>1</sup>, u<sup>2</sup>,...,u<sup>k</sup>, k&lt;n, n-мерного пространства V можно дополнить до базиса этого пространства.
+</p>
+<p>
+<strong>Доказательство.</strong> Пусть k&lt;n. Допустим, что к векторам u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup> нельзя добавить вектор u<sup>k+1</sup>, такой, что векторы u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup>, u<sup>k+1</sup> будут линейно зависимы. Это значит, что в пространстве V имеется только k линейно независимых векторов, т.е. dim V = k&lt;n, что противоречит условию теоремы. Следовательно, к векторам u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup> можно добавить вектор u<sup>k+1</sup>
+<span style="font-family:Symbol; font-size:14pt">&#8364;</span>
+V, такой, что система векторов u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup> нельзя добавить вектор u<sup>k+1</sup> линейно независима. Если k + 1 &lt; n, то, повторяя предыдущие рассуждения, получим, что можно добавить еще один вектор u<sup>k+2</sup>
+
+<span style="font-family:Symbol; font-size:14pt">&#8364;</span>
+V так, что векторы u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup>, u<sup>k+1</sup>, u<sup>k+2</sup> линейно независимы. После конечного числа шагов получим ровно n линейно независимых векторов u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup>, u<sup>k+1</sup>,..., u<sup>n</sup>, образующих, по определению, базис пространства V.
+</p>
+
+<p>
+Приведем примеры базисов конкретных линейных пространств.
+</p>
+<p>
+<strong>Пример 5.</strong> В пространстве R<sup>3</sup>базис образует тройка единичных взаимно ортогональных векторов i, j, k. Любой вектор x<span style="font-family:Symbol; font-size:14pt">&#8364;</span>R<sup>3</sup> имеет вид x = <span style="font-family:Symbol; font-size:14pt; ">&#945;</span>i + <span style="font-family:Symbol; font-size:14pt; ">&#946;</span>j + <span style="font-family:Symbol; font-size:14pt; ">&#947;</span>k, где <span style="font-family:Symbol; font-size:14pt; ">&#945;</span>, <span style="font-family:Symbol; font-size:14pt; ">&#946;</span>, <span style="font-family:Symbol; font-size:14pt; ">&#947;</span> - проекции вектора на оси координат.
+</p>
+
+<p>
+<strong>Пример 6.</strong> В пространстве R<sub>n</sub> базисом служит система векторов (8.4), т. к. эти векторы, как показано выше, линейно независимы, и для любого x<span style="font-family:Symbol; font-size:14pt">&#8364;</span>
+R<sup>n</sup> справедливо разложение (8.5): x = (x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) = x<sub>1</sub>е<sup>1</sup> + x<sub>2</sub>е<sup>2</sup> +... + x<sub>n</sub>е<sup>n</sup>.
+</p>
+
+<p>
+<strong>Пример 7.</strong> Пусть P<sub>n</sub>(x) - пространство многочленов степени не выше n. В примере 3 показано, что векторы 1, x, x<sup>2</sup>,..., x<sup>n</sup> линейно независимы. Каждый многочлен f(x)<span style="font-family:Symbol; font-size:14pt; letter-spacing:-0.2pt">&#8364;</span>P<sub>n</sub>(x) линейно выражается через них очевидным образом: f(x) = а<sub>0</sub> + а<sub>1</sub>x + а<sub>2</sub>x<sup>2</sup> +... + а<sub>n</sub>x<sup>n</sup>, где а<sub>i</sub>, i = 0, 1,…, n, – коэффициенты f(x). Отсюда следует, что векторы 1, x, x<sup>2</sup>,..., x<sup>n</sup> образуют базис пространства P<sub>n</sub>(x) и dim P<sub>n</sub>(x) = n + 1.
+</p>
+
+<p>
+<strong>Пример 8.</strong> Примером бесконечномерного пространства может служить пространство C<sub>[a; b]</sub>. В самом деле, для любого натурального числа n система 1, x, x<sup>2</sup>,..., x<sup>n</sup>, состоящая из n + 1 векторов этого пространства, как показано в примере 3, является линейно независимой.
+</p>
+
+
+<p>&nbsp; </p>
+
+    <h4>8.4.Понятие подпространства и линейной оболочки</h4>
+
+    <p><strong>Определение 8.5.</strong> <i>Подnространством</i> <i>линейного</i> <i>nространства</i> <i>V</i> называется всякое непустое подмножество <i><img width="53" height="24" src=" ../../images/lk8/8.4.files/image001.jpg"></i>, обладающее следующими свойствами:</p>
+
+    <p>1°. Если <i>x</i>, <i>y</i> <img width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>, то <i>x</i> + <i>y</i> <img width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>.</p>
+
+    <p>2°. Если <i>x</i> <img width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>, <img width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><img width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg">R, то <img width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>x</i><img width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>.</p>
+
+    <p>Убедимся, что подпространство <i><img width="53" height="24" src=" ../../images/lk8/8.4.files/image001.jpg"></i>, удовлетворяющее требованиям 1° и 2°, само является линейным пространством. Действительно, аксиомы 1°, 2°, 5°–8° линейного пространства для векторов из <i>V</i><sub>1</sub>, очевидно, выполняются. Надо убедиться только в том, что нулевой вектор принадлежит <i>V</i><sub>1</sub> и что для любого <i>x</i><img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub> существует противоположный элемент (– <i>x</i>)<img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>.</p>
+
+    <p>В самом деле, если <i>x</i><img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>, то произведения <img border="0" width="20" height="20" src=" ../../images/lk8/8.4.files/image004.jpg"><i>x</i> = 0 и (– 1)<i>x</i> = – <i>x</i> также принадлежат <i>V</i><sub>1</sub>.</p>
+
+    <p>Приведем примеры подпространств линейных пространств.</p>
+
+    <p><strong>Пример9.</strong> Пусть <i>V</i> = R<sup>2</sup>. В этом пространстве рассмотрим множества <i>V</i><sub>1</sub> и <i>V</i><sub>2</sub> всех векторов вида <i>a</i> = (<i>x</i>, 0) и вида <i>b</i> = (0, <i>y</i>) соответственно. Любые векторы <i>a</i><sup>1</sup> = (<i>x</i><sub>1</sub>, 0), <i>a</i><sup>2</sup> = (<i>x</i><sub>2</sub>, 0) и <i>a</i> = (<i>x</i>, 0) из <i>V</i><sub>1</sub> обладают свойствами</p>
+
+    <p align="center"><i>a</i><sup>1</sup> + <i>a</i><sup>2</sup> = (<i>x</i><sub>1</sub> + <i>x</i><sub>2</sub>, 0) <img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>; <img border="0" width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>a</i> = (<img border="0" width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>x</i>, 0) <img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>1</sub>, <i><img border="0" width="45" height="20" src=" ../../images/lk8/8.4.files/image005.jpg"></i>R.</p>
+
+    <p>Аналогично, для всех векторов <i>b</i><sup>1</sup> = (0, <i>y</i><sub>1</sub>), <i>b</i><sup>2</sup> = (0, <i>y</i><sub>2</sub>) и <i>b</i> = (0, <i>y</i>) из <i>V</i><sub>2</sub> имеем</p>
+
+    <p align="center"><i>b</i><sup>1</sup> + <i>b</i><sup>2</sup> = (0, <i>y</i><sub>1</sub> + <i>y</i><sub>2</sub>) <img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>2</sub>; <img border="0" width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>b</i> = (0, <img border="0" width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>у</i>) <img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"><i>V</i><sub>2</sub>, <i><img border="0" width="45" height="20" src=" ../../images/lk8/8.4.files/image005.jpg"></i>R.</p>
+
+    <p>Таким образом, <i>V</i><sub>1</sub> и <i>V</i><sub>2</sub> – подпространства пространства R<sup>2</sup>. Подпространство <i>V</i><sub>1</sub> состоит из всех векторов, параллельных оси <i>Ox</i>, а подпространство <i>V</i><sub>2</sub> образуют все векторы, параллельные оси <i>Oy</i>.·</p>
+
+    <p><strong>Пример10.</strong> Пусть <i>V</i> = R<sup>3</sup>. Векторы вида <i>a</i> = (<i>x</i>, 0, 0), вида <i>b</i> = (0, <i>у</i>, 0) и вида <i>с</i> = (0, 0, <i>z</i>) образуют три самостоятельных линейных подпространства в R<sup>3</sup>, состоящих из всех векторов, параллельных осям <i>Ox</i>, <i>Oy</i> и <i>Oz</i> соответственно. Аналогично, векторы вида <i>a</i><sup>1</sup> = (0, <i>у</i>, <i>z</i>), вида <i>b</i><sup>1</sup> = (<i>x</i>, 0, <i>z</i>) и вида <i>c</i><sup>1</sup> = (<i>x</i>, <i>y</i>, 0) образуют линейные подпространства в R<sup>3</sup>, состоящие из всех векторов, параллельных плоскостям <i>Oyz</i>, <i>Oxz</i> и <i>Oxy</i> соответственно.·</p>
+
+    <p><strong>Пример11.</strong> Пусть <i>V</i> = <i>C<sub>[a</sub><sub>; b</sub><sub>]</sub></i>, а <i>V</i><sub>1</sub> – подмножество функций <i>f</i> из <i>C</i><sub>[</sub><i><sub>a</sub></i><sub>;</sub> <i><sub>b</sub></i><sub>]</sub>, таких, что <i>f</i>(<i>x</i><sub>0</sub>) = 0 для фиксированного <i>x</i><sub>0</sub><img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg">[<i>а</i>; <i>b</i>]. Если <i>f</i><sub>1</sub>(<i>x</i><sub>0</sub>) = 0, <i>f</i><sub>2</sub>(<i>x</i><sub>0</sub>) = 0, то <i>f</i><sub>1</sub>(<i>x</i><sub>0</sub>) + <i>f</i><sub>2</sub>(<i>x</i><sub>0</sub>) = = 0 и <img border="0" width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>f</i><sub>1</sub>(<i>x</i><sub>0</sub>) = 0, <img border="0" width="32" height="20" src=" ../../images/lk8/8.4.files/image006.jpg"><img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg">R. Значит, <i>V</i><sub>1</sub> – подпространство пространства <i>C</i><sub>[</sub><i><sub>a</sub></i><sub>;</sub> <i><sub>b</sub></i><sub>]</sub>.·</p>
+
+    <p>Если в <i>n</i>-мерном пространстве <i>V</i> всякие <i>n</i> + 1 векторов линейно зависимы, то это утверждение и подавно выполнено в подпространстве <i><img border="0" width="53" height="24" src=" ../../images/lk8/8.4.files/image001.jpg"></i>, т. е. dim <i>V</i><sub>1</sub> <img border="0" width="15" height="17" src=" ../../images/lk8/8.4.files/image007.jpg"> dim <i>V</i>. Другими словами, <i>размерность подпространства не</i> <i>превосходит размерности</i> <i>самого</i> <i>линейного пространства</i>.</p>
+
+    <p>Важным в теории линейных пространств является понятие линейной оболочки.</p>
+
+    <p><strong>Определение 8.6.</strong> Пусть <i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i> – система векторов линейного пространства <i>V</i>. <i>Линейной оболочкой,</i> <i>порожденной векторами</i> <i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>, называется совокупность всех линейных комбинаций вида <i>y</i> = <img border="0" width="21" height="24" src=" ../../images/lk8/8.4.files/image008.jpg"><i>x</i><sup>1</sup> + <img border="0" width="23" height="24" src=" ../../images/lk8/8.4.files/image009.jpg"><i>x</i><sup>2</sup> +… + <img border="0" width="24" height="24" src=" ../../images/lk8/8.4.files/image010.jpg"><i>x</i><i><sup>k</sup></i>, где <img border="0" width="21" height="24" src=" ../../images/lk8/8.4.files/image008.jpg">, <img border="0" width="23" height="24" src=" ../../images/lk8/8.4.files/image009.jpg">,..., <img border="0" width="24" height="24" src=" ../../images/lk8/8.4.files/image010.jpg"> – любые числа из R, и обозначается <i>L</i> (<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>).</p>
+
+    <p>Легко показать, что <i>линейная</i> <i>оболочка</i> <i>L</i> (<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>) <i>является</i> <i>подпро-странством</i> <i>линейного</i> <i>пространства</i> <i>V</i>.</p>
+
+    <p>Пусть <i>y</i><sup>l</sup> = <img border="0" width="21" height="24" src=" ../../images/lk8/8.4.files/image011.jpg"><i>x</i><sup>1</sup> + <img border="0" width="23" height="24" src=" ../../images/lk8/8.4.files/image012.jpg"><i>x</i><sup>2</sup> +… + <img border="0" width="24" height="24" src=" ../../images/lk8/8.4.files/image013.jpg"><i>x</i><i><sup>k</sup></i>,  <i>y</i><sup>2</sup> = <img border="0" width="24" height="24" src=" ../../images/lk8/8.4.files/image014.jpg"><i>x</i><sup>1</sup> + <img border="0" width="24" height="24" src=" ../../images/lk8/8.4.files/image015.jpg"><i>x</i><sup>2</sup> +… + <img border="0" width="24" height="24" src=" ../../images/lk8/8.4.files/image016.jpg"><i>x</i><i><sup>k</sup></i> – произвольные элементы из <i>L</i> (<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>). Тогда по аксиомам 5°, 7°, 8° линейного пространства</p>
+
+    <p align="center"><i>y</i><sup>l</sup> + <i>y</i><sup>2</sup> = <img border="0" width="71" height="25" src=" ../../images/lk8/8.4.files/image017.jpg"><i>x</i><sup>1</sup> +<img border="0" width="75" height="25" src=" ../../images/lk8/8.4.files/image018.jpg"><i>x</i><sup>2</sup> +…+<img border="0" width="76" height="25" src=" ../../images/lk8/8.4.files/image019.jpg"><i>x</i><i><sup>k</sup></i> <img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"> <i>L</i> (<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>);</p>
+
+    <p align="center"><img border="0" width="17" height="16" src=" ../../images/lk8/8.4.files/image003.jpg"><i>y</i><sup>l</sup> = <img border="0" width="47" height="25" src=" ../../images/lk8/8.4.files/image020.jpg"><i>x</i><sup>1</sup> +<img border="0" width="49" height="25" src=" ../../images/lk8/8.4.files/image021.jpg"><i>x</i><sup>2</sup> +…+<img border="0" width="49" height="25" src=" ../../images/lk8/8.4.files/image022.jpg"><i>x</i><i><sup>k</sup></i> <img border="0" width="15" height="15" src=" ../../images/lk8/8.4.files/image002.jpg"> <i>L</i> (<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>), <i><img border="0" width="45" height="20" src=" ../../images/lk8/8.4.files/image005.jpg"></i>R.</p>
+
+    <p>Следовательно, <i>L</i> (<i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i>) – подпространство линейного пространства <i>V</i>, а, значит, dim <i>L</i> <img border="0" width="15" height="17" src=" ../../images/lk8/8.4.files/image007.jpg"> dim <i>V</i>, причем dim <i>L</i> = <i>k</i> тогда и только тогда, когда векторы <i>x</i><sup>1</sup>, <i>x</i><sup>2</sup>,…, <i>x</i><i><sup>k</sup></i> линейно независимы.</p>
+
+<p>&nbsp; </p>
+<h4>8.4. Понятие подпространства и линейной оболочки</h4>
+
+<p>
+ <strong>Определение 8.7.</strong> Пусть V<sub>1</sub> и V<sub>2</sub> – два линейных пространства. Пересечением этих пространств называется совокупность <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> всех векторов x, принадлежащих как V<sub>1</sub>, так и V<sub>2</sub>, т. е. 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> = {x | x<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>1</sub> x<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>2</sub>}.
+</p>
+<p>
+ Совокупность всех векторов вида y + z, где y<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>1</sub>, z<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>2</sub>, называется суммой пространств V<sub>1</sub> и V<sub>2</sub> и обозначается V<sub>1</sub> + V<sub>2</sub>, т. е. 
+</p>
+<p>
+ V<sub>1</sub> + V<sub>2</sub> = {y + z | y<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>1</sub>, z<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>2</sub>}. 
+</p>
+<p>
+ Покажем, что <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> образует линейное пространство, являющееся под-пространством как V<sub>1</sub>, так и V<sub>2</sub>. В самом деле, если x и y принадлежат <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> , то они принадлежат и V<sub>1</sub>, и V<sub>2</sub>. Поэтому вектор x + y и вектор <img src=" ../../images/lk8/8_5/8_5.004.jpg" width="17" height="16" alt="" />x, <img src=" ../../images/lk8/8_5/8_5.005.jpg" width="45" height="25" alt="" />R, также принадлежат и V<sub>1</sub>, и V<sub>2</sub>, т. е. x + y <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> и <img src=" ../../images/lk8/8_5/8_5.004.jpg" width="17" height="16" alt="" />x <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" />. 
+</p>
+<p>
+<strong>Пример 12.</strong> Пусть V<sub>1</sub> – пространство всех векторов вида a = (x, 0, z), V<sub>2</sub> – пространство всех векторов вида b = (0, y, z). Тогда суммой этих пространств является множество векторов вида a + b = (x, у, 2z), т. е. V<sub>1</sub> + V<sub>2</sub> = R<sup>3</sup>. Пересечение пространств V<sub>1</sub> и V<sub>2</sub> есть множество векторов вида (0, 0, z), т. е. <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> – множество всех векторов, параллельных оси Oz.
+</p>
+<p>
+ <strong>Определение 8.8.</strong> Подпространства V<sub>1</sub> и V<sub>2</sub> линейного пространства V называются дополнительными в V, если выполнены соотношения 
+</p>
+<p>
+ V<sub>1</sub> + V<sub>2</sub> = V, <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> = 0, 0 V. 
+</p>
+<p>
+ В этом случае говорят, что пространство V представлено в виде прямой суммы подпространств V<sub>1</sub> и V<sub>2</sub>. 
+</p>
+<p>
+ <strong>Пример 13.</strong> В пространстве R<sup>3</sup> выделим плоскость Оху (рис. 8.1). Рассмотрим в R<sup>3</sup> линейное подпространство R<sup>1</sup> векторов вида z = (0, 0, z), направленных параллельно оси Oz. Векторы на плоскости R<sup>2</sup> имеют вид u = (x, у, 0). Общим вектором пространств R<sup>1</sup> и R<sup>2</sup> является, очевидно, нулевой вектор 0 = = (0, 0, 0). Пусть а = (x, у, z) – любой вектор из R<sup>3</sup>. 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/8_5.009.jpg" width="234" height="189" alt="" />
+</p>
+<p>
+Тогда a = (x, у, z) = (x, у, 0) + (0, 0, z) = u + z. Таким образом, R<sup>3</sup> можно представить в виде прямой суммы подпространств R<sup>1</sup> и R<sup>2</sup>.
+</p>
+<p>
+ <strong>Теоремa 8.4.</strong> Для того чтобы пространство V являлось прямой суммой подпространств V<sub>1</sub> и V<sub>2</sub>, необходимо и достаточно, чтобы всякий элемент xV единственным образом представлялся в виде 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/1.png"/>
+</p>
+<p>
+ <strong>Доказательство.</strong> Необходимость. Пусть V<sub>1</sub> + V<sub>2</sub>=V, <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> = 0. Предположим, что xV имеет два представления: x = x<sup>1</sup> + x<sup>2</sup> и x = yl + y<sup>2</sup>. Отсюда x<sup>1</sup> + x<sup>2</sup> = = yl + y<sup>2</sup>, или x<sup>1</sup> – yl = y<sup>2</sup> – x<sup>2</sup>. Левая часть принадлежит V<sub>1</sub>, а правая часть принадлежит V<sub>2</sub>. Поскольку общим у V<sub>1</sub> и V<sub>2</sub> является 0, то x<sup>1</sup> = yl, x<sup>2</sup> = y<sup>2</sup>. 
+</p>
+<p>
+<strong>Достаточность.</strong> Если для любого x<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V верно единственное разложение x = = x<sup>1</sup> + x<sup>2</sup>, то, по определению, V = V<sub>1</sub> + V<sub>2</sub>. Покажем теперь, что единственным элементом, общим для V<sub>1</sub> и V<sub>2</sub>, является 0. Действительно, если a<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" /><img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> и a не равно 0, то для x имеем два представления: x = x<sup>1</sup> + x<sup>2</sup> и x = (x<sup>1</sup> – a) + (x<sup>2</sup> + a), что противоречит единственности.
+</p>
+<p>
+ <strong>Определение 8.9.</strong> Обобщая определение 8.8, будем говорить, что пространство V разлагается в прямую сумму подпространств V<sub>1</sub>, V<sub>2</sub>,..., V<sub>k</sub>, если 
+</p>
+<p>
+ V = V<sub>1</sub> + V<sub>2</sub> +… + V<sub>k</sub>; <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> = 0 при <img src=" ../../images/lk8/8_5/8_5.012.jpg" width="39" height="23" alt="" />, где i, j = l, 2,..., k. 
+</p>
+<p>
+ В этом случае любой вектор x<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V единственным образом представляется в виде 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/2.png"/>
+</p>
+<p>
+Например, в пространстве Rn рассмотрим подпространства
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/4.png"/>
+</p>
+<p>
+ порождаемые векторами вида (x<sub>1</sub>, 0,..., 0), (0, x<sub>2</sub>,..., 0),..., (0, 0,..., x<sub>n</sub>) соответственно. Поскольку x = (x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) = (x<sub>1</sub>, 0,..., 0) + (0, x<sub>2</sub>,..., 0) +... + (0, 0,..., x<sub>n</sub>), то 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/5.png"/>
+</p>
+<p>
+Кроме того, 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/6.png"/>
+</p>
+<p>
+ при всех i не равных j, где i, j = l, 2,..., n, т. е. указанная сумма – прямая.
+</p>
+<p>
+<strong>Теоремa 8.5.</strong> Если пространство V представлено в виде прямой суммы пространств V<sub>1</sub> и V<sub>2</sub>, то dim V = dim V<sub>1</sub> + dim V<sub>2</sub>.
+</p>
+<p>
+ <strong>Доказательство.</strong> Из соотношения V = V<sub>1</sub> + V<sub>2</sub> следует, что для любого x<img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V справедливо равенство x = x<sup>1</sup> + x<sup>2</sup>, где x<sup>1</sup><img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>1</sub>, x<sup>2</sup><img src=" ../../images/lk8/8_5/8_5.003.jpg" width="15" height="15" alt="" />V<sub>2</sub>. Пусть u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup> – базис пространства V<sub>1</sub> (dim V<sub>1</sub> = k) и V<sub>1</sub>, V<sub>2</sub>,…, v r – базис пространства V<sub>2</sub> (dim V<sub>2</sub> = r). Тогда для x<sup>1</sup> и x<sup>2</sup> имеют место разложения 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/7.png"/>
+</p>
+<p>
+Следовательно, 
+</p>
+<p>
+<img src=" ../../images/lk8/8_5/8.png"/>
+</p>
+<p>
+Поскольку <img src=" ../../images/lk8/8_5/8_5.001.jpg" width="53" height="24" alt="" /> = 0, то векторы u<sup>1</sup>, u<sup>2</sup>,..., u<sup>k</sup>, v<sup>1</sup>, v<sup>2</sup>,…, v<sup>r</sup> линейно независимы (докажите это), и, согласно последнему равенству, эти векторы порождают все пространство V. Значит, они образуют базис V и dim V = k + r.
+</p>
+
+
+
+
+</div>
+<p>&nbsp; </p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

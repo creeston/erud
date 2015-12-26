@@ -1,0 +1,205 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <p>&nbsp;</p><h1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний | <A HREF="../../../Об авторах/author.htm">Об авторах</var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+    <h3 >Тема 4. Ранг матрицы. Исследование систем линейных уравнений на совместность</h3>
+    <p><br></p>
+    <h4 >4.1. Ранг матрицы</h4>
+    <p>
+        Рассмотрим прямоугольную матрицу </p>
+    <p><img width=164 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img474.jpg">.</p>
+    <p>
+        Выделим какие-нибудь k строк и k столбцов матрицы <img width=99 height=23 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img475.jpg">. Из элементов матрицы, стоящих на пересечении выделенных строк и столбцов, составим определитель k-го порядка. Все такие определители называются минорами матрицы. Ясно, что всего можно составить <img width=48 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img476.jpg"> миноров k-го порядка. </p>
+    <p><strong>Пример 1.</strong> Пусть</p>
+    <p><img width=112 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img477.jpg">.</p>
+    <p>Можно составить <img width=76 height=27 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img478.jpg"> миноров 2-го порядка матриы A. Это </p>
+    <p><img width=40 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img479.jpg">,&nbsp; <img width=51 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img480.jpg">,&nbsp; <img width=52 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img481.jpg">.&#9679;</p>
+    <p>
+        <strong>Определение 4.1.</strong> Рангом матрицы называется наивысший порядок отличных от нуля миноров этой матрицы.</p>
+    <p>Таким образом, если ранг матрицы равен r, то среди миноров этой матрицы есть по крайней мере один минор r-го порядка, отличный от нуля, в то время как все миноры (r + 1)-го порядка и выше равны нулю.</p>
+    <p>Ранг матрицы А обозначают r(A).</p>
+    <p>Следующие преобразования матрицы называются элементарными:</p>
+    <p>1) транспонирование, т. е. замена каждой строки столбцом с тем же номером и наоборот;</p>
+    <p>2) перестановка двух строк (столбцов);</p>
+    <p>3) умножение всех элементов строки (столбца) на число <img width=44 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img482.jpg">;</p>
+    <p>4) прибавление ко всем элементам строки (столбца) соответствующих элементов другой строки (столбца), умноженных на одно и тоже число.</p>
+    <p><strong>Теорема 4.1.</strong> При элементарных преобразованиях матрицы ее ранг не меняется.</p>
+    <p>Теорема 4.1 приводится здесь без доказательства.</p>
+    <p>Ранг матрицы можно вычислить, пользуясь определением 4.1, т. е., вычисляя все миноры матрицы, определить наивысший порядок отличных от нуля миноров. Но это очень трудоемко. Сформулированная теорема 4.1 позволяет уменьшить вычисления, преобразуя матрицу с помощью элементарных преобразований к эквивалентной (т. е. того же ранга) матрице, имеющей не более одного ненулевого элемента в каждой строке и в каждом столбце.</p>
+    <p 2>
+        <strong>Пример 2.</strong></p>
+    <p><img width=155 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img483.jpg">~<img width=127 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img484.jpg">~<img width=127 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img485.jpg">~</p>
+    <p>~<img width=127 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img486.jpg">~<img width=125 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img487.jpg">~<img width=109 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img488.jpg">~<img width=109 height=73 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img489.jpg">,</p>
+    <p 0>отсюда r(A) = 3.&#9679;</p>
+    <p 0><br></p>
+    <p>&nbsp;</p><h4 >4.2. Понятие n-мерного векторного пространства</h4>
+    <p>Каждая точка в пространстве определяется тремя координатами. Однако в математике часто встречаются объекты, для задания которых недостаточно трех действительных чисел. Например, шар в пространстве определяется 4 числами &#8211; координатами его центра и величиной радиуса. Многочлен степени, не превосходящей n, определяется n + 1 числом &#8211; его коэффициентами.</p>
+    <p>
+        Упорядоченная система n чисел <img width=13 height=23 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img490.jpg"><img width=124 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img491.jpg"> называется n-мерным вектором. При этом числа xi &isin; R, i = 1, 2,…, n, называются компонентами, или координатами, данного вектора. Два вектора называются равными, если равны все их соответствующие компоненты.</p>
+    <p>Для n-мерных векторов определяются операции сложения и умножения на число как покоординатные операции:</p>
+    <p><img width=427 height=28 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img492.jpg">,</p>
+    <p><img width=147 height=28 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img493.jpg">.</p>
+    <p>Очевидно,</p>
+    <p><img width=84 height=23 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img494.jpg">,</p>
+    <p><img width=144 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img495.jpg">.</p>
+    <p 0>То есть сложение коммутативно и ассоциативно.</p>
+    <p>Роль нуля играет нулевой вектор</p>
+    <p><img width=83 height=28 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img496.jpg">.</p>
+    <p>Разность векторов определяется следующим образом:</p>
+    <p><img width=113 height=28 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img497.jpg"></p>
+    <p><strong>Определение 4.2.</strong> Множество всех n-мерных векторов, для которых установлены операции сложения и умножения на число, называется n-мерным вещественным векторным пространством и обозначается Rn.</p>
+    <p>На векторное пространство Rn без изменений переносятся определения линейной комбинации, линейной независимости и зависимости векторов, данные в 2.2.</p>
+    <p>Покажем, что векторы</p>
+    <p><img width=287 height=28 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img498.jpg"></p>
+    <p 0>линейно независимы, т. е. для них равенство вида (2.1)</p>
+    <p><img width=176 height=27 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img499.jpg"></p>
+    <p 0>возможно только при условии</p>
+    <p><img width=151 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img500.jpg">.</p>
+    <p>Действительно, в силу определения операций сложения векторов и умножения вектора на число это равенство равносильно такому:</p>
+    <p><img width=119 height=28 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img501.jpg"></p>
+    <p 0>Отсюда &lambda;i = 0 при i = 1, 2,…, n.</p>
+    <p>Также нетрудно показать, что любые n + 1 векторов линейно зависимы в Rn. Таким образом, максимальное число линейно независимых векторов в Rn равно n. Любая система из n линейно независимых векторов называется базисом в Rn. Нетрудно показать, что любой вектор однозначно разлагается по базису.</p>
+    <p>Рассмотрим еще один пример. 
+        Левая часть линейного уравнения с n неизвестными, т. е. выражение</p>
+    <p><img width=293 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img502.jpg">,</p>
+    <p 0>называется линейной формой от неизвестных <img width=87 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img503.jpg">. Очевидно, линейная форма полностью определяется вектором <img width=103 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img504.jpg"> из своих коэффициентов и, обратно, всякий n-мерный вектор однозначно задает линейную форму. Таким образом, операции над векторами можно рассматривать как операции над линейными формами.</p>
+    <p><br></p>
+    <p>&nbsp;</p><h4 >4.3. Теорема о ранге матрицы</h4>
+    <p>Рассмотрим матрицу</p>
+    <p><img width=164 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img505.jpg">.</p>
+    <p 0>Столбцы этой матрицы можно рассмотреть как m-мерные векторы, строки &#8211; как n-мерные векторы.</p>
+    <p>
+        <strong>Определение 4.3.</strong> Базисным минором матрицы будет называться любой отличный от нуля минор, порядок которого равен рангу матрицы. Очевидно, для ненулевой матрицы базисный минор всегда существует, вообще говоря, не единственный. Столбцы и строки, на пересечении которых стоят элементы базисного минора, называются базисными.</p>
+    <p>
+        <strong>Теорема 4.2.</strong> Базисные строки (столбцы) матрицы линейно независимы. Любая строка (столбец) матрицы является линейной комбинацией базисных строк (столбцов).</p>
+    <p><strong>Доказательство.</strong> Пусть r(A) = r. Предположим для определенности, что отличный от нуля минор r-го порядка (т. е. базисный минор) расположен в левом верхнем углу матрицы, т. е.</p>
+    <p><img width=177 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img506.jpg"></p>
+    <p>Обозначим i-ю строку матрицы через <img width=99 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img507.jpg">. Докажем первое утверждение теоремы. Предположим противное, т. е. базисные строки линейно зависимы. Тогда одна из базисных строк, например, <img width=19 height=27 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img508.jpg">, является линейной комбинацией остальных:</p>
+    <p><img width=195 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img509.jpg">.</p>
+    <p>Отсюда и в миноре D r-я строка является линейной комбинацией остальных. По свойству 5 определителей определитель D не изменится, если мы вычтем из r-й строки 1-ю, умноженную на <img width=21 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img510.jpg">, затем 2-ю, умноженную на <img width=23 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img511.jpg">, … …, (r &#8211; 1)-ю, умноженную на <img width=35 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img512.jpg">. Но после этих преобразований строка минора D станет нулевой, т. е. он должен равняться нулю. Полученное противоречие доказывает первое утверждение.</p>
+    <p>Докажем второе утверждение теоремы. Очевидно, достаточно доказать, что небазисные строки матрицы линейно выражаются через базисные. Пусть <img width=75 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img513.jpg"> и <img width=64 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img514.jpg">.</p>
+    <p>
+        Рассмотрим определитель (r + 1)-го порядка</p>
+    <p><img width=180 height=128 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img515.jpg"></p>
+    <p>Он равен нулю при всех k и l. Действительно, если <img width=37 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img516.jpg">, то он равен нулю т. к. у него два одинаковых столбца. Если же <img width=39 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img517.jpg">, то это минор (r + 1)-го порядка матрицы ранга r и, следовательно, он тоже равен нулю, согласно определению 4.1.</p>
+    <p>Разложим определитель <img width=17 height=19 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img518.jpg"> по элементам последнего столбца:</p>
+    <p><img width=309 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img519.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4.1)</p>
+    <p 0>где <img width=21 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img520.jpg"> &#8211; алгебраические дополнения элементов последнего столбца <img width=17 height=19 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img521.jpg">.</p>
+    <p>Эти алгебраические дополнения зависят от k, но не зависят от l, т. к. при их вычислении последний столбец вычеркивается. Кроме того, <img width=87 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img522.jpg"> и, значит, равенство (4.1) можно разделить на <img width=24 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img523.jpg">. Получим </p>
+    <p><img width=233 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img524.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4.2)</p>
+    <p 0>где <img width=73 height=41 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img525.jpg">, i = 1, 2,…, r.</p>
+    <p>Равенство (4.2) справедливо при всех <img width=75 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img526.jpg">. Но это означает, что </p>
+    <p><img width=183 height=27 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img527.jpg">&diams;</p>
+    <p>Так как при транспонировании матрицы ее строки становятся столбцами, а ранг не меняется, то имеют место следующие утверждения.</p>
+    <p> <strong>Следствие 1.</strong> Максимальное число линейно независимых строк матрицы равно максимальному числу линейно независимых столбцов и равно рангу матрицы.</p>
+    <p><strong>Следствие 2.</strong> Для того чтобы определитель был равен нулю, необходимо и достаточно, чтобы его строки (столбцы) были линейно зависимы.</p>
+    <p><br></p>
+    <p>&nbsp;</p><h4 >4.4. Метод окаймляющих миноров для вычисления ранга матрицы</h4>
+    <p><strong>Определение 4.4.</strong> Минором, окаймляющим минор М порядка k матрицы, называется минор (k + 1)-го порядка этой матрицы, содержащий М.</p>
+    <p>Если внимательно рассмотреть доказательство теоремы 4.2 о ранге матрицы, то можно заметить, что в нем не рассматривались все миноры (r + 1)-го порядка, равные нулю. В действительности, в данном доказательстве рассматривались только миноры <img width=17 height=19 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img528.jpg">, окаймляющие минор D. Таким образом, справедливо следующее утверждение.</p>
+    <p><strong>Утверждение.</strong> Если в матрице А имеется минор порядка r, отличный от нуля, а все окаймляющие его миноры равны нулю, то ранг матрицы А равен r.</p>
+    <p>Таким образом, для вычисления ранга достаточно найти отличный от нуля минор, все окаймляющие миноры которого равны нулю.</p>
+    <p><strong>Пример 3.</strong> Пусть</p>
+    <p><img width=131 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img529.jpg">.</p>
+    <p 0>Очевидно,</p>
+    <p><img width=100 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img530.jpg"></p>
+    <p 0>Все окаймляющие М миноры равны нулю:</p>
+    <p><img width=96 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img531.jpg">,&nbsp;&nbsp; <img width=96 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img532.jpg">. </p>
+    <p 0>Следовательно, r(A) = 2.&#9679;</p>
+    <p>К достоинству метода окаймляющих миноров относится то, что он одновременно с рангом матрицы дает возможность найти ее базисный минор.</p>
+    <p>Пусть дана система линейных форм</p>
+    <p><img width=289 height=96 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img533.jpg"></p>
+    <p 0>Используя метод окаймляющих миноров, можно выделить максимальную линейно независимую подсистему линейных форм, через которые будут линейно выражаться все остальные формы.</p>
+    <p><strong>Пример 4.</strong> Пусть дана система линейных форм:</p>
+    <p><img width=209 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img534.jpg">, <img width=137 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img535.jpg">, <img width=211 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img536.jpg">.</p>
+    <p 0>Составим матрицу из коэффициентов линейных форм</p>
+    <p><img width=108 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img537.jpg">.</p>
+    <p 0>Рассмотрим минор </p>
+    <p>M =<img width=91 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img538.jpg"></p>
+    <p 0>Единственный окаймляющий M минор равен нулю:</p>
+    <p><img width=100 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img539.jpg"></p>
+    <p 0>Следовательно, M &#8211; базисный минор. Поэтому формы f1(x1, x2, x3) и f2(x1, x2, x3) линейно независимы и через них линейно выражается форма f3(x1, x2, x3).&#9679;</p>
+    <p 0><br></p>
+    <p>&nbsp;</p><h4 >4.5. Произвольные системы линейных уравнений</h4>
+    <p class=rvps7>
+        Рассмотрим систему линейных уравнений</p>
+    <p><img width=204 height=96 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img540.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4.3)</p>
+    <p 0>Здесь, вообще говоря, не обязательно <img width=48 height=16 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img541.jpg">. Обобщим определение 1.5 из 1.4.</p>
+    <p><strong>Определение 4.5.</strong> Решением системы (4.3) называется совокупность n значений неизвестных <img width=217 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img542.jpg">, при подстановке которых в систему все уравнения превращаются в тождества.</p>
+    <p>Система, имеющая хотя бы одно решение, называется совместной, не имеющая ни одного решения &#8211; несовместной. Если система имеет единственное решение, ее называют определенной, если более одного &#8211; неопределенной.</p>
+    <p>Рассмотрим матрицы</p>
+    <p><img width=164 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img543.jpg">, <img width=192 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img544.jpg"></p>
+    <p 0>Матрицу B называют расширенной матрицей системы.</p>
+    <p>Ясно, что r(B) <img width=15 height=17 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img545.jpg"> r(A), т. к. каждый минор матрицы А является и минором матрицы В, но не наоборот.</p>
+    <p><strong>Теорема 4.3 (критерий Кронекера &#8211; Капелли* совместности системы).</strong> Для того чтобы система линейных уравнений (4.3) была совместна, необходимо и достаточно, чтобы ранг матрицы системы был равен рангу расширенной матрицы, т. е. r(A) = r(B).</p>
+    <p><strong>Доказательство. Необходимость.</strong> Пусть система (4.3) совместна, т. е. су-ществует числа <img width=96 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img546.jpg">, такие, что </p>
+    <p><img width=211 height=96 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img547.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4.4)</p>
+    <p 0>Из последнего столбца матрицы B вычтем 1-й столбец, умноженный на <img width=21 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img548.jpg">, затем 2-й, умноженный на <img width=23 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img549.jpg">,…, наконец, n-й столбец, умноженный на <img width=23 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img550.jpg">.</p>
+    <p>В силу (4.4) получим матрицу</p>
+    <p><img width=189 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img551.jpg"></p>
+    <p 0>При этом r(B1) = r(B), поскольку элементарные преобразования не меняют ранга матрицы.</p>
+    <p>Но ясно, что r(B1) = r(A), т. к. все неизмененные миноры матрицы B1 равны соответствующим минорам матрицы А и обратно. То есть r(A) = r(B).</p>
+    <p><strong>Достаточность.</strong> Пусть r(B) = r(A) = r. И предположим, для определенности, что отличный от нуля минор r-го порядка расположен в левом верхнем углу матрицы A:</p>
+    <p><img width=177 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img552.jpg"></p>
+    <p>Тогда по теореме 4.2 о ранге матрицы первые r строк матрицы В &#8211; базисные и, следовательно, линейно независимы, все остальные строки линейно выражаются через базисные. Но это означает, что первые r уравнений системы (4.3) независимы, а все остальные m &#8211; r уравнений являются их следствиями, т. е. их можно исключить из системы. Нам достаточно решить первые r уравнений; их решения автоматически будут удовлетворять и остальным уравнениям.</p>
+    <p>Далее возможны два случая.</p>
+    <p>1. Пусть r = n. Тогда систему, состоящую из первых r уравнений системы (4.3), </p>
+    <p><img width=188 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img553.jpg"></p>
+    <p 0>можно решить по формулам Крамера. Ее главный определитель <img width=48 height=20 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img554.jpg"> и, значит, система имеет единственное решение. Тогда система (4.3) &#8211; совместная и определенная.</p>
+    <p>2. Пусть r &lt; n. Возьмем r базисных уравнений (т. е. в данном случае r первых уравнений). Первые r неизвестных оставим в левой части уравнений, остальные перенесем вправо:</p>
+    <p><img width=321 height=99 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img555.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4.5)</p>
+    <p 0>Так называемым свободным неизвестным <img width=75 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img556.jpg"> можно придавать какие угодно значения, получая при этом соответствующие значения неизвестных <img width=83 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img557.jpg"> из системы (4.5).</p>
+    <p>Это случай совместной, но неопределенной системы. Общие формулы решения можно получить, если считать свободные неизвестные параметрами и решать систему (4.5) относительно <img width=83 height=25 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img558.jpg"> (например, по формулам Крамера).&diams;</p>
+    <p><strong>Следствие.</strong> Совместная система будет определенной тогда и только тогда, когда n = r(A).</p>
+    <p>В 1.4 при выводе формул Крамера остался неисследованным особый случай, когда в системе из n уравнений c n неизвестными <img width=159 height=24 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img559.jpg">. Очевидно, у такой системы r(В) &lt; n, т. к. все миноры n-го порядка матрицы В равны нулю. Аналогично, r(A) &lt; n, т. к. равен нулю единственный минор n-го порядка матрицы А.</p>
+    <p>Значит, эта система может быть несовместной, если r(A) &ne; r(B), или совместной, но неопределенной, если r(A) = r(B).</p>
+    <p>
+        <strong>Пример 5.</strong> Пусть требуется решить систему линейных уравнений</p>
+    <p><img width=136 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img560.jpg"></p>
+    <p 0>Нетрудно убедиться, что r(B) = r(A) = 2, т. е. система совместна. Выберем два базисных уравнения с базисными неизвестными. Например, выберем два первых уравнения с неизвестными x1, x2. Тогда система принимает вид (4.5):</p>
+    <p><img width=132 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img561.jpg"></p>
+    <p 0>Находим</p>
+    <p><img width=52 height=21 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img562.jpg"> <img width=312 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img563.jpg"> &rArr; <img width=75 height=21 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img564.jpg">.</p>
+    <p>Аналогично находим</p>
+    <p><img width=315 height=48 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img565.jpg"> &rArr; <img width=69 height=21 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img566.jpg">.</p>
+    <p 0>И получаем, что данная система уравнений имеет бесконечное множество решений вида</p>
+    <p><img width=80 height=75 alt="" style="padding : 1px;" src="../../images/lk4/theory partI chapter1/img567.jpg"></p>
+    <p>где &alpha; &#8211; любое действительное число.&#9679;</p>
+</div>
+
+
+
+
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

@@ -1,0 +1,167 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний | <A HREF="../../../Об авторах/author.htm">Об авторах</var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+    <h3 >Тема 3. Матрицы</h3>
+    <h4 >3.1. Прямоугольные матрицы и линейные операции над ними</h4>
+    <p><strong>Определение 3.1.</strong> Таблица из m строк и&nbsp; n столбцов</p>
+    <p><img width=164 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img421.jpg"></p>
+    <p>называется прямоугольной матрицей порядка, или размерности, m&times;n. Часто в обозначении матрицы вместо квадратных скобок употребляют круглые. Размерность матрицы иногда удобно указывать в обозначении: AmЧn. Если m = n, то матрица называется квадратной матрицей порядка n.</p>
+    <p><strong>Определение 3.2.</strong> Матрицы А и В называются равными (A = B), если они одинаковых размерностей и все их соответствующие элементы совпадают, т. е. <img width=59 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img422.jpg"> при i = 1, 2,..., m; j = 1, 2,..., n.</p>
+    <p><strong>Определение 3.3.</strong> Нулевой матрицей О называют матрицу, все элементы которой нулевые, т. е.</p>
+    <p><img width=133 height=96 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img423.jpg">.</p>
+    <p><strong>Определение 3.4.</strong> Операция сложения вводится только для матриц, имеющих одинаковые размерности. Суммой матриц А и В называется матрица С = A + B, такая, что </p>
+    <p><img width=93 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img424.jpg">, i = 1, 2,..., m; j = 1, 2,..., n.</p>
+    <p>То есть при сложении матриц складываются все их соответствующие элементы.</p>
+    <p>Например, </p>
+    <p><img width=184 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img425.jpg">.</p>
+    <p>Легко проверить, что операция сложения матриц удовлетворяет свойствам:</p>
+    <p>1) A + B = B + A;</p>
+    <p>2) (A + B) + C = A + (B + C);</p>
+    <p>3) A + О = A.</p>
+    <p><strong>Определение 3.5.</strong> Произведением матрицы А на число &alpha; называется матрица &alpha;А, полученная умножением всех элементов матрицы А на число &alpha;.</p>
+    <p><strong>Пример 1.</strong> Пусть </p>
+    <p><img width=48 height=19 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img426.jpg">, <img width=95 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img427.jpg">.</p>
+    <p>Тогда </p>
+    <p><img width=97 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img428.jpg">.&#9679;</p>
+    <p><strong>Определение 3.6.</strong> Матрицу (&#8211; 1)A называют противоположной матрице A и обозначают &#8211; A, выражение A &#8211; В = А + (&#8211; В) называют разностью матриц А и В.</p>
+    <p><br></p>
+    <p>&nbsp;</p><h4 >3.2. Умножение матриц</h4>
+    <p>Произведение АВ матриц А и В определяется только в том случае, когда матрица А согласована с матрицей В, т. е. когда число столбцов матрицы А равно числу строк матрицы В. Например,</p>
+    <p><img width=104 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img429.jpg">, <img width=55 height=75 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img430.jpg">.</p>
+    <p>Здесь матрица A согласована с В, но В не согласована с А. Значит, существует произведение АВ, но не существует ВА.</p>
+    <p>Квадратные матрицы одного порядка, очевидно, всегда взаимно согласованы.</p>
+    <p><strong>Определение 3.7.</strong> Произведением матрицы Am &times; n на матрицу Bn &times; p называется матрица Cm &times; p, каждый элемент сij которой равен сумме произведений элементов i-й строки матрицы А на соответствующие элементы j-го столбца матрицы В, т. е. </p>
+    <p><img width=225 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img431.jpg">, i = 1, 2,..., m; j = 1, 2,..., p.</p>
+    <p>Кратко эту сумму записывают следующим образом:</p>
+    <p><img width=97 height=52 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img432.jpg">,</p>
+    <p>а произведение матриц обозначают С = АВ.</p>
+    <p><strong>Пример 2.</strong> Пусть</p>
+    <p><img width=96 height=73 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img433.jpg">, <img width=109 height=49 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img434.jpg">.</p>
+    <p>Тогда </p>
+    <p><img width=136 height=75 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img435.jpg">, <img width=117 height=49 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img436.jpg">.&#9679;</p>
+    <p>Из данного примера видно, что для матричного умножения закон коммутативности АВ = ВА не справедлив.</p>
+    <p>Следует отметить, что произведение двух ненулевых матриц может быть нулевой. Например, </p>
+    <p><img width=168 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img437.jpg">, но <img width=311 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img438.jpg">.</p>
+    <p>При умножении квадратных матриц особое значение имеет единичная матрица</p>
+    <p><img width=133 height=96 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img439.jpg">,</p>
+    <p>у которой на главной диагонали стоят единицы, а все остальные элементы &#8211; нулевые. Легко проверить, что АЕ = ЕА = А для любой матрицы А того же порядка, что и Е.</p>
+    <p>Матричное умножение обладает следующими свойствами:</p>
+    <p>1) (АВ)С = А(ВС);</p>
+    <p>2) (А + В)С = АС + ВС, А(В + С) = АВ + АС;</p>
+    <p>3) &alpha;(АВ) = (&alpha;А)В = А(&alpha;В);</p>
+    <p>4) (АВ)* = В*А*, где знак «*» означает транспонирование;</p>
+    <p>
+        5) |АВ| = |А| &sdot; |В|, т. е. определитель произведения квадратных матриц равен произведению их определителей.</p>
+    <p><br></p>
+    <p>&nbsp;</p><h4 >3.3. Обратная матрица</h4>
+    <p>
+        <strong>Определение 3.2.</strong> Обратная матрица определяется только для квадратной матрицы. Если А &#8211; квадратная матрица, то обратной к ней называется матрица А&#8211;1 той же размерности, удовлетворяющая условию</p>
+    <p>АА&#8211;1 = А&#8211;1А = Е.</p>
+    <p>
+        Если определитель матрицы А равен нулю, то матрица А называется вырожденной, в противном случае &#8211; невырожденной.</p>
+    <p>Пусть дана квадратная матрица</p>
+    <p><img width=160 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img440.jpg">.</p>
+    <p>Из алгебраических дополнений элементов матрицы А составим матрицу</p>
+    <p><img width=165 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img441.jpg"></p>
+    <p>и транспонируем ее (т. е. поменяем местами соответствующие строки и столбцы). Получится матрица</p>
+    <p><img width=179 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img442.jpg">.</p>
+    <p>
+        <strong>Лемма.</strong> AB* = В*A = <img width=21 height=28 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img443.jpg">Е.</p>
+    <p><strong>Доказательство.</strong> Обозначим C = AB*, т. е. </p>
+    <p><img width=301 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img444.jpg">.</p>
+    <p>Элемент сij матрицы С равен сумме произведений элементов i-й строки матрицы А на соответсвующие элементы j-го столбца матрицы В*. Очевидно, для элементов сij матрицы С, стоящих на главной диагонали, получим сумму произведений элементов i-й строки на их алгебраические дополнения, что равно определителю матрицы А. Для остальных элементов сij (i &ne; j) получим сумму произведений элементов i-й строки матрицы А на алгебраические дополнения элементов j-й строки, что равно 0. Значит,</p>
+    <p><img width=213 height=101 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img445.jpg">.</p>
+    <p>Аналогично получается В*A = <img width=21 height=28 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img446.jpg">Е.&diams;</p>
+    <p><strong>Теорема 3.1.</strong> Для того чтобы для матрицы А существовала обратная матрица, необходимо и достаточно, чтобы матрица А была невырожденной.</p>
+    <p><strong>Доказательство.</strong> Необходимость. Пусть обратная матрица А&#8211;1 существует. Тогда по определению обратной матрицы и свойству 5 умножения матриц</p>
+    <p>|E| = |АА&#8211;1| = |А| &sdot; |А&#8211;1| = 1 &ne; 0,</p>
+    <p>откуда получаем, что |А| &ne; 0. То есть А &#8211; невырожденная матрица.</p>
+    <p><strong>Достаточность.</strong> Пусть А &#8211; невырожденная матрица, т. е. <img width=21 height=28 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img447.jpg"><img width=16 height=16 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img448.jpg">0. докажем, что матрица</p>
+    <p><img width=52 height=44 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img449.jpg"></p>
+    <p>является обратной для А.</p>
+    <p>Действительно, в силу леммы АС = Е&nbsp; и&nbsp; СА = Е. Следовательно, С = А&#8211;1.&diams;</p>
+    <p>В процессе доказательства теоремы 3.1 найдено выражение для обратной матрицы:</p>
+    <p><img width=79 height=47 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img450.jpg">,</p>
+    <p>или </p>
+    <p><img width=203 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img451.jpg">.</p>
+    <p><strong>Теорема 3.2.</strong> Для невырожденной матрицы существует единственная обратная матрица.</p>
+    <p><strong>Доказательство.</strong> Предположим противное. Пусть <img width=80 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img452.jpg"> &#8211; матрицы, обратные А. Тогда <img width=75 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img453.jpg">. Умножим это равенство на <img width=29 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img454.jpg"> слева. Получим </p>
+    <p><img width=480 height=27 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img455.jpg">.&diams;</p>
+    <p><strong>Упражнение.</strong> Показать, что:</p>
+    <p>1) <img width=73 height=47 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img456.jpg">;</p>
+    <p>2) <img width=87 height=29 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img457.jpg">;</p>
+    <p>3) <img width=113 height=29 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img458.jpg">, <img width=61 height=24 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img459.jpg">;</p>
+    <p>4) <img width=123 height=28 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img460.jpg">.</p>
+    <p>
+        <strong>Пример 3.</strong> Найдем обратную матрицу для матрицы </p>
+    <p><img width=75 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img461.jpg">.</p>
+    <p>Получаем</p>
+    <p><img width=372 height=28 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img462.jpg">.</p>
+    <p>Отсюда</p>
+    <p><img width=200 height=52 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img463.jpg">.</p>
+    <p>Проверка:</p>
+    <p><img width=223 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img464.jpg">.</p>
+    <p>Аналогично, <img width=76 height=21 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img465.jpg">.&#9679;</p>
+    <p><br></p>
+    <p>&nbsp;</p><h4 >
+        3.4. Матричная запись системы линейных уравнений</h4>
+    <p>Пусть дана система n линейных уравнений с n неизвестными</p>
+    <p><img width=205 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img466.jpg"> (3.1)</p>
+    <p>Составим матрицу данной системы</p>
+    <p><img width=160 height=99 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img467.jpg"></p>
+    <p>и обозначим</p>
+    <p><img width=64 height=96 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img468.jpg">,&nbsp; <img width=60 height=96 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img469.jpg">.</p>
+    <p>Тогда система (3.1) равносильна матричному уравнению</p>
+    <p>АХ = B. (3.2)</p>
+    <p>Если матрица А невырождена, то решение уравнения (3.2), а значит, и системы (3.1), можно найти следующим образом.</p>
+    <p>Умножим на А&#8211;1 слева обе части равенства (3.2). Получим</p>
+    <p>А&#8211;1АХ = А&#8211;1В,</p>
+    <p>откуда</p>
+    <p 14>Х = А&#8211;1В. (3.3)</p>
+    <p><strong>Пример 4.</strong> В примере 3 из предыдущего параграфа показана невырожден-ность матрицы</p>
+    <p><img width=79 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img470.jpg"></p>
+    <p>Рассмотрим систему линейных уравнений</p>
+    <p><img width=101 height=51 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img471.jpg"></p>
+    <p>матрицей которой является А. Тогда эту систему можно записать в виде (3.2):</p>
+    <p><img width=127 height=48 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img472.jpg">.</p>
+    <p>Откуда, согласно (3.3), получаем</p>
+    <p><img width=304 height=52 alt="" style="padding : 1px;" src="../../images/lk3/theory partI chapter1/img473.jpg">,</p>
+    <p>т. е. x1 = 5, x2 = &#8211; 2.&#9679;</p>
+    <p>Итак, мы имеем еще один способ решения систем линейных уравнений &#8211; матричный.</p>
+    <p><strong>Упражнение.</strong> Вывести формулы Крамера из формулы (3.3).</p>
+
+</div>
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

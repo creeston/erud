@@ -1,0 +1,181 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"], ["__","__"]]}
+  });
+</script>
+<script type="text/javascript" src="../../../Оболочка/mathjax/MathJax.js"></script>
+<style type="text/css">
+  #MathJax-Span-2755 { font-family: MathJax_Main-bold !important; font-style: italic; }
+  #MathJax-Span-2760 { font-family: MathJax_Main-bold !important; font-style: italic; }
+  div.style1 {
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+  }
+</style>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+<p>         ресурс по учебной дисциплине</p>
+<p>         "Математика. Геометрия и Алгебра"</p>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+<center><span style="font-size: 16pt; font-weight: bold;">Основные обозначения</span></center>
+<br>
+<p>$\textbf{N}$ – множество натуральных чисел</p>
+<p>$\textbf{Z}$ – множество целых чисел</p>
+<p>$\textbf{Q}$ – множество рациональных чисел</p>
+<p>$\textbf{R}$ – множество вещественных чисел</p>
+<p>$\textbf{C}$ – множество комплексных чисел</p>
+<p>$\textit{A} \subset \textit{B}$ – множество $\textit{A}$ является собственным подмножеством множества $\textit{B}$</p>
+<p>$\textit{A} \subseteq \textit{B}$ – множество $\textit{B}$ является подмножеством множества $\textit{B}$</p>
+<p>$\textit{a} \in \textit{A}$ – элемент $\textit{a}$ принадлежит множеству $\textit{A}$</p>
+<p>$\textit{A} _{\textit{>a}}$ – подмножество числового множества $\textit{A} \subseteq \textbf{R}$, состоящее из всех чисел, больших $a$</p>
+<p>$\textit{A} _{\textit{&lt;a}}$ – подмножество числового множества $\textit{A} \subseteq \textbf{R}$, состоящее из всех чисел, меньших $a$</p>
+<p>$\textit{A} _{\geq\textit{a}}$ – подмножество числового множества $\textit{A} \subseteq \textbf{R}$, состоящее из всех чисел, больших или равных $a$</p>
+<p>$\textit{A} _{\leq\textit{a}}$ – подмножество числового множества $\textit{A} \subseteq \textbf{R}$, состоящее из всех чисел, меньших или равных $a$</p>
+<p>$a_1, a_2, ..., a_n \in \textit{A}$ – элементы $a_1, a_2, ..., a_n$ принадлежат множеству $\textit{A}$, $\textit{n} \in \textbf{N}$</p>
+<p>$|\textit{a}|$ – модуль числа $\textit{a}$</p>
+<p>$\triangleright$ – начало доказательства утверждения (леммы, свойства, теоремы)</p>
+<p>$\triangleleft$ – окончание доказательства утверждения</p>
+<p>$\Rightarrow$ – символ следствия (импликации)</p>
+<p>$\bullet$ – окончание примера</p>
+<p>$\textit{a}\;\vdots\,\textit{b}$ – целое число $\textit{a}$ делится на целое число $\textit{b} \neq \textit{0}$</p>
+<p>$\textit{b}\;|\,\textit{a}$ – целое число $\textit{b} \neq \textit{0}$ делит целое число $\textit{a}$</p>
+<p>$\textit{a} \;\not\vdots \textit{b}$ – целое число $\textit{а}$ не делится на целое число $\textit{b} \neq \textit{0}$</p>
+<p>$\textit{b} \not| \;\textit{a}$ – целое число $\textit{b} \neq \textit{0}$ не делит целое число $\textit{a}$</p>
+<p>$\forall$ – квантор общности, означающий слова «любой», «каждый»</p>
+<p>$\&$ – символ конъюнкции, одновременного выполнения условий, означающий логическое «и»</p>
+<p>$\Leftrightarrow$ – символ эквивалентности (равносильности)</p>
+<p>$\vee$ – символ дизъюнкции, выполнения хотя бы одного из условий, означающий логическое «или»</p>
+<p>$\textrm{sgn}(\textit{a}\,)$ – сигнум вещественного числа $\textit{a}$</p>
+<p><span style="">ОД</span> – общий делитель</p>
+<p><span style="">НОД</span> – наибольший общий делитель</p>
+<p><span style="">НОД</span> ($\textit{a}_{1}, \textit{a}_{2}, \textit{…}, \textit{a}_{\textit{n}}$) или ($\textit{a}_{1}, \textit{a}_{2}, \textit{…}, \textit{a}_{\textit{n}}$) – <span style="">НОД</span> целых чисел $\textit{a}_{1}, \textit{a}_{2}, \textit{…}, \textit{a}_{\textit{n}}$, где $\textit{n} \geq \textit{2}$</p>
+<p>$\textit{i}=\overline{\textit{m},\, \, \textit{n}}$ – $\textit{i}$ принимает все целые значения от $\textit{m}$ до $\textit{n}$, где $\textit{m} &#60; \textit{n}$</p>
+<p><span style="">ОК</span> – общее кратное</p>
+<p><span style="">НОК</span> – наименьшее общее кратное</p>
+<p><span style="">НОК</span> ($\textit{a}_{1}, \textit{a}_{2}, \textit{…}, \textit{a}_{\textit{n}}$) или [$\textit{a}_{1}, \textit{a}_{2}, \textit{…}, \textit{a}_{\textit{n}}$] – <span style="">НОК</span> целых чисел $\textit{a}_{1}, \textit{a}_{2}, \textit{…}, \textit{a}_{\textit{n}}$, где $\textit{n} \geq \textit{2}$</p>
+<p>$\textit{A} \cup \textit{B}$ – объединение множеств $\textit{A}$ и $\textit{B}$</p>
+<p>$\exists$ – квантор существования, означающий слова «существует», «найдется»</p>
+<p>$[\textit{a}; \textit{b}\,]$ – отрезок (подмножество $\textbf{R}$, состоящее из всех чисел $\textit{r}$, таких, что $\textit{a} \leq \textit{r} \leq \textit{b}$)</p>
+<p>$[\textit{a}\,]$ – целая часть вещественного числа $\textit{a}$</p>
+<p>$\textit{m}!$ – факториал целого неотрицательного числа $\textit{m}$</p>
+<p>$\pi(\textit{x}\,)$ – количество всех простых чисел, меньших $\textit{x}$ для $\textit{x} \in \textbf{N}_{>2}$</p>
+<p>$|$ – обозначение слов «такой, что», «такие, что» при описательном задании множеств</p>
+<p>$\overline{\exists}$ – отрицание существования</p>
+<p>$\textit{a} \equiv \textit{b} \, (\textrm{mod} \, \textit{m})$ – целые числа $\textit{a}$ и $\textit{b}$ сравнимы по модулю $\textit{m} \in \textbf{N}$</p>
+<p>$\overline{\textit{i}}$ – класс вычетов по натуральному модулю с представителем $\textit{i} \in \textbf{Z}$</p>
+<p>$\textit{A} = \textit{B}$ – множества $\textit{A}$ и $\textit{B}$ равны</p>
+<p>$\textbf{Z} / \textit{m} \textbf{Z}$ – множество классов вычетов по натуральному модулю $\textit{m}$</p>
+<p>$\textit{A} \neq \textit{B}$ – множества $\textit{A}$ и $\textit{B}$ не равны</p>
+<p>$\textit{a} \not\equiv \textit{b} \, (\textrm{mod} \, \textit{m})$ – целые числа $\textit{a}$ и $\textit{b}$ несравнимы по модулю $\textit{m} \in \textbf{N}$</p>
+<p><img src="phi.png"> – функция Эйлера (тотиент-функция)</p>
+<p>$\textit{q}: \textit{X} \rightarrow \textit{Y}$ – существование соответствия $\textit{q}$ между множествами $\textit{X}$ и $\textit{Y}$</p>
+<p>$\textit{A} \times \textit{B}$ – прямое (декартово) произведение множеств $\textit{A}$ и $\textit{B}$</p>
+<p>$\textit{q} = (\textit{X, Y, Q}\,)$ – соответствие $\textit{q}$ с областью отправления $\textit{X}$, областью прибытия $\textit{Y}$ и графиком $\textit{Q}$</p>
+<p>$\textit{D}(\textit{q}\,)$ – область определения соответствия $\textit{q}$</p>
+<p>$\textit{E}(\textit{q}\,)$ – область значений соответствия $\textit{q}$</p>
+<p>$\textit{q}(\textit{x}\,)$ – образ элемента $\textit{x}$ при соответствии $\textit{q}$</p>
+<p>$\textit{q}^{–1}(\textit{y}\,)$ – прообраз элемента $\textit{y}$ при соответствии $\textit{q}$</p>
+<p>$\textit{q}(\textit{C}\,)$ – образ множества $\textit{C}$ при соответствии $\textit{q}$</p>
+<p>$\textit{q}^{–1}(\textit{D}\,)$ – прообраз множества $\textit{D}$ при соответствии $\textit{q}$</p>
+<p>$\textit{p} = \textit{q}$ – отображения $\textit{p}$ и $\textit{q}$ равны</p>
+<p>$\textit{q}: \textit{x} \mapsto \textit{y}$ или $\textit{q}(\textit{x}\,) = \textit{y}$ – функциональное соответствие $\textit{q}$ сопоставляет элементу $\textit{x}$ единственный элемент $\textit{y}$</p>
+<p>$\textit{e} _{\textit{X}}$ – тождественная функция на множестве $\textit{X}$</p>
+<p>$\textbf{R} ^{2}$ – декартова вещественная плоскость</p>
+<p>$\textit{q} ^{-1}$ – соответствие, обратное соответствию $\textit{q}$</p>
+<p><span style="font-family: MathJax_Math; font-size: 126%; font-weight: bold;">&empty;</span> – пустое множество</p>
+<p>$\textit{A} \cap \textit{B}$ – пересечение множеств $\textit{A}$ и $\textit{B}$</p>
+<p>$\textit{g} \circ \textit{f}$ или $\textit{gf}$ – композиция функций $\textit{f}$ и $\textit{g}$</p>
+<p>$\textit{p} \neq \textit{q}$ – отображения $\textit{p}$ и $\textit{q}$ не равны</p>
+<p>$\textit{f} _{\textit{A}}$ – сужение функции $\textit{f}$ на множество $\textit{A}$</p>
+<p>$\textit{A} \leftrightarrow \textit{B}$ – множества $\textit{A}$ и $\textit{B}$ равномощны</p>
+<p>$| \textit{A} |$ – мощность множества $\textit{A}$</p>
+<p>$\textit{A}^{\textit{n}}$ – $\textit{n}$-я декартова степень множества $\textit{A}$, $\textit{n} \in \textbf{N}$</p>
+<p>$\textit{P}(\textit{A}\,)$ – булеан (множество-степень) множества $\textit{A}$</p>
+<p>$\textit{a} \notin \textit{A}$ – элемент $\textit{a}$ не принадлежит множеству $\textit{A}$</p>
+<p>$C^k_n$ – число сочетаний из $\textit{n}$ элементов по $\textit{k}$, биномиальный коэффициент</p>
+<p>$\textit{A} \backslash \textit{B}$ – разность множеств $\textit{A}$ и $\textit{B}$</p>
+<p>$(\textit{a}; \textit{b}\,)$ – интервал (подмножество $\textbf{R}$, состоящее из всех чисел $\textit{r}$, таких, что $\textit{a} \lt \textit{r} \lt \textit{b}$)</p>
+<p>$[ \textit{a}; \textit{b}\,)$ – полуинтервал (подмножество $\textbf{R}$, состоящее из всех чисел $\textit{r}$, таких, что $\textit{a} \leq \textit{r} \lt \textit{b}$)</p>
+<p>$(\textit{a}; \textit{b}\,]$ – полуинтервал (подмножество $\textbf{R}$, состоящее из всех чисел $\textit{r}$, таких, что $\textit{a} \lt \textit{r} \leq \textit{b}$)</p>
+<p>$\textit{A}^{\,*}$ – множество всех обратимых элементов относительно некоторой бинарной алгебраической операции, заданной на множестве $\textit{A}$</p>
+<p>$\textit{M}_{m&#215;n}(\textit{K}\,)$ – множество прямоугольных матриц порядка $\textit{m} &#215; \textit{n}$ с элементами из множества $\textit{K}$</p>
+<p>$\textit{V}_{n}(\textit{K}\,)$ – множество $\textit{n}$-мерных векторов с компонентами из множества $\textit{K}$</p>
+<p>$\textit{GL}_{n}(\textit{K}\,)$ – полная линейная группа квадратных матриц порядка $\textit{n}$ с элементами из множества $\textit{K}$</p>
+<p>$\textit{C}_{n}$ – мультипликативная группа всех комплексных корней $\textit{n}$-ой степени из 1</p>
+<p>$\textit{H} \leq \textit{G}$ или $\textit{H} \lt \textit{G}$, если $\textit{H} \subset \textit{G}$, – $\textit{H}$ является подгруппой группы $\textit{G}$</p>
+<p>$\textit{SL}_{n}(\textit{K}\,)$ – специальная линейная группа квадратных матриц порядка $\textit{n}$ с элементами из множества&nbsp;$\textit{K}$</p>
+<p>$\textrm{det}(\textit{A}\,)$ – определитель матрицы A</p>
+<p>$\lt \textit{a} \gt$ – циклическая группа (подгруппа), порожденная элементом $\textit{a}$</p>
+<p>$\textrm{ord}(\textit{a}\,)$ – порядок элемента $\textit{a}$ в группе</p>
+<p>$\textit{E}_{n}$ – единичная квадратная матрица порядка $\textit{n}$</p>
+<p>$\textit{aH}$ – левый смежный класс с представителем $\textit{a}$ группы по подгруппе $\textit{H}$</p>
+<p>$\textit{Ha}$ – правый смежный класс с представителем $\textit{a}$ группы по подгруппе $\textit{H}$</p>
+<p>$\textit{G} : \textit{H}$ – индекс подгруппы $\textit{H}$ в группе $\textit{G}$</p>
+<p>$\textit{H} \triangleleft \textit{G}$ – $\textit{H}$ является нормальной подгруппой группы $\textit{G}$</p>
+<p>$\textit{G}/\textit{H}$ – фактормножество (факторгруппа) группы $\textit{G}$ по нормальной подгруппе $\textit{H}$</p>
+<p>$\textit{S}_{n}$ – симметрическая группа степени $\textit{n}$</p>
+<p>$\textrm{S}(\Omega)$ – симметрическая группа множества $\Omega$</p>
+<p>$\Big(\textit{i}{\rm \; }\textit{f}(\textit{i}\,){\rm \; }...{\rm \; }\, \textit{f}^{\,k-1} (\textit{i}\,)\Big)$ или $(\textit{i}_{1\, } \, \textit{i}_{2} ...\, \, \, \textit{i}_{\textit{k}\,} )$ – цикл длины $\textit{k}$ в группе $\textit{S}_{n}$</p>
+<p>$\textit{A}_{n}$ – знакопеременная группа степени $\textit{n}$</p>
+<p>$\textrm{Im}\,\textit{f}$ – образ группового или кольцевого гомоморфизма $\textit{f}$</p>
+<p>$\textrm{Ker}\,\textit{f}$ – ядро группового или кольцевого гомоморфизма $\textit{f}$</p>
+<p>$(\textit{G}_{1}, *\,)\cong(\textit{G}_{2}, \bullet\,)$ или $\textit{G}_{1}\cong\textit{G}_{2}$ – группы $(\textit{G}_{1}, *\,)$ и $(\textit{G}_{2}, \bullet\,)$ изоморфны</p>
+<p>$\textrm{Aut}(\textit{G}\,)$ – множество всех автоморфизмов группы $\textit{G}$</p>
+<p><span style="">ЭЦП</span> – электронная цифровая подпись</p>
+<p>$\textit{M}_{n}(\textit{K}\,)$ – множество квадратных матриц порядка $\textit{n}$ с элементами из множества $\textit{K}$</p>
+<p>$\textit{K}[x]$ – множество полиномов от одной переменной $\textit{x}$ с коэффициентами из кольца $\textit{K}$</p>
+<p>$\textit{K}^{\,*}$ – мультипликативная группа ассоциативного кольца $\textit{K}$ с единицей</p>
+<p>$\textit{L} \leq \textit{K}$ или $\textit{L} &#60; \textit{K}$, если $\textit{L} \subset \textit{K}$, – $\textit{L}$ является подкольцом кольца $\textit{K}$</p>
+<p>$\textit{J}\triangleleft\textit{K}$ – $\textit{J}$ является двусторонним идеалом кольца $\textit{K}$</p>
+<p>$(\textit{a}\,)$ – главный идеал коммутативного кольца, порожденный элементом $\textit{a}$</p>
+<p>$\textrm{deg}\,\textit{f}$ – степень многочлена $\textit{f} (\textit{x}\,)$</p>
+<p>$\textit{g} (\textit{x}\,) \, | \, \textit{f} (\textit{x}\,)$ – многочлен $\textit{g} (\textit{x}\,) \neq 0$ делит многочлен $\textit{f} (\textit{x}\,)$</p>
+<p>$\textit{f} (\textit{x}\,) \,\vdots\, \textit{g} (\textit{x}\,)$ – многочлен $\textit{f} (\textit{x}\,)$ делится на многочлен $\textit{g} (\textit{x}\,) \neq 0$</p>
+<p>$\textit{g} (\textit{x}\,)\not|\;\; \textit{f} (\textit{x}\,)$ – многочлен $\textit{g} (\textit{x}\,) \neq 0$ не делит многочлен $\textit{f} (\textit{x}\,)$</p>
+<p>$\textit{f} (\textit{x}\,) \,\not\vdots \textit{g} (\textit{x}\,)$ – многочлен $\textit{f} (\textit{x}\,)$ не делится на многочлен $\textit{g} (\textit{x}\,) \neq 0$</p>
+<p>НОД$\Big(\textit{f}_{1}(\textit{x}\,), \textit{f}_{2}(\textit{x}\,), ..., \textit{f}_{\textrm{s}}(\textit{x}\,)\Big)$ или $\Big(\textit{f}_{1}(\textit{x}\,), \textit{f}_{2}(\textit{x}\,), ..., \textit{f}_{\textrm{s}}(\textit{x}\,)\Big)$ – <span style="">НОД</span> многочленов $\textit{f}_{1}(\textit{x}\,), \textit{f}_{2}(\textit{x}\,), ..., \textit{f}_{\textrm{s}}(\textit{x}\,)$, где $\textit{s} \geq 2$</p>
+<p>НОК$\Big(\textit{f}_{1}(\textit{x}\,), \textit{f}_{2}(\textit{x}\,), ..., \textit{f}_{\textrm{s}}(\textit{x}\,)\Big)$ или $\Big[\textit{f}_{1}(\textit{x}\,), \textit{f}_{2}(\textit{x}\,), ..., \textit{f}_{\textrm{s}}(\textit{x}\,)\Big]$ – <span style="">НОК</span> многочленов $\textit{f}_{1}(\textit{x}\,), \textit{f}_{2}(\textit{x}\,), ..., \textit{f}_{\textrm{s}}(\textit{x}\,)$, где $\textit{s} \geq 2$</p>
+<p><b>$\boldsymbol{F}_{\boldsymbol{q}}$</b> – конечное поле из $\textit{q}$ элементов</p>
+<p>$\overline{\textit{a}}$ – класс вычетов с представителем $\textit{a}$ кольца по модулю двустороннего идеала</p>
+<p>$\textit{K}/\textit{I}$ – фактормножество (факторкольцо) кольца $\textit{K}$ по двустороннему идеалу $\textit{I}$</p>
+<p>$(\textit{K}_{1}, +, \cdot\,)\cong(\textit{K}_{2}, \breve{+}, \bullet\,)$  или $\textit{K}_{1}\cong\textit{K}_{2}$ – кольца $(\textit{K}_{1}, +, \cdot\,)$ и $(\textit{K}_{2}, \breve{+}, \bullet\,)$ изоморфны</p>
+<p>$\textrm{Aut}(\textit{K}\,)$ – множество всех автоморфизмов кольца $\textit{K}$</p>
+<p>$\textrm{char}\,\textit{K}$ – характеристика кольца $\textit{K}$</p>
+<p>$\textit{P}(\textit{x}\,)$ – множество рациональных функций кольца $\textit{P}[\textit{x}\,]$, где $\textit{P}$ – поле</p>
+
+</div>
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

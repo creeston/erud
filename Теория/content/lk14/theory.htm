@@ -1,0 +1,200 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+<h3>Тема 14. Диагональный вид матрицы линейного оператора</h3>
+<h4>14.1. Приведение матрицы линейного оператора к диагональному виду</h4>
+<p>
+	Как следует из теоремы 13.1, матрица линейного оператора зависит от базиса пространства. Как подобрать этот базис, 
+	чтобы матрица линейного оператора в нем имела наиболее простой вид? На этот вопрос отвечает следующая теорема.
+</p>
+<p>
+	<strong>Теоремa 14.1.</strong> Для того чтобы матрица линейного оператора A: R<sup>n</sup>&rarr;R<sup>n</sup> в некотором базисе 
+	была диагональной, необходимо и достаточно, чтобы этот базис состоял из собственных векторов линейного оператора A.
+</p>
+<p>
+	<strong>Доказательство. Необходимость.</strong> Пусть матрица линейного оператора A в некотором базисе е<sup>1</sup>, 
+	е<sup>2</sup>,..., е<sup>n</sup> диагональная, т. е.
+</p>
+<p>
+	<img src="../../images/lk14/14/1.png" height="96px">
+</p>
+<p>
+	Тогда, очевидно, справедливы равенства Aе<sup>j</sup> = &Lambda;е<sup>j</sup> = &lambda;<sub>j</sub>e<sup>j</sup>, j = 1, 2,..., n, 
+	из которых следует, что &lambda;<sub>j</sub> – собственные значения, а е<sup>j</sup> – соответствующие им собственные векторы оператора A.
+</p>
+<p>
+	<strong>Достаточность.</strong> Предположим, что базис пространства состоит из собственных векторов x<sup>1</sup>, x<sup>2</sup>,..., x
+	<sup>n</sup>,	 а &lambda;<sub>1</sub>, &lambda;<sub>2</sub>,..., &lambda;<sub>n</sub> – соответствующие им собственные значения оператора A. 
+	Тогда Ax<sup>j</sup> = &lambda;<sub>j</sub>x<sup>j</sup>, j = 1, 2,..., n. Отсюда следует, что &Lambda; = = diag (&lambda;<sub>1</sub>,
+	 &lambda;<sub>2</sub>,..., &lambda;<sub>n</sub>) – матрица линейного оператора A в базисе x<sup>1</sup>, x<sup>2</sup>,..., x<sup>n</sup>.
+</p>
+<p>
+	<strong>Определение 14.1.</strong> Если существует базис пространства Rn, состоящий из собственных векторов x<sup>1</sup>, x<sup>2</sup>,..., x<sup>n</sup>
+	 линейного оператора A: R<sup>n</sup>&rarr;R<sup>n</sup> с матрицей А в некотором базисе пространства R<sup>n</sup>, и Т – матрица перехода
+	 от этого базиса к базису x<sup>1</sup>, x<sup>2</sup>,..., x<sup>n</sup>, то справедливо равенство
+</p>
+<p>
+	&Lambda; = <i>Т </i><sup>–1</sup><i>AT</i>, (14.1)
+</p>
+<p>
+	где &Lambda; – диагональная матрица с собственными значениями, соответствующими собственным векторам оператора A, на главной диагонали. 
+	В этом случае матрица А линейного оператора A называется диагонализируемой.
+</p>
+<p>
+	<strong>Пример 1.</strong> Привести к диагональному виду матрицу
+</p>
+<p>
+	<img src="../../images/lk14/14/2.png" height="79px">
+</p>
+<p>
+	<strong>Решение.</strong> Для этой матрицы в примере 1 из §12.2 найдены собственные векторы x<sup>1</sup> = (–1, 1, 1), x<sup>2</sup> = (11, 1, –14) и x
+	<sup>3</sup> = (1, 1, 1), соответствующие собственным значениям &lambda;<sub>1</sub> = 1, &lambda;<sub>2</sub> = – 2 и &lambda;<sub>3</sub>
+	 = 3. Поскольку все собственные значения попарно различны, векторы x<sup>1</sup>, x<sup>2</sup>, x<sup>3</sup> образуют базис пространства
+	 R<sup>3</sup> согласно теореме 12.1. Значит, согласно определению 14.1 матрица А диагонализируема.
+</p>
+<p>
+	Составим матрицу перехода Т к базису x<sup>1</sup>, x<sup>2</sup>, x<sup>3</sup>, столбцами которой будут координаты данных базисных векторов.
+</p>
+<p>
+	<img src="../../images/lk14/14/3.png" height="79px">
+</p>
+<p>
+	откуда
+</p>
+<p>
+	<img src="../../images/lk14/14/4.png" height="161px">
+</p>
+<p>
+	Тогда
+</p>
+<p>
+	<img src="../../images/lk14/14/5.png" height="79px">diag(1, –2, 3).
+</p>
+<p>&nbsp</p>
+<h4>14.2. Диагональный вид матрицы самосопряженного оператора</h4>
+<p>
+	Пусть <i><strong>A</strong></i> – самосопряженный оператор. По теореме 12.4 у него существует <i>n</i> <span class="paint_green">
+	попарно ортогональных</span> собственных векторов. Если эти векторы <span class="paint_green">нормировать</span> и взять в качестве 
+	<span class="paint_green">базиса пространства</span>, то в силу теоремы 14.1 матрица оператора <i><strong>A</strong></i> в этом базисе 
+	будет диагональной. Таким образом, для всякого самосопряженного оператора существует такой <span class="paint_green">ортонормированный базис
+	</span>, что матрица этого оператора имеет в нем диагональный вид. Матрица перехода <i>Т</i> к этому базису, очевидно, ортогональная, 
+	т. е. <i>Т</i><sup>–1</sup> = <i>Т</i><sup>*</sup>. Таким образом, с учетом формулы (14.1), установлено следующее утверждение.
+</p>
+<p>
+	<strong>Теоремa 14.2</strong>. Если <i>А</i> – симметрическая матрица, то существует ортогональная матрица <i>Т</i>, такая, что <i>Т</i>
+	<sup>*</sup> <i>АТ</i> – диагональная матрица.
+</p>
+<p>
+	Из вышеизложенного в 14.1 получаем следующий <i>алгоритм приведения матрицы А к диагональному виду</i>:
+</p>
+<ol>
+  <li>
+	находим собственные значения и соответствующие им собственные векторы 
+	матрицы <i>А</i>, образующие <span class="paint_green">базис</span> 
+	пространства <strong>R</strong><sup><i>n</i></sup>, и переходим к шагу 2; 
+	если не существует базиса пространства <strong>R</strong><sup><i>n</i></sup>, 
+	состоящего из собственных векторов матрицы <i>А</i>, то матрица <i>А</i> 
+	не диагонализируема;
+  </li>
+  <li>
+	составляем матрицу перехода <i>Т</i>, столбцами которой служат координаты 
+	собственных векторов матрицы <i>А</i>, образующие 
+	<span class="paint_green">базис</span> пространства 
+	<strong>R</strong><sup><i>n</i></sup>;
+  </li>
+  <li>
+	находим <i>Т</i><sup>–1</sup> и по формуле (14.1) получаем искомую 
+	диагональную матрицу <i>&Lambda;</i>.
+  </li>
+</ol>
+<p>
+	Если <i>А</i> – симметрическая матрица, то ее собственные векторы необходимо <span class="paint_green">нормировать</span> 
+	при составлении матрицы <i>T</i>, и тогда
+</p>
+<p>
+	<i>&Lambda;</i> = <i>Т</i><sup>*</sup><i>АТ</i>.                                                  (14.2)
+</p>
+<p>
+	<strong>Пример 2</strong>. Привести к диагональному виду матрицу
+</p>
+<p>
+	<img src="../../images/lk14/Тема 14-2/1.png" width="128" height="75"/>
+</p>
+<p>
+	<strong>Решение</strong>. Характеристическое уравнение
+</p>
+<p>
+	<img src="../../images/lk14/Тема 14-2/2.png" width="165" height="75"/>
+</p>
+<p>
+  	имеет корни <i>&lambda;</i><sub>1</sub> = –2, <i>&lambda;</i><sub>2</sub> = 
+  	<i>&lambda;</i><sub>3</sub> = 4. Для <i>&lambda;</i><sub>1</sub> = –2 и 
+  	<i>&lambda;</i><sub>2</sub> = 4 находим соответствующие собственные векторы 
+  	<i><strong>x</strong></i><sup>1</sup> = (1, 1, – 2) и 
+  	<i><strong>x</strong></i><sup>2</sup> = (2, 0, 1) (см. аналогичный пример 1 
+  	из §12.2). Поскольку <i><strong>x</strong></i><sup>3</sup> &perp; 
+  	<i><strong>x</strong></i><sup>1</sup> и <i><strong>x</strong></i><sup>3</sup> 
+  	&perp; <i><strong>x</strong></i><sup>2</sup> в силу теоремы 12.4, то в качестве 
+  	третьего собственного вектора можно взять вектор 
+  	<i><strong>x</strong></i><sup>3</sup> = [<i><strong>x</strong></i><sup>1</sup>, 
+  	<i><strong>x</strong></i><sup>2</sup>] = (1, – 5, – 2) – 
+  	<span class="paint_green">векторное произведение</span> 
+  	<i><strong>x</strong></i><sup>1</sup> и <i><strong>x</strong></i><sup>2</sup>. 
+  	<span class="paint_green">Пронормировав</span> векторы 
+  	<i><strong>x</strong></i><sup>1</sup>, <i><strong>x</strong></i><sup>2</sup> 
+  	и <i><strong>x</strong></i><sup>3</sup>, получим
+</p>
+<p>
+  	<img src="../../images/lk14/Тема 14-2/3.png" width="171" height="81"/>
+  	<img src="../../images/lk14/Тема 14-2/4.png" width="169" height="83"/>
+  	<img src="../../images/lk14/Тема 14-2/5.png" width="184" height="82"/>
+</p>
+<p>
+	Координаты этих векторов образуют столбцы матрицы <i>Т</i>. Тогда согласно (14.2)
+</p>
+<p>
+  	<i>&Lambda;</i> = <i>T</i><sup>*</sup> <i>AT</i> = 
+  	<img src="../../images/lk14/Тема 14-2/6.png" width="213" height="81" align="center"/>
+  	<img src="../../images/lk14/Тема 14-2/7.png" width="90" height="73" align="center"/>
+  	<img src="../../images/lk14/Тема 14-2/8.png" width="198" height="81" align="center"/> 
+ 	= 
+  	<img src="../../images/lk14/Тема 14-2/9.png" width="85" height="74" align="center"/> .
+</p>
+</div>
+
+
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

@@ -1,0 +1,325 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+<h3>Тема 15. Квадратичные формы</h3>
+<h4>15.1. Квадратичные формы и их матрицы</h4>
+
+<p>
+	<strong>Определение 15.1.</strong> Квадратичной формой от n переменных x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,…, x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">n</span>называется многочлен
+</p>
+<p>
+	<img src="../../images/lk15/15.1/15.1.001.jpg" width="217" height="53" alt="" /> ,                                (15.1)
+</p>
+<p>
+	 где все a<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">ij</span> =a<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">ji</span> –  действительные числа, называемые коэффициентами квадратичной формы.
+</p>
+
+<p>
+	 Для записи квадратичной формы в матричном виде из переменных x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">2</span> ,… ,  x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">n</span>  образуем вектор-столбец  X, а из коэффициентов  a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">ij</span>  –  матрицу
+</p>
+<p>
+	А <img src="../../images/lk15/15.1/15.1.002.jpg" width="145" height="96" alt="" /> ,
+</p>
+<p>
+	 которая  называется матрицейквадратичной формыи является в силу равенств a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ij</span> = a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ji</span> , i , j  = 1,2,... ,n,  симметрической.
+</p>
+
+<p>
+	 Учитывая правило умножения матрицы на вектор, получаем
+</p>
+<p>
+	Аx<img src="../../images/lk15/15.1/15.1.003.jpg" width="357" height="96" alt="" /> .
+</p>
+
+<p>
+	 Тогда выражение (15.1) запишется в виде
+</p>
+<p>
+	<img src="../../images/lk15/15.1/15.1.004.jpg" width="477" height="51" alt="" /> (x , Аx ),
+</p>
+<p>
+	 или в виде
+</p>
+<p>
+	<img src="../../images/lk15/15.1/15.1.005.jpg" width="397" height="96" alt="" />  x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">*</span>Аx ,
+</p>
+
+<p>
+	где x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:super">*</span> – вектор-строка из переменных x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub">1, x</span><span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub">2,…,x</span><span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub">n</span>, знак «</span><span style="font-family:Symbol; font-size:9.5pt; letter-spacing:-0.5pt">*</span><span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub"></span>» означает транспонирование.</span>
+</p>
+
+<p>
+	 Итак, в матричной записи квадратичная форма (15.1) имеет вид
+</p>
+<p>
+	Q   ( x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">1</span> ,  x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">2</span> ,…,  x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">n</span> ) =(x ,Аx ) = x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">*</span>Аx.                                 (15.2)
+</p>
+<p>
+	 Таким образом, квадратичная форма полностью определяется своей матрицей, и, наоборот, любая квадратичная форма определяет однозначно симметрическую матрицу.
+</p>
+
+<p>
+	<strong>Пример 1.</strong> Составить матрицу квадратичной формы
+</p>
+<p>
+	Q(x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ) = <img src="../../images/lk15/15.1/15.1.006.jpg" width="224" height="27" alt="" /> .
+</p>
+
+<p>
+	 <strong>Решение.</strong> Учитывая, что в квадратичной форме коэффициенты a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ij</span> = a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ji</span> , получаем а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">11</span>  = 1, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">12</span>  = а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">21</span> = – 1, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">13</span>  = а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">31</span> = 0, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">22 </span> = – 3, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">23</span>  = а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">32</span> = 2, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">33</span>  = 5. То есть искомая матрица имеет вид
+</p>
+<p>
+	<img src="../../images/lk15/15.1/15.1.007.jpg" width="120" height="75" alt="" /> .</span>
+</p>
+<p>
+	 Можно проверить по формуле (15.2), что
+</p>
+<p>
+	 (x , Аx ) = (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x</span><span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> )<span style="font-family:Symbol; font-size:9.5pt">&#215;</span>(x</span><span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> – x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span>  –3x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> + 2x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> , 2x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> +   5x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> )   = Q (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ),
+</p>
+<p>
+	x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">*</span>Аx  = <img src="../../images/lk15/15.1/15.1.008.jpg" width="204" height="75" alt="" />  = Q (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ).
+</p>
+
+<p>
+	 <strong>Пример 2.</strong> Найти квадратичную форму, соответствующую матрице
+</p>
+<p>
+	<img src="../../images/lk15/15.1/15.1.009.jpg" width="144" height="96" alt="" /> .
+</p>
+
+<p>
+	 <strong>Решение.</strong> Данной матрице соответствует квадратичная форма
+</p>
+<p>
+	Q(x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">4</span> ) =<img src="../../images/lk15/15.1/15.1.010.jpg" width="327" height="27" alt="" /> .
+</p>
+
+
+<p>&nbsp</p>
+<h4>15.2. Приведение квадратичной формы к каноническому виду ортогональным преобразованием</h3>
+<p>
+	<strong>Определение 15.2.</strong> Квадратичная форма называется <i>канонической</i> (или имеет <i>канонический вид)</i>, если все
+	<img src=../../images/lk15/p15.2/15.2_1.PNG> Таким образом, канонический вид квадратичной формы следующий:
+	<img class="centr" src=../../images/lk15/p15.2/15.2_2.PNG>
+</p>
+<p>
+	Очевидно, что канонической квадратичной форме соответствует диагональная матрица
+	<img class="centr" src=../../images/lk15/p15.2/15.2_3.PNG>
+	Нахождение канонического вида квадратичной формы называется <i>приведением формы к каноническому виду</i>.
+</p>
+<p>
+	<strong>Теоремa 15.1.</strong> Любая квадратичная форма с помощью ортогонального преобразования может быть приведена к каноническому виду
+	<img class="centr" src=../../images/lk15/p15.2/15.2_4.PNG>
+	где <img src=../../images/lk15/p15.2/15.2_5.PNG> – собственные значения матрицы квадратичной формы.
+</p>
+<p>
+	<strong>Доказательство.</strong> Так как матрица А квадратичной формы является симметрической, 
+	то в силу теоремы 14.2 для нее существует ортогональная матрица Т, такая, что выполнено равенство
+	<img src=../../images/lk15/p15.2/15.2_6.PNG> Пусть <img src=../../images/lk15/p15.2/15.2_7.PNG>
+	где <img src=../../images/lk15/p15.2/15.2_8.PNG>
+	– это координаты <b>x</b> в новом базисе, состоящем из нормированных собственных векторов матрицы А. 
+	Тогда из соотношения (15.2) получаем
+	<img class="centr" src=../../images/lk15/p15.2/15.2_9.PNG>
+</p>
+<p>
+	Таким образом, <i>квадратичная форма в базисе, состоящем из ортонормированных собственных векторов матрицы А, 
+	приводится к каноническому виду</i>. Алгоритм приведения ее к каноническому виду заключается, очевидно, в диагонализации 
+	симметрической матрицы квадратичной формы и последующей записи квадратичной формы в виде (15.3).•
+</p>
+<p>
+	<strong>Пример 3.</strong> Привести к каноническому виду квадратичную форму
+	<img class="centr" src=../../images/lk15/p15.2/15.2_10.PNG>
+	<i>Решение.</i> Составим соответствующую этой форме матрицу
+	<img class="centr" src=../../images/lk15/p15.2/15.2_11.PNG>
+	Характеристическое уравнение <img src=../../images/lk15/p15.2/15.2_12.PNG>
+	имеет корни <img src=../../images/lk15/p15.2/15.2_13.PNG> Для <img src=../../images/lk15/p15.2/15.2_14.PNG>
+	находим собственные векторы (см. аналогичный пример 1 из §12.2) 
+	<img src=../../images/lk15/p15.2/15.2_15.PNG> соответственно. Собственные векторы <b>v<sup>3</sup></b> и <b>v<sup>4</sup></b>, 
+	соответствующие собственному значению <img src=../../images/lk15/p15.2/15.2_16.PNG>
+	найдем из следующих соображений: по теореме 12.4 собственные векторы <img src=../../images/lk15/p15.2/15.2_17.PNG>
+	можно выбрать попарно ортогональными. Если <img src=../../images/lk15/p15.2/15.2_18.PNG>
+	 – произвольный вектор, ортогональный <b>v<sup>1</sup></b> и <b>v<sup>2</sup></b>, то для определения его координат
+	получаем систему уравнений
+	<img class="centr" src=../../images/lk15/p15.2/15.2_19.PNG>
+	общее решение которой имеет вид
+	<img class="centr" src=../../images/lk15/p15.2/15.2_20.PNG>
+	где v<sub>2</sub> и v<sub>4</sub> – произвольные действительные числа.
+</p>
+<p>	Таким образом, любой вектор <b>v</b>, ортогональный <b>v<sup>1</sup></b> и <b>v<sup>2</sup></b>, 
+	является линейной комбинацией векторов <img src=../../images/lk15/p15.2/15.2_21.PNG>
+	Попарная ортогональность векторов <img src=../../images/lk15/p15.2/15.2_22.PNG>
+	очевидна. Итак, найдены все четыре попарно ортогональных собственных вектора матрицы A. Нормируя их, получим векторы
+	<img class="centr" src=../../images/lk15/p15.2/15.2_23.PNG>
+	которые являются столбцами матрицы ортогонального преобразования Т, т. е.
+	<img class="centr" src=../../images/lk15/p15.2/15.2_24.PNG>
+	Тогда в силу формулы (15.4) квадратичная форма Q в базисе
+	<img src=../../images/lk15/p15.2/15.2_25.PNG> приводится к каноническому виду
+	<img class="centr" src=../../images/lk15/p15.2/15.2_26.PNG>
+</p>
+<p>&nbsp</p>
+<h4>15.3. Знакоопределенные квадратичные формы</h4>
+<p>
+	<strong>Определение 15.3.</strong> Квадратичная форма <i>Q (<b>x</b>) = Q (x<sub>1</sub>, x<sub>2</sub>,…, x<sub>n</sub>)</i> 
+	называется <i>положительно (отрицательно) определенной</i>, если <i>Q (<b>x</b>) > 0 (Q (<b>x</b>) < 0)</i>, &forall; x&isin;
+	<b>R</b><i><sup>n</sup></i>, x &ne; 0. Квадратичная форма <i>Q</i> (<b>x</b>) называется <i>неотрицательно (неположительно) определенной</i>,
+	 если <i>Q (<b>x</b>)</i> &ge; 0 <i>(Q (<b>x</b>) &le; 0)</i>, &forall; x&isin;<b>R<i><sup>n</sup></i></b>. Матрица А, соответствующая
+	 положительно (отрицательно) определенной форме <i>Q (<b>x</b>) = (<b>x, Аx</b>)</i>, называется <i>положительно (отрицательно) 
+	определенной матрицей</i>. Положительно и отрицательно определенные квадратичные формы называются <i>знакоопределенными.</i>
+</p>
+<p>
+	Например, квадратичная форма <i>Q (x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>) = 3x<sub>1</sub><sup>2</sup> + 5x<sub>2</sub><sup>2</sup>
+	 + 4x<sub>3</sub><sup>2</sup></i> является, очевидно, положительно определенной. А форма <i>Q (x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>
+	) = (4x<sub>1</sub> – 5x<sub>2</sub> – x<sub>3</sub>)<sup>2</sup> = = 16x<sub>1</sub><sup>2</sup> – 40x<sub>1</sub>x<sub>2</sub> – 8x<sub>
+	1</sub>x<sub>3</sub> + 25x<sub>2</sub><sup>2</sup> + 10x<sub>2</sub>x<sub>3</sub> + x<sub>3</sub><sup>2</sup></i> является неотрицательно
+	 определенной, т. к. она обращается в нуль, например, при <b><i>x</i></b> = <i>(x<sub>1</sub>, 0, 4x<sub>1</sub>)</i> &ne; 0, если x<sub>1
+	</sub> &ne; 0.
+</p>
+<p>
+	<strong>Теоремa 15.2.</strong> Для того чтобы квадратичная форма <i>Q (<b>x</b>) = (<b>x</b>, А<b>x</b>)</i> была положительно (отрицательно)
+	 определенной, необходимо и достаточно, что-бы все собственные значения <i>&lambda;<sub>1</sub>, &lambda;<sub>2</sub>,…, &lambda;<sub>n</sub>
+	</i> матрицы <i>А</i> квадратичной формы были положительными (отрицательными). Для того чтобы квадратичная форма была неотрицательно
+	 (неположительно) определенной, необходимо и достаточно, чтобы все собственные значения <i>&lambda;<sub>1</sub>, &lambda;<sub>2</sub>
+	,…, &lambda;<sub>n</sub></i> матрицы квадратичной формы были неотрицательными (неположительными), среди которых найдутся нулевые.
+</p>
+<p>
+	<strong>Доказательство.</strong> Необходимость. Пусть <i>Q (<b>x</b>) = (<b>x, Аx</b>) > 0, &forall;x &ne; 0.</i> Если <i>&lambda;i</i>
+	 – собственное значение матрицы <i>А</i>, соответствующее собственному вектору <b><i>x<sup>i</sup></i></b>, <i>i = 1, 2,..., n,</i> то 
+	<i>Q (<b>x</b><sup>i</sup>) = (<b>x</b><sup>i</sup>, A<b>x</b><sup>i</sup>) = (<b>x</b><sup>i</sup>, &lambda;<sub>i</sub><b>x</b><sup>i</sup>)
+	 = &lambda;<sub>i</sub>(<b>x</b><sup>i</sup>, <b>x</b><sup>i</sup>) > 0</i>. Отсюда, т. к. <b><i>(x<sup>i</sup>, x<sup>i</sup>)</i></b> > 0,
+	 получаем, что &lambda;<sup>i</sup> > 0, <i>i = 1, 2,..., n.</i>
+</p>
+<p>
+	<strong>Достаточность.</strong> Пусть <i>&lambda;<sub>i</sub> > 0, i = 1, 2,..., n.</i> Тогда из формулы (15.4) следует, что <i>Q (<b>x</b>)
+	 > 0, <b>&forall;x &ne; 0.</b></i>
+</p>
+<p>
+	Аналогично проводится доказательство для отрицательно (неотрицательно, неположительно) определенной квадратичной формы.&diams;
+</p>
+<p>
+	<strong>Следствие.</strong> Матрица знакоопределенной квадратичной формы является <span class="grn">невырожденной.
+	 Определитель матрицы</span> положительно определенной квадратичной формы положителен. Определитель матрицы неотрицательно (неположительно)
+	 определенной квадратичной формы равен нулю.
+</p>
+<p>
+	<strong>Доказательство.</strong> Пусть <i>Т</i> – матрица ортогонального преобразования, приводящая квадратичную форму с матрицей <i>А</i>
+	 к каноническому виду с матрицей <i>&Lambda;</i> = diag (&lambda;<sub>1</sub>, &lambda;<sub>2</sub>,…, &lambda;<sub>n</sub>). Тогда имеем
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/1.PNG" width="524" height="19" class="centr">
+<p>
+	Отсюда и из теоремы 15.2 вытекает справедливость данного следствия.&diams;
+</p>
+<p>
+	Из теоремы 15.2 следует, что преобразование <img src="../../images/lk15/images/Zhyshkevich 15.3/2.PNG" width="85"
+	 height="22"> при <i>&lambda;<sub>i</sub></i> &ne; 0, <i>z<sub>i</sub> = y<sub>i</sub></i> при <i>&lambda;<sub>i</sub> = 0, i = 1, 2,..., n</i>,
+	 приводит канонический вид (15.3) квадратичной формы к виду
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/3.PNG" width="523" height="41" style="margin:0 0 0 211px" id="15.5">
+<p>
+	где <img src="../../images/lk15/images/Zhyshkevich 15.3/4.PNG" width="388" height="17">
+</p>
+<p>
+	<strong>Определение 15.4.</strong> Канонический вид (15.5) называется <i>нормальным видом квадратичной формы.</i>
+</p>
+<p>
+	<strong>Определение 15.5.</strong> Пусть <i>A = [a<sub>ij</sub>], i, j = 1, 2,..., n,</i> – квадратная матрица. <i>Угловыми минорами</i>
+	 порядков 1, 2,…, n матрицы А называются все <span class="grn">миноры</span> соответствующих порядков, расположенные в левом верхнем 
+	углу матрицы <i>А</i>:
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/5.PNG" width="377" height="42" style="margin:0 0 0 357px" id="15.6">
+<p>
+	<strong>Теоремa 15.3 (критерий Сильвестра* положительной определенности квадратичной формы).</strong> Для того чтобы квадратичная форма <i>
+	Q (<b>x</b>) = (<b>x</b>, А<b>x</b>)</i> была положительно определенной, необходимо и достаточно, чтобы все угловые миноры матрицы <i>A</i> 
+	были положительны:
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/6.PNG" width="474" height="67" style="margin:0 0 0 260px" id="15.7">
+<p>
+	<strong>Доказательство.</strong> Необходимость. Пусть квадратичная форма положи-тельно определена. Тогда | <i>А</i> | > 0 в 
+	силу следствия из теоремы 15.2. Для вектора <i><b>x</b> = (x<sub>1</sub>, 0,..., 0)</i> &ne; <b>0</b> имеем 
+	<img src="../../images/lk15/images/Zhyshkevich 15.3/7.PNG" width="203" height="18">/ Если <i><b>x</b> = (x<sub>1</sub>, x<sub>2</sub>, 0,..., 0)
+	 &ne 0</i>, то на основании того же следствия имеем
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/8.PNG" width="339" height="43" class="centr">
+<p>
+	Продолжая этот процесс последовательно, получим все соотноше-ния (15.7).
+</p>
+<p>
+	<strong>Достаточность.</strong> Доказывается методом математической индукции по числу переменных квадратичной формы с помощью теорем 15.1, 
+	15.2 и формулы (15.5).&diams;
+</p>
+<p>
+	<strong>Замечание 1.</strong> Если квадратичная форма является неотрицательно определенной, то все угловые миноры 
+	(15.6) ее матрицы неотрицательны. Доказательство проводится аналогично доказательству теоремы 15.3
+	 с учетом теорем 15.1 и 15.2.
+</p>
+<p>
+	<strong>Замечание 2.</strong> Очевидно, квадратичная форма <i>Q (<b>x</b>)</i> является отрицательно (неположительно)
+	 определенной тогда и только тогда, когда квадратичная форма    – Q (x) является положительно (неотрицательно) определенной. 
+	Матрицы этих двух форм отличаются друг от друга только множителем – 1. Следовательно, согласно <span class="grn">свойству 3 определителей
+	</span>, их угловые миноры одинакового четного порядка равны, а угловые миноры одинакового нечетного порядка различаются лишь знаком.
+</p>
+<p>
+	<strong>Следствие (критерий отрицательной определенности квадратичной формы).</strong> Для того чтобы квадратичная форма <i>Q (<b>x</b>) 
+	= (<b>x</b>, А<b>x</b>)</i> была отрицательно определенной, необходимо и достаточно, чтобы все угловые миноры нечетных порядков матрицы
+	<i>A</i> были отрицательны, а все угловые миноры четных порядков матрицы <i>A</i> были положительны:
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/9.PNG" width="357" height="67" class="centr">
+<p>
+	<strong>Замечание 3.</strong> Если квадратичная форма является неположительно определенной, то все угловые миноры нечетных порядков ее 
+	матрицы неположительны, а все угловые миноры четных порядков ее матрицы неотрицательны. Данное утверждение вытекает из замечаний 
+	1 и 2.
+</p>
+<p>
+	<strong>Пример 4.</strong> Исследовать на знакоопределенность квадратичную форму
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/10.PNG" width="415" height="18" class="centr">
+<p>
+	<i>Решение</i>. Матрица этой формы имеет вид 
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/11.PNG" width="106" height="68" class="centr">
+<p>
+	Вычислим значения всех угловых миноров матрицы <i>A</i>:
+</p>
+<img src="../../images/lk15/images/Zhyshkevich 15.3/12.PNG" width="486" height="48" class="centr">
+<p>
+	В соответствии с критерием Сильвестра данная квадратичная форма является положительно определенной.
+</p>
+
+</div>
+
+
+
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

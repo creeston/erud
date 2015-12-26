@@ -1,0 +1,466 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"], ["__","__"]]}
+  });
+</script>
+<script type="text/javascript" src="../../../Оболочка/mathjax/MathJax.js"></script>
+<style type="text/css">
+    p {
+        font-family: 'Times New Roman';
+        font-size: 14pt;
+        text-indent: 1cm;
+        margin: 0;
+    }
+    .overbit {
+        text-decoration: overline;
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
+    table {
+        font-family: 'Times New Roman';
+        font-size: 14pt;
+    }
+</style>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 valign="middle"> <H1 >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+
+    <center><span style="font-size: 18pt; font-weight: bold;" id="tem18">Тема 18.&nbsp;Сравнения целых чисел. Множество классов вычетов. Функция Эйлера</span></center>
+    <br>
+    <center><span style="font-size: 16pt; font-weight: bold;" id="par16">&#xa7; 1.6. Сравнения целых чисел</span></center>
+    <br>
+    <p id="teor161"><b>Теорема 1.6.1.</b> Пусть $\textit{m}$&nbsp;– натуральное число. Для любых целых чисел $\textit{a}$ и $\textit{b}$ следующие условия равносильны:</p>
+
+    <p><b>1)</b>&nbsp;$\textit{a}$ и $\textit{b}$ имеют одинаковые остатки от деления на $\textit{m}$;</p>
+
+    <p><b>2)</b>&nbsp;$\textit{a}-\textit{b}$ делится на $\textit{m}$, т. е. $\textit{a}-\textit{b} = \textit{mq}$ для подходящего целого $\textit{q}$;</p>
+
+    <p><b>3)</b>&nbsp;$\textit{a}=\textit{b}+\textit{mq}$ для некоторого целого $\textit{q}$.</p>
+
+    <p>$\triangleright$<b>1)</b><b>$\Rightarrow$</b><b>2).</b> Пусть $\textit{a}=\textit{mq}_{1}+\textit{r}$, $\textit{b}=\textit{mq}_{2}+\textit{r}$, где $0\;\leq\;\textit{r}\lt\textit{m}$, $\textit{q}_{1}, \textit{q}_{2} \in \textbf{Z}$. Тогда $\textit{a}-\textit{b}=\textit{mq}_{1}-\textit{mq}_{2}=\textit{m}(\textit{q}_{1}-\textit{q}_{2}\,)\Rightarrow(\textit{a}-\textit{b})\vdots\textit{m}$.</p>
+
+    <p><b>2)</b><b>$\Rightarrow$</b><b>3).</b> Пусть $(\textit{a}-\textit{b}\,)\vdots\textit{m} \Rightarrow (\textit{a}-\textit{b}=\textit{mq}, \textit{q} \in \textbf{Z}) \Rightarrow \textit{a}=\textit{b}+\textit{mq}$.</p>
+
+    <p><b>3)</b><b>$\Rightarrow$</b><b>1).</b> Пусть $\textit{a} = \textit{b}+\textit{mq}$, причем $\textit{a} = \textit{mq}_{1}+\textit{r}_{1}$, $\textit{b}=\textit{mq}_{2}+\textit{r}_{2}$, где $0\; \leq \;\textit{r}_{1}, \textit{r}_{2}\lt\textit{m}$, $\textit{q}, \textit{q}_{1}, \textit{q}_{2} \in \textbf{Z}$. Тогда $\textit{mq}_{1}+\textit{r}_{1}=\textit{mq}_{w}+\textit{r}_{2}+\textit{mq} \Rightarrow \textit{r}_{1}-\textit{r}_{2}=\textit{m}(\textit{q}_{2}+\textit{q}-\textit{q}_{1}\,) \Rightarrow \textit{m}\,|(\textit{r}_{1}-\textit{r}_{2}\,) \Rightarrow \textit{r}_{1} = \textit{r}_{2}. \triangleleft$</p>
+
+    <p><b>Определение</b><b>1.6.1.</b> Целые числа $\textit{a}$ и $\textit{b}$ называются <i>сравнимыми по модулю </i>$\textit{m}$, если они удовлетворяют условиям <a href="#teor161">теоремы 1.6.1</a>. Этот факт обозначают формулой $\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,)$ или $\textit{a}\equiv\textit{b}\;(\textit{m}\,)$. Данное соотношение между целыми числами называют <i>сравнением по модулю</i> $\textit{m}$.</p>
+
+    <p><b>Пример 1.6.1.</b> $-6\equiv9\equiv14\equiv24\equiv39\equiv4\;(\textrm{mod}\;5\,).\bullet$</p>
+
+    <p><center><span style="font-size: 14pt; font-weight: bold;" id="ssr">Свойства сравнений</span></center></p>
+
+    <p><b>1.</b>&nbsp;Для всякого целого $\textit{c}$ справедливо $\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,) \Leftrightarrow \textit{a}\pm\textit{c}\equiv\textit{b}\pm\textit{c}\;(\textrm{mod}\;\textit{m}\,)$, т. е. к обеим частям сравнения можно прибавить или вычесть из обеих частей одно и то же целое число.</p>
+
+    <p>$\triangleright\; (\textit{a}=\textit{b}+\textit{mq}, \textit{q}\in\textbf{Z}) \Leftrightarrow \textit{a}\pm\textit{c}\equiv\textit{b}\pm\textit{c}\;(\textrm{mod}\;\textit{m}\,) \triangleleft$</p>
+
+    <p><b>2.</b>&nbsp;Сравнения можно почленно складывать и вычитать:</p>
+
+    <p style="text-align: center;">$\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,) \;\&\; \textit{c}\equiv\textit{d}\;(\textrm{mod}\;\textit{m}\,) \Rightarrow \textit{a}\pm\textit{c}\equiv\textit{b}\pm\textit{d}\;(\textrm{mod}\;\textit{m}\,)$.</p>
+
+    <p>$\triangleright\; (\textit{a}=\textit{b}+\textit{mq}_{1}\;\&\;\textit{c}=\textit{d}+\textit{mq}_{2}\,) \Rightarrow \Big(\textit{a}\pm\textit{c} = \textit{b}\pm\textit{d} + \textit{m}(\textit{q}_{1}\pm\textit{q}_{2}), \textit{q}_{1} \pm \textit{q}_{2} \in \textbf{Z}\Big) \Leftrightarrow \textit{a}\pm\textit{c}\equiv\textit{b}\pm\textit{d}\;(\textrm{mod}\;\textit{m}\,). \triangleleft$</p>
+
+    <p><b>3.</b>&nbsp;Сравнения можно почленно перемножать:</p>
+
+    <p style="text-align: center;">$\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,)\;\&\;\textit{c}\equiv\textit{d}\;(\textrm{mod}\;\textit{m}\,) \Rightarrow \textit{ac}\equiv\textit{bd}\;(\textrm{mod}\;\textit{m}\,).$</p>
+
+    <p>$\triangleright\; (\textit{a}=\textit{b}+\textit{mq}_{1}\;\&\;\textit{c}=\textit{d}+\textit{mq}_{2}, \textit{q}_{1}, \textit{q}_{2} \in \textbf{Z}) \Rightarrow (\textit{ac} = (\textit{b}+\textit{mq}_{1})(\textit{d}+\textit{mq}_{2})=$<br>$=\textit{bd}+\textit{m}(\textit{q}_{1}\textit{d}+\textit{bq}_{2}+\textit{mq}_{1}\textit{q}_{2}\,)=\textit{bd}+\textit{mt}, \textit{t}\in\textbf{Z}) \Leftrightarrow \textit{ac}\equiv\textit{bd}\;(\textrm{mod}\;\textit{m}\,). \triangleleft$</p>
+
+    <p><b>4.</b>&nbsp;Следствие из свойства 3 сравнений. Сравнения можно почленно возводить в любую натуральную степень: $\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,) \Rightarrow \textit{a}^{n}\equiv\textit{b}^{n}\;(\textrm{mod}\;\textit{m}\,), \forall\textit{n}\in\textbf{N}.$</p>
+
+    <p id="s5sr"><b>5.</b>&nbsp;Если в сравнении числа $\textit{a, b, m}$ имеют общий делитель $\textit{d}$, то на него обе части сравнения и модуль можно сократить: $\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,) \Leftrightarrow \textit{a/d}\equiv\textit{b/d}\;(\textrm{mod}\;\textit{m/d}\,).$</p>
+
+    <p>$\triangleright\; (\textit{a}=\textit{b}+\textit{mq}, \textit{q}\in\textbf{Z}\,) \Leftrightarrow \textit{a/d}=\textit{b/d}+(\textit{m/d}\,)\textit{q} \Leftrightarrow \textit{a/d}\equiv\textit{b/d}\;(\textrm{mod}\;\textit{m/d}\,). \triangleleft$</p>
+
+    <p id="s6sr"><b>6.</b>&nbsp;Обе части сравнения можно сократить на их общий множитель, взаимно простой с модулем: если $\textit{a}=\textit{a}_{1}\textit{d}, \textit{b}=\textit{b}_{1}\textit{d}, (\textit{d, m}\,) = 1$, то $\textit{q}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,) \Leftrightarrow \textit{a}_{1}\equiv\textit{b}_{1}\;(\textrm{mod}\;\textit{m}\,).$</p>
+
+    <p>$\triangleright\; (\textit{a}_{1}\textit{d}=\textit{b}_{1}\textit{d}+\textit{mq}, \textit{q}\in\textbf{Z}) \Rightarrow \textit{d}\;|\textit{mq}$&nbsp;<font color="green">по свойству 6 делимости целых чисел</font>, но т. к. $(\textit{d, m}\,) = 1$, то $\textit{d}\;|\textit{q}$ <font color="green">по свойству 2 взаимно простых чисел</font>, значит, $\textit{q}=\textit{q}_{1}\textit{d}, \textit{q}_{1}\in\textbf{Z}$. Таким образом, $\textit{a}\equiv\textit{b}\;(\textrm{mod}\;\textit{m}\,) \Leftrightarrow \textit{a}_{1}\textit{d}=\textit{b}_{1}\textit{d}+\textit{mq}_{1}\textit{d} \Leftrightarrow \textit{a}_{1}=\textit{b}_{1}+\textit{mq}_{1} \Leftrightarrow \textit{a}_{1}\equiv\textit{b}_{1}\;(\textrm{mod}\;\textit{m}\,). \triangleleft$</p>
+
+    <p>Легко проверяются следующие три свойства.</p>
+
+    <p><b>7.</b>&nbsp;Рефлексивность: $\textit{a} \equiv \textit{a}\;(\textrm{mod}\;\textit{m}\,)$ для любого целого числа $a$ и всякого натурального числа&nbsp;$m$.</p>
+
+    <p>$\triangleright$ Действительно, $a-a=0$ и $m\,|\,0$ <font color="green">по свойству 1 делимости целых чисел</font>. $\triangleleft$</p>
+
+    <p><b>8.</b>&nbsp;Симметричность: $a \equiv b\;(\textrm{mod}\;m\,) \Leftrightarrow b \equiv a\;(\textrm{mod}\;m\,)$.</p>
+
+    <p>$\triangleright$ $m\,|\,(a-b\,) \Rightarrow m\,|\,(b-a\,)$ <font color="green">по свойству 7 делимости целых чисел</font>. $\triangleleft$</p>
+
+    <p><b>9.</b>&nbsp;Транзитивность: $a \equiv b\;(\textrm{mod}\;m\,) \;\&\; b \equiv c\;(\textrm{mod}\;m\,) \Rightarrow a \equiv c\;(\textrm{mod}\;m\,)$.</p>
+
+    <p>$\triangleright$ $a-c=(a-b\,)+(b-c\,) \;\&\; m\,|\,(a-b\,) \;\&\; m\,|\,(b-c\,) \Rightarrow m\,|\,(a-c\,)$ по свойствам 5 и 6 делимости целых чисел. $\triangleleft$</p>
+
+    <p>Свойства 7–9 означают, что отношение сравнимости на множестве целых чисел $\textbf{Z}$ есть отношение эквивалентности. Это означает, что $\textbf{Z}$ разбивается на непересекающиеся классы эквивалентности попарно сравнимых друг с другом целых чисел по модулю фиксированного $m \in \textbf{N}$.</p>
+
+    <p>Каждый класс сравнимых друг с другом целых чисел характеризуется общими свойствами представителей этого класса. Например, все они имеют один и тот же остаток от деления на модуль; все они в силу теорем <a href="#teor161">1.6.1</a> и <font color="green">1.2.1</font> имеют одинаковый наибольший общий делитель с этим модулем:</p>
+
+    <p style="text-align: center;">$a=mq_{\textrm{1}}+r, b=mq_{\textrm{2}}+r,$ где $q_{\textrm{1}}, q_{\textrm{2}} \in \textbf{Z}, 0 \leq r \lt m$;</p>
+
+    <p style="text-align: center;">$(a=mq+b$, где $q \in \textbf{Z}\,) \Rightarrow (a,m\,)=(m,b\,)$.</p>
+
+    <p>&nbsp;</p>
+
+	<center><span style="font-size: 16pt; font-weight: bold; padding-top: 20px; padding-bottom: 10px;" id="par17">&#xa7; 1.7. Множество классов вычетов. Функция Эйлера</span></center>
+    <br>
+	
+	<p >
+		При делении целых чисел на натуральное число  $m$  существует  $m$  различных остатков: $0,  1,  2, ...,  m - 1$. Соответственно этим остаткам  $\textbf{Z}$  разбивается на  $m$  непересекающихся классов эквивалентности сравнимых друг с другом чисел, имеющих, как отмечено в §1.6, один и тот же остаток от деления на $m$. В соответствии со значениями остатков от деления целых чисел на  $m$  будем обозначать эти классы $\overline{0}, \overline{1}, ..., \overline{m-1}$. Английское слово residue&nbsp;– «остаток»&nbsp;–  переводится на русский язык еще и как «вычет». 
+	</p>
+	<p>
+		<strong>Определение 1.7.1.</strong>   Классом  вычетов   по модулю  $m$   с представителем   $i \in \textbf{Z}$  называется множество $\overline{i} = \{mq+i \,|\, q \in \textbf{Z} \}$, состоящее из всех целых чисел, сравнимых друг с другом по модулю  $m$. Любой представитель класса вычетов однозначно определяет свой класс, т. е. для каждого $mq+i$ класс вычетов $\overline{mq+i}=\overline{i}$. Чаще всего представители $i$ классов вычетов  по модулю $m$ выбираются из диапазона $0 \leq i \leq m-1$.  М ножеством классов вычетов по модулю $m$ называется множество $\textbf{Z}/m\textbf{Z} = \Big\{\overline{0}, \overline{1}, ..., \overline{m-1}\Big\}$, состоящее из $m$ всех различных классов вычетов по данному модулю. 
+	</p>
+	<p>
+		Заметим, что для любых классов $\overline{k}, \overline{l} \in \textbf{Z}/m\textbf{Z}$ и для произвольных  $k_1, k_2 \in \overline{k},  l_1, l_2 \in \overline{l}$ суммы  $k_1+l_1$  и  $k_2+l_2$  принадлежат одному классу из  $\textbf{Z}/m\textbf{Z}$, т.к. эти суммы сравнимы друг с другом по модулю $m$ согласно <font color="green">свойству 2 сравнений из  §1.6</font>. Аналогично, согласно <font color="green">свойству 3 сравнений из §1.6</font> произведения  $k_1 l_1$  и  $k_2 l_2$ находятся в одном классе из $\textbf{Z}/m\textbf{Z}$. 
+	</p>
+	<p style="text-align: center;">
+		$k_1 \equiv k_2\;(\textrm{mod}\;m\,) \;\&\; l_1 \equiv l_2\;(\textrm{mod}\;m\,) \Rightarrow k_1 + l_1 \equiv k_2 + l_2\;(\textrm{mod}\;m\,) \;\&\; k_1 l_1 \equiv k_2 l_2\;(\textrm{mod}\;m\,)$. 
+	</p>
+	<p>
+		Определим операции сложения и умножения на $\textbf{Z}/m\textbf{Z}$. Полагаем, что сумма $\overline{k}+\overline{l}=\overline{z}$, где $\overline{z}$&nbsp;– такой единственный класс из $\textbf{Z}/m\textbf{Z}$, в который попадают все суммы $k+l$ для $k \in \overline{k}, l \in \overline{l}$, а произведение $\overline{k}\overline{l} = \overline{s}$&nbsp;– тот единственный класс из $\textbf{Z}/m\textbf{Z}$, в который попадают все произведения $kl$  для  $k \in \overline{k}, l \in \overline{l}$: 
+	</p>
+	<p style="text-align: center;">
+		  $\overline{k} + \overline{l} = \overline{k+l} = \Big\{k+l \,|\, k \in \overline{k}, l \in \overline{l}\Big\}, \overline{k}\overline{l} = \overline{kl} = \Big\{kl \,|\, k \in \overline{k}, l \in \overline{l}\Big\}.$ 
+	</p>
+	<p>
+		Поскольку сложение и умножение в $\textbf{Z}/m\textbf{Z}$  однозначно определяются сложением и умножением представителей классов вычетов, то свойства 1–5 операций сложения и умножения в $\textbf{Z}$ из §1.1 справедливы и в $\textbf{Z}/m\textbf{Z}$: 
+	</p>
+	<p>
+		1) $\overline{k} + \Big(\overline{l} + \overline{r}\,\Big) = \Big(\overline{k} + \overline{l}\,\Big) + \overline{r}, \overline{k} \Big(\overline{l} \overline{r}\,\Big) = \Big(\overline{k} \overline{l}\,\Big) \overline{r}$&nbsp;– ассоциативность; 
+	</p>
+	<p>
+		2) $\overline{k} + \overline{l} = \overline{l} + \overline{k}, \overline{k} \overline{l} = \overline{l} \overline{k}$&nbsp;– коммутативность; 
+	</p>
+	<p>
+		3)  существуют  единственные нейтральные  элементы относительно сложения и умножения: $\overline{k} + \overline{0} = \overline{k}, \overline{k} \cdot \overline{1} = \overline{k}, \forall\; \overline{k} \in \textbf{Z}/m\textbf{Z}$. 
+	</p>
+	<p>
+		Пусть $\overline{n}$ и $\overline{t}$&nbsp;– нейтральные элементы относительно сложения и умножения соответственно. Тогда 
+	</p>
+	<p style="text-align: center;">
+		$\overline{n}+\overline{0} = \overline{n} \;\&\; \overline{n}+\overline{0}=\overline{0} \Rightarrow \overline{n}=\overline{0};\;\; \overline{t} \cdot \overline{1} = \overline{t} \;\&\; \overline{t} \cdot \overline{1}=\overline{1} \Rightarrow \overline{t}=\overline{1}.$ 
+	</p>
+	<p>
+		При  $m = 1$ класс вычетов $\overline{0}$&nbsp;– нейтральный элемент относительно сложения и умножения, поскольку $\overline{0}=\overline{1}$
+	</p>
+	<p>
+		4) для всякого $\overline{k} \in \textbf{Z}/m\textbf{Z}$ существует единственный противоположный класс $\overline{l}=-\overline{k}$, такой, что $\overline{k}+\overline{l}=\overline{0}$, при этом $\overline{l}=\overline{m-k}.$
+	</p>
+	<p>
+		Пусть $\overline{k}+\overline{l_1} = \overline{0}, \overline{k}+\overline{l_2} = \overline{0}$. Тогда 
+	</p>
+	<p style="text-align: center;">
+		$\overline{l_1}+\overline{k}+\overline{l_2}=\overline{l_1}+\Big(\overline{k}+\overline{l_2}\,\Big)=\overline{l_1}=\Big(\overline{l_1}+\overline{k}\,\Big)+\overline{l_2}=\overline{l_2} \Rightarrow \overline{l_1}=\overline{l_2}$;
+	</p>
+	<p>
+		5) $\Big(\overline{k}+\overline{l}\,\Big)\overline{r} = \overline{k}\overline{r}+\overline{l}\overline{r}$&nbsp;– дистрибутивность умножения относительно сложения. 
+	</p>
+	<p>
+		Свойства 1, 2, 5 выполняются для всех $\overline{k}, \overline{l}, \overline{r} \in \textbf{Z}/m\textbf{Z}$. 
+	</p>
+	<p>
+		<strong>Определение  1.7.2.</strong>  Элемент $\overline{k} \in \textbf{Z}/m\textbf{Z}$  называется  обратимым, если найдется такой класс $\overline{l} \in \textbf{Z}/m\textbf{Z}$, что $\overline{k}\overline{l}=\overline{1}$. Тогда $\overline{l}=\overline{k}^-1$ называют <i>классом вычетов, обратным</i> $\overline{k}$.
+	</p>
+	<p>
+		Так как  $\overline{1}=\overline{0}$ при $m = 1$, то $\textbf{Z}/\textbf{Z} = \{\overline{0}\}$  и   состоит из одного обратимого класса вычетов. 
+	</p>
+	<p>
+		Из ассоциативности умножения вытекает, что если $\overline{k}$&nbsp;– обратимый класс, то для него обратный класс определен однозначно. 
+	</p>
+	<p>
+		Пусть $\overline{k}\overline{l_1}=\overline{1}, \overline{k}\overline{l_2}=\overline{1}$. Тогда 
+	</p>
+	<p style="text-align: center;">
+		$\overline{l_1}\overline{k}\overline{l_2}=\overline{l_1}\Big(\overline{k}\overline{l_2}\,\Big)=\overline{l_1}=\Big(\overline{l_1}\overline{k}\,\Big)\overline{l_2}=\overline{l_2} \Rightarrow \overline{l_1}=\overline{l_2}$.
+	</p>
+	<p id="lemm171">
+		<strong>Лемма  1.7.1.</strong>  Пусть $\overline{k} \in \textbf{Z}/m\textbf{Z}$&nbsp;– такой класс, что $(k,  m\,)  =  1$. Тогда: 
+	</p>
+	<p>
+		1) $\overline{k}\overline{l}\neq\overline{0}$ для каждого $\overline{l}\neq\overline{0}$
+	</p>
+	<p>
+		2) $\overline{k}\overline{l_1}\neq\overline{k}\overline{l_2}$, если $\overline{l_1}\neq\overline{l_2}$
+	</p>
+	<p>
+		3) $\overline{k}$&nbsp;– обратимый класс в $\textbf{Z}/m\textbf{Z}$. 
+	</p>
+	<p>
+		$\triangleright$ 1)  $(k,  m\,)  =  1$. Если бы $\exists\; l, 0 \lt l \lt m$, такое, что $\overline{k}\overline{l}=\overline{0}$, то $m \,|\, kl$, но <font color="green">по свойству 2 взаимной простоты</font> $m \,|\, l$, что невозможно;
+	</p>
+	<p>
+		2) если бы $\overline{k}\overline{l_1}=\overline{k}\overline{l_2}$ при $\overline{l_1} \neq \overline{l_2}$, то $\overline{k}(\overline{l_1}-\overline{l_2}\,)=\overline{0}$, т.е. $m \,|\, k (l_1-l_2\,)$, в силу <font color="green">свойства 2 взаимной простоты</font> $m \,|\, (l_1-l_2\,)$, что невозможно, поскольку $0 \lt |l_1-l_2| \lt m$  
+	</p>
+	<p>
+		3) по <font color="green">критерию взаимной простоты (теорема 1.4.1)</font> $\exists\; u, v \in \textbf{Z}$, такие, что $ku + mv  =  1 \Leftrightarrow ku =  1 - mv \Leftrightarrow \overline{k}\overline{u}=\overline{1}$ согласно <a href="#teor161">условию 3 теоремы 1.6.1</a>, т.е.  $\overline{k}$&nbsp;– обратимый класс, $\overline{u}$&nbsp;– обратный ему класс. $\triangleleft$
+	</p>
+	<p id="lemm172">
+		<strong>Лемма  1.7.2.</strong>  Пусть $\overline{k} \in \textbf{Z}/m\textbf{Z}$&nbsp;– такой класс, что $(k, m\,) = d \gt 1$. Тогда: 
+	</p>
+	<p>
+		1)  существует $\overline{l}\neq\overline{0}$, такой, что $\overline{k}\overline{l}=\overline{0}$;
+	</p>
+	<p>
+		2)  существуют $\overline{l_1}\neq\overline{l_2}$, такие, что $\overline{k}\overline{l_1}=\overline{k}\overline{l_2}$; 
+	</p>
+	<p>
+		3)  $\overline{k}\overline{l}\neq\overline{1}$ для всех $\overline{l}\neq\overline{0}$, т.е. класс $\overline{k}$ необратим в $\textbf{Z}/m\textbf{Z}$. 
+	</p>
+	<p>
+		$\triangleright$ 1)  так как $(k, m\,)  =  d \gt 1$, то $m  =  dl$, где $1 \leq l \lt m, k  =  dk_1, (k_1, l\,)  =  1$ <font color="green">по свойству 1 взаимно простых чисел</font>. Тогда  $kl = (dk_1\,)l = k_1\,(dl\,) = k_1m$, что означает $\overline{k}\overline{l}=\overline{0}$ при $\overline{l}\neq\overline{0}$; 
+	</p>
+	<p>
+		2) существует $\overline{l}\neq\overline{0}$ с условием $\overline{k}\overline{l}=\overline{0}$ согласно утверждению 1   данной леммы. Рассмотрим $\overline{l_1} \in \textbf{Z}/m\textbf{Z}$, построим класс $\overline{l_2}=\overline{l_1+l}=\overline{l_1}+\overline{l} \in \textbf{Z}/m\textbf{Z}, \overline{l_1}\neq\overline{l_2}$. Тогда $\overline{k}\overline{l_2}=\overline{k}(\overline{l_1}+\overline{l}\,)=\overline{k}\overline{l_1}+\overline{0}=\overline{k}\overline{l_1}$; 
+	</p>
+	<p>
+		3) если бы $\overline{k}$ был обратим  в $\textbf{Z}/m\textbf{Z}$, то существовал бы $\overline{u}\in\textbf{Z}/m\textbf{Z}$ со свойством $\overline{k}\overline{u}=\overline{1}$, т.е. согласно <a href="#teor161">условию 3 теоремы 1.6.1</a> $(ku  =  1 + mq, q \in \textbf{Z}\,) \Leftrightarrow ku-mq = 1 \Leftrightarrow (k, m)  =  1$ (по критерию взаимной простоты), что не так. $\triangleleft$
+	</p>
+	<p>
+		Из лемм 1.7.1 и 1.7.2 вытекает следующая теорема. 
+	</p>
+	<p id="teor171" class="ListContinue2" style="margin-left:0pt; margin-bottom:0pt; text-indent:28.35pt; text-align:justify">
+		<strong>Теорема  1.7.1.</strong>  Класс  $\overline{k} \in \textbf{Z}/m\textbf{Z}$  обратим тогда и только тогда, когда $(k, m\,) = 1$. Произведение обратимых классов есть обратимый класс. 
+	</p>
+	<p>
+		$\triangleright$ Первое утверждение следует из утверждений 3 лемм 1.7.1 и 1.7.2. 
+	</p>
+	<p>
+		Пусть  $n \geq 2$ и $\overline{k_1}, ..., \overline{k_{\textrm{n}}}$&nbsp;– обратимые классы, $\overline{k_1}^{-1}, ..., \overline{k_{\textrm{n}}}^{-1}$&nbsp;– соответственно обратные им классы. Тогда, поскольку операция умножения в $\textbf{Z}/m\textbf{Z}$ коммутативна, 
+	</p>
+	<p style="text-align: center;">
+		$\left(\overline{k_{1} }\cdot ...\cdot \, \overline{k_{n} }\right)\, \left(\overline{k_{1} }^{-1} \cdot ...\cdot \, \overline{k_{n} }^{-1} \right)\, \, \, =\left(\overline{k_{1} }\, \overline{k_{1} }^{-1} \right)\, \, \cdot ...\cdot \left(\overline{k_{n} }\, \, \overline{k_{n} }^{-1} \right)\, \, \, =\overline{1}\cdot ...\cdot \overline{1}=\overline{1}$. 
+	</p>
+	<p style="text-indent: 0;">
+		Следовательно,  $\overline{k_{1} \cdot ...\cdot k_{n} }^{-1} =\left(\overline{k_{1} }\cdot ...\cdot \overline{k_{n} }\right)^{-1} =\overline{k_{1} }^{-1} \cdot ...\cdot \overline{k_{n} }^{-1} $. $\triangleleft $
+	</p>
+	<p>
+		<strong>Следствие.</strong>  Если  $p$&nbsp;– простое число, то в $\textbf{Z}/p\textbf{Z}$ каждый ненулевой класс обратим. 
+	</p>
+	<p>
+		Поскольку  $\textbf{Z}/m\textbf{Z}$&nbsp;– конечное множество, то сложение и умножение на нем можно задавать поэлементно в виде таблиц. На пересечении  $i$-й  строки и  $j$-го столбца таблицы записывается  $x_{i} \circ x_{j} $ (где $\circ$&nbsp;– знак операции). Так задавать алгебраические операции на конечном множестве впервые предложил известный английский математик  XIX в. Артур Кэли  (1821–1895),   поэтому такие таблицы называются  таблицами Кэли . 
+	</p>
+	<p>
+		<strong>Пример  1.7.1.</strong>  Построим таблицы Кэли сложения и умножения в  $\textbf{Z}/3\textbf{Z}$  и в $\textbf{Z}/4\textbf{Z}$&nbsp;– рис. 1.7.1 и 1.7.2 соответственно&nbsp;– и найдем обратимые элементы. 
+	</p>
+	<p style="text-align: center;">
+		$\textbf{Z}/3\textbf{Z} = \{\overline{0}, \overline{1}, \overline{2}\}=\{3\textbf{Z},~3\textbf{Z}~+~1,~3\textbf{Z}~+~2\}$;
+	</p>
+	<p style="text-align: center;">
+		$\textbf{Z}/4\textbf{Z} = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}\}=\{4\textbf{Z},~4\textbf{Z}~+~1,~4\textbf{Z}~+~2,~4\textbf{Z}~+~3\}$.
+		
+	</p>
+	
+	
+	<p>
+		
+	</p>
+	
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+	<p>
+	<span style="margin-left: 15%;"><img src="../../images/lk18/1.7/1.7.110.jpg" width="514" height="158" alt="" style="margin-top:-0.35pt; margin-left:64.5pt; position:absolute; z-index:0" /></span>
+	</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+    <p>
+    Из таблицы умножения на рис. 1.7.1, б видно, что $\overline{1}$ и $\overline{2}$ обратны  сами себе. 
+    </p>
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+	<p>
+	<span style="margin-left: 15%;"><img src="../../images/lk18/1.7/1.7.113.jpg" width="602" height="191" alt="" style="margin-top:0pt; margin-left:36pt; position:absolute; z-index:1" /></span>
+	</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+	<p>&#xa0;</p>
+    <p>&#xa0;</p>
+    <p>&#xa0;</p>
+	<p>
+		Из таблицы умножения на рис. 1.7.2, б видно, что $\overline{1}$ и $\overline{3}$ обратны  сами себе, а $\overline{2}$ необратим.&nbsp;$\bullet$
+	</p>
+	<p>
+		<strong>Определение  1.7.3.</strong>   Функция Эйлера  (или  тотиент-функция)   &#966;   ставит в соответствие каждому натуральному числу $m \gt 1$ количество   натуральных   чисел, меньших  $m$  и взаимно простых с  $m$.
+	</p>
+	<p>
+		Эта функция обладает следующими свойствами. 
+	</p>
+	<p id="teor172">
+		<strong>Теорема  1.7.2 (о вычислении значений функции Эйлера).</strong>
+	</p>
+	<p>
+		1.  &#966;$(p\,) =  p-1$ для каждого простого числа $p$. 
+	</p>
+	<p>
+		2.  &#966;$(p^s\,)  =  p^{\textrm{s}}-p^{\textrm{s}-1}, \forall\; s \in \textbf{N}$. 
+	</p>
+	<p>
+		3.  Если $(m, n) = 1$, то  &#966;$(mn\,) =$ &#966;$(m\,)$&#966;$(n\,)$. 
+	</p>
+	<p>
+		4.  Если  $n=p_{1}^{s_{1} } \cdot ...\cdot p_{t}^{s_{t} } $&nbsp;– каноническое разложение числа $n$, то 
+	</p>
+	<p style="text-align: center;">
+		&#966;$(n)=\left(p_{1}^{s_{1} } -p_{1}^{s_{1} -1} \right)\cdot ...\cdot \left(p_{t}^{s_{t} } -p_{t}^{s_{t} -1} \right)=n\, (1-1/p_{1})\cdot ...\cdot (1-1/p_{t})$.
+	</p>
+	<p>
+		$\triangleright$ 1.  Количество чисел множества $\{ 1, ...,  p-1\}$, взаимно простых с $p$, равно $p-1$, т. к. любое число этого множества взаимно просто с $p$. 
+	</p>
+	<p>
+		2.  Рассмотрим множество 
+	</p>
+	<p style="text-align: center;">
+		$\{1,\dots,~\textit{p},~\textit{p}~+~1,\dots,~2\textit{p},\dots,~p^{s-1}, \dots, ~p^{s}\}$.
+	</p>
+	<p style="text-indent: 0;">
+		Разобьем это множество на подмножества $\{1, ...,  p\}$,  $\{p+1, ..., 2p\}$, ..., $\{p^s-p+1, ...,  p^s\}$. В каждом подмножестве по $p$ элементов, причем число элементов, взаимно простых с $p$, равно $p-1$. Всего таких подмножеств $p^{s-1}$. Поэтому  &#966;$(ps) = (p-1) p^{s-1} = p^s-p^{s-1}$. 
+	</p>
+	<p>
+		3.  Рассмотрим множество  $\Big\{1, 2, ...,  n,  n + 1, ..., 2n, ..., (m-1\,)n, ...,  mn\Big\}$.  Разобьем его на подмножества $\{1, 2, ...,  n\}, \{n + 1, ..., 2n\}, ...,  \Big\{(m-2\,)n + 1, ..., (m-1\,)n\}, \Big\{(m-1\,)n + 1, ...$ $...,(m-1\,)n + n  =  mn \Big\}$. Числа, взаимно простые с $mn$, взаимно просты с $m$ и $n$ одновременно (свойство 3 взаимно простых чисел). В первом подмножестве количество чисел, взаимно простых с $n$, равно  &#966;$(n)$ по определению. Во всех подмножествах числа имеют вид $b=kn+r$, где $1 \leq r \leq n$, тогда $(b, n) = (n, r)$ (<font color="green">теoрема 1.2.1</font>), т.е. количество чисел, взаимно простых с $n$, тоже равно &#966;$(n)$. Количество элементов, взаимно простых с $n$, в исходном множестве равно  $m$ &#966;$(n)$. Пусть $d_1, ..., d_{\phi(n)}$&nbsp;– числа первого подмножества, взаимно простые с $n$. Тогда $kn+d_i \not\equiv ln+d_i (\textrm{mod}\;m\,)$, где $0 \leq k, l \leq m-1,  k \neq l$, т. к. $(k-l\,)n \not \equiv 0 (\textrm{mod}\;m\,)$,  ведь $(n, m) = 1$ и $0 \lt |k-l| \lt m$. Таким образом, $\Big\{\overline{kn+d_i} \big | 0 \leq k \leq m-1 \Big\} = \textbf{Z}/m\textbf{Z}$ для  фиксированного $d_i$, где $1 \leq i \leq$ &#966;$(n)$. Все множество чисел, взаимно простых с $n$, разобьем на &#966;$(n)$ подмножеств по $m$ элементов, у которых остатки от деления на $m$ все  различны. В каждом таком подмножестве &#966;$(m)$ элементов, взаимно простых с $m$, поэтому всего &#966;$(m)$&#966;$(n)$ элементов, взаимно простых с $n$  и $m$ одновременно. Значит, &#966;$(mn) = $ &#966;$(m)$&#966;$(n)$. 
+	</p>
+	<p>
+		4.  Пусть $n = p_1^{s_1} \cdot ... \cdot p_t^{s_t}$&nbsp;– каноническое разложение числа $n$. Тогда 
+	</p>
+	<p style="text-align: center;">
+		&#966;$(n)=$ &#966;$\left(p_{1}^{s_{1} } \cdot ...\cdot p_{t}^{s_{t} } \right)=$ &#966;$\left(p_{1}^{s_{1} } \right)\cdot ...\cdot$ &#966;$\left(p_{t}^{s_{t} } \right)=\left(p_{1}^{s_{1} } -p_{1}^{s_{1} -1} \right)\cdot ...\cdot \left(p_{t}^{s_{t} } -p_{t}^{s_{t} -1} \right)=$
+	</p>
+	<p style="text-align: center;">
+		$=p_{1}^{s_{1} } \cdot ...\cdot p_{t}^{s_{t} } \, (1-1/p_{1})\cdot ...\cdot (1-1/p_{t})=n\, (1-1/p_{1})\cdot ...\cdot (1-1/p_{t}). \triangleleft$
+	</p>
+	<p>
+		<strong>Пример  1.7.2.</strong> $n = 72 = 2^3 \cdot 3^2$.
+	</p>
+	<p>
+		Следовательно,  &#966;$(72) = (2^3 - 2^2)(3^2 - 3) = 72(1-1/2)(1-1/3) = 24. \bullet$
+	</p>
+	<p>
+		Из <a href="#teor171">теоремы 1.7.1</a> следует, что при $m \in \textbf{N}_{\gt 1}$  в $\textbf{Z}/m\textbf{Z}$ имеется в точности  &#966;$(m)$ обратимых классов вычетов. 
+	</p>
+	<p>
+		<strong>Пример  1.7.3.</strong>   &#966;$(18) =$ &#966;$(2 \cdot 3^2) = 6$,  значит, в $\textbf{Z}/18\textbf{Z}$ имеется в точности $6$ обратимых элементов. Ими являются классы вычетов $\overline{1},\, \, \overline{5},\, \, \overline{7},\, \, \overline{11},\, \, \overline{13},\, \, \overline{17}. \bullet$
+	</p>
+	<p id="teor173">
+		<strong>Теорема  1.7.3 (Л.  Эйлер).</strong>  Для любых $m \in \textbf{N}_{\gt 1}$  и $a \in \textbf{Z}$ справедливо утверждение: $(a, m) = 1$ тогда и только тогда, когда $a$<sup>&#966;</sup>$^{(m)} \equiv 1 (\textrm{mod}\;m\,)$. 
+	</p>
+	<p>
+		$\triangleright$ Необходимость. Если $(a, m) = 1$, то $\overline{a}$&nbsp;– обратимый элемент $\textbf{Z}/m\textbf{Z}$ по <a href="#teor171">теореме 1.7.1</a>. Пусть $\overline{k_{1} },...,\, \, \overline{k}$<span class="overbit"><sub>&#966;(<small><i>m</i></small>)</sub></span>&nbsp;– все обратимые элементы в $\textbf{Z}/m\textbf{Z}$. Рассмотрим 
+	</p>
+	<p style="text-align: center;">
+		$\left(\overline{a}\, \overline{k_{1} }\right)\cdot ...\cdot \Big(\overline{a}\, \overline{k}$<span class="overbit"><sub>&#966;(<small><i>m</i></small>)</sub></span>$\Big)=\overline{a}$<sup>&#966;</sup>$^{(m)} \, \overline{k_{1} }\cdot ...\cdot \overline{k}$<span class="overbit"><sub>&#966;(<small><i>m</i></small>)</sub></span>$=\overline{k_{1} }\cdot ...\cdot \overline{k}$<span class="overbit"><sub>&#966;(<small><i>m</i></small>)</sub></span>.
+	</p>
+	<p style="text-indent: 0;">
+		Действительно, $\overline{a}\, \overline{k_{i} }\ne \overline{a}\, \overline{k_{j} }$ при $i \neq j$ по <a href="#lemm171">лемме 1.7.1</a>, тогда $\overline{a}\, \overline{k_{i} }$, где $1\le i\le$ &#966;$(m)$,&nbsp;– все  различные обратимые  классы по <a href="#teor171">теореме 1.7.1</a>.  Следовательно, 
+	</p>
+	<p style="text-align: center;">
+		$a$<sup>&#966;</sup>$^{(m)} \, k_{1} \cdot ...\cdot k$<sub>&#966;</sub>$_{(m)} \equiv k_{1} \cdot ...\cdot k$<sub>&#966;</sub>$_{(m)} \, \, (mod\, \, m).$
+	</p>
+	<p>
+		Так как $(k_{1},\, \, m)=...=(k$<sub>&#966;</sub>$_{(m)},\, \, m)=1$, то по <a href="#s6sr">свойству 6 сравнений</a> $a$<sup>&#966;</sup>$^{(m)} \equiv 1 (\textrm{mod}\;m\,)$.
+	</p>
+	<p>
+		&#934; Достаточность. &#966;$(m) \geq 1$, значит,  $a$<sup>&#966;</sup>$^{(m)} \equiv 1 (\textrm{mod}\;m\,) \Rightarrow \overline{a}\, \, \overline{a}$<sup>&#966;</sup>$^{(m)-1} =\overline{1}\, \, \Rightarrow \, \, \overline{a}$ – обратимый  элемент в $\textbf{Z}/\textit{m}\textbf{Z} \Rightarrow (\textit{a},~\textit{m})~=~1$ (по <a href="#teor171">теореме 1.7.1</a>). $\triangleleft$
+	</p>
+	<p>
+		Следствие.  В  $\textbf{Z}/m\textbf{Z}$ при $m \in \textbf{N}_{\gt 1}$ всякий обратимый элемент $\overline{k}$ обладает свойствами: 
+	</p>
+	<p>
+		1) $\overline{k}$<sup>&#966;</sup>$^{(m)} = \overline{1}$; 
+	</p>
+	<p>
+		2)  обратным  классу $\overline{k}$ является класс вычетов <img src="../../images/lk18/x2.png"><!--\overline{k}<span class="overbit"><sup>&#966;(<small><i>m</i>-1</small>)</sup></span>-->.
+	</p>
+	<p id="teor174">
+		<strong>Теорема  1.7.4 (малая теорема Ферма).</strong>  Пусть $p$ &nbsp;– простое число. Число $a \in \textbf{Z}$ не делится на $p$ тогда и только тогда, когда $a^{p-1} \equiv 1 (\textrm{mod}\;p\,)$.
+	</p>
+	<p>
+		$\triangleright$ Доказательство следует из <font color="green">теоремы Эйлера</font>, поскольку &#966;$(p) = p-1. \triangleleft$
+	</p>
+	<p>
+		Следствие 1. В  $\textbf{Z}/p\textbf{Z}$ при  простом $p$ обратным  классу $\overline{k} \neq \overline{0}$ является класс  вычетов $\overline{k^{p-2}}$.
+	</p>
+	<p>
+		Следствие 2. Если для $m \in \textbf{N}_{\gt 1}$ выполняется $a^{m-1} \not \equiv 1 (\textrm{mod}\;m\,)$ при некотором $a \in \textbf{Z}$ с условием $(a, m) = 1$, то $m$ &nbsp;– составное число. 
+	</p>
+	<p>
+		Этот факт часто используется для проверки числа на простоту. Он позволяет установить наличие нетривиальных множителей данного числа $m$, не находя ни одного из таких множителей. 
+	</p>
+	<p>
+		<center><span style="font-size: 14pt; font-weight: bold;" id="reshs">Решение линейных сравнений в целых числах</span></center>
+	</p>
+	<p>
+		Рассмотрим сравнение вида 
+	</p>
+	<p style="text-indent: 0;">
+		<table width="100%" border="0"><tr><td width="auto" style="text-align: center;">$ax \equiv b (\textrm{mod}\;m\,),$</td><td width="50px">(1.7.1)</td></tr></table>
+	</p>
+	<p style="text-indent: 0;">
+		где  $a, b \in \textbf{Z}, m \in \textbf{N}, x$&nbsp;– искомое значение в $\textbf{Z}$. 
+	</p>
+	<p>
+		1.  Пусть $(a,  m)  =  1$. Тогда сравнение (1.7.1) имеет в качестве множества решений $\overline{x}$&nbsp;– единственный класс вычетов в  $\textbf{Z} / m \textbf{Z}$.  По <a href="#teor171">теореме 1.7.1</a> $\overline{a}$&nbsp;–  обратимый  класс в  $\textbf{Z} / m \textbf{Z}$  и $\overline{a}^{-1} $&nbsp;– единственный обратный  $\overline{a}$ класс. В  $\textbf{Z} / m \textbf{Z}$  сравнение  (1.7.1) соответствует уравнению $\overline{a}\, \, \overline{x}=\overline{b}$.  Умножив обе его части на $\overline{a}^{-1} $, получим $\overline{x}=\overline{a}^{-1} \, \, \overline{b}$. Тогда $\overline{x}~=~\{\textit{x}~+~\textit{mq} \,|~\textit{q}~\in~\textbf{Z}\}$&nbsp;– множество решений (1.7.1). Представитель класса $\overline{a}^{-1}$ можно найти, определив коэффициент при $a$ в соотношении  Безу  для 1 и чисел $a$ и $m$, или согласно следствию из <a href="#teor173">теоремы 1.7.3</a> <img src="../../images/lk18/x1.png">.
+	</p>
+	<p>
+		2.  Пусть $(a,  m)  =  d \gt 1$ и $d \not | b$, тогда сравнение (1.7.1) не имеет решений в $\textbf{Z}$, поскольку не выполняется <font color="green">свойство 6 делимости целых чисел</font>: $ax  =  b + mq,  q \in \textbf{Z}$, и  $d | a,  d | m $, но $d\not |b$. 
+	</p>
+	<p>
+		3.  Пусть $(a,  m)  =  d  \gt 1$ и  $d | b$ . Тогда разделим обе части (1.7.1) и  $m$  на  $d$  согласно <a href="#s5sr">свойству 5 сравнений</a>. Получим сравнение 
+	</p>
+	<p>
+		<table width="100%" border="0"><tr><td width="auto" align="center">$a_1 x \equiv b_1 (\textrm{mod}\;m_1\,),$</td><td width="50px">(1.7.2)</td></tr></table>
+	</p>
+	<p style="text-indent: 0;">
+		где  $\textit{a}{}_{1}~=~\textit{a}/\textit{d}, \textit{b}{}_{1}~=~\textit{b}/\textit{d}, \textit{m}{}_{1}~=~\textit{m}/\textit{d}$, и $(\textit{a}{}_{1},~\textit{m}{}_{1})~=~1$ по <font color="green">свойству 1 взаимно простых чисел</font>. Сравнение (1.7.2) имеет в качестве множества решений единственный класс вычетов $\overline{x_{0} }$ в $\textbf{Z} / m_1 \textbf{Z}$ согласно случаю 1. Числа из $\overline{x_0}~=~\{x_0~+~\textit{mq} \,|~\textit{q}~\in~\textbf{Z}\}$ являются решениями (1.7.1) : $\textit{a}(\textit{x}{}_{0}~+~\textit{m}{}_{1}\textit{q})~=~\textit{da}{}_{1}\textit{x}{}_{0}~+~\textit{ma}{}_{1}\textit{q}~\equiv~\textit{db}{}_{1}~+~\textit{dm}{}_{1}\textit{t}{}_{0}~\equiv~\textit{b}~(\textrm{mod}~\textit{m})$ для   любого $q \in \textbf{Z}$  и фиксированного $t_0 \in \textbf{Z}$.  Пусть  $x  =  x_0 + y$&nbsp;– решение (1.7.1), тогда $ax \equiv ax_0 \equiv b (\textrm{mod}\;m\,)$. Это возможно, когда $ay \equiv 0 (\textrm{mod}\;m\,) \Leftrightarrow m \,|\, ay \Leftrightarrow m_1 \,|\, a_1 y \Leftrightarrow m_1 \,|\, y$  по <font color="green">свойству 2 взаимно простых чисел</font>, значит, $x \in \overline{x_0}$. Итак, числа из $\overline{x_0}$, и только они, являются решениями сравнения (1.7.1). Поскольку  $y \equiv 0 (\textrm{mod}\;m_1\,)$, то  $y \equiv 0,  m_1, ..., (d-1) m_1 (\textrm{mod}\;m\,)$ в соответствии с остатками от деления $q \in \textbf{Z}$  на $d$. Все множество решений сравнения (1.7.1)&nbsp;– это объединение $d$ классов  вычетов по модулю $m$: $\overline{x_{0} },\, \, \overline{x_{0} +m_{1} },\, \, ...,\, \, \overline{x_{0} +(d-1)m_{1} }$.
+	</p>
+
+
+
+
+
+</div>
+
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>

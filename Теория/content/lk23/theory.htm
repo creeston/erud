@@ -1,0 +1,284 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "Высшая матемaтика"</title>
+<base target="_top">
+</HEAD><BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+  <tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
+
+<h3 >
+	Тема 23. Смежные классы. Нормальные подгруппы. Факторгруппы
+</h3>
+
+<h4 >
+	3.4. Смежные классы. Теорема Лагранжа. Нормальные подгруппы
+</h4>
+
+<p>
+	<strong>Определение 3.4.1.</strong> Пусть H – подгруппа группы G и a <img src=" ../../images/lk23/3.4/8712.jpg"/> G. Обозначим aH множество элементов {a<img src=" ../../images/lk23/3.4/8226.jpg"/>h | h <img src=" ../../images/lk23/3.4/8712.jpg"/> H} и назовем его левым смежным классом группы G по подгруппе H. Элемент a называется представителем левого смежного класса aH.
+</p>
+<p>
+	Аналогично строятся правые смежные классы Ha = {h<img src=" ../../images/lk23/3.4/8226.jpg"/>a | h <img src=" ../../images/lk23/3.4/8712.jpg"/> H} с представителями <img src=" ../../images/lk23/3.4/3.4.001.jpg" width="47" height="20" alt="" />.
+</p>
+<p>
+	<strong>Теорема 3.4.1.</strong> Пусть H – подгруппа группы G. Тогда справедливы утверждения:
+</p>
+<p>
+	1) каждый элемент g <img src=" ../../images/lk23/3.4/8712.jpg"/> G принадлежит какому-нибудь левому (правому) смежному классу по подгруппе H;
+</p>
+<p>
+	2) два элемента a, b <img src=" ../../images/lk23/3.4/8712.jpg"/> G принадлежат одному левому (правому) смежному классу тогда и только тогда, когда a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>b <img src=" ../../images/lk23/3.4/8712.jpg"/> H (b<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> H);
+</p>
+<p>
+	3) любые два левых (правых) смежных класса либо не пересекаются, либо совпадают;
+</p>
+<p>
+	4) G есть объединение попарно непересекающихся левых (правых) смежных классов по подгруппе H.
+</p>
+<p>
+	1) для любого g <img src=" ../../images/lk23/3.4/8712.jpg"/> G имеем g = g<img src=" ../../images/lk23/3.4/8226.jpg"/>e; т. к. e <img src=" ../../images/lk23/3.4/8712.jpg"/> H, то g <img src=" ../../images/lk23/3.4/8712.jpg"/> {g<img src=" ../../images/lk23/3.4/8226.jpg"/>h | h <img src=" ../../images/lk23/3.4/8712.jpg"/> H} = gH. Аналогично, g = e<img src=" ../../images/lk23/3.4/8226.jpg"/>g <img src=" ../../images/lk23/3.4/8658.jpg"/> g <img src=" ../../images/lk23/3.4/8712.jpg"/> {h<img src=" ../../images/lk23/3.4/8226.jpg"/>g | h <img src=" ../../images/lk23/3.4/8712.jpg"/> H} = Hg;
+</p>
+<p>
+	2) согласно утверждению 1 имеем a <img src=" ../../images/lk23/3.4/8712.jpg"/> aH, b <img src=" ../../images/lk23/3.4/8712.jpg"/> bH, тогда b <img src=" ../../images/lk23/3.4/8712.jpg"/> aH <img src=" ../../images/lk23/3.4/8660.jpg"/> <img src=" ../../images/lk23/3.4/8707.jpg"/> h<sub>1</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, такой, что b = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>1</sub> <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>1</sub> = a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>b <img src=" ../../images/lk23/3.4/8712.jpg"/> H.
+</p>
+<p>
+	Cогласно утверждению 1 имеем a <img src=" ../../images/lk23/3.4/8712.jpg"/> Ha, b <img src=" ../../images/lk23/3.4/8712.jpg"/> Hb, тогда b <img src=" ../../images/lk23/3.4/8712.jpg"/> Ha <img src=" ../../images/lk23/3.4/8660.jpg"/> <img src=" ../../images/lk23/3.4/8707.jpg"/> h<sub>2</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, такой, что b = h<sub>2</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>2</sub> = b<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> H;
+</p>
+<p>
+	3) пусть c <img src=" ../../images/lk23/3.4/8712.jpg"/> aH <img src=" ../../images/lk23/3.4/8745.jpg"/> bH <img src=" ../../images/lk23/3.4/8660.jpg"/> <img src=" ../../images/lk23/3.4/8707.jpg"/> h<sub>3</sub>, h<sub>4</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, такие, что c = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>3</sub> = b<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>4</sub> <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>3</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>4</sub><sup>–1</sup> = = a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>b <img src=" ../../images/lk23/3.4/8712.jpg"/> H <img src=" ../../images/lk23/3.4/8660.jpg"/> a, b принадлежат одному и тому же левому смежному классу согласно утверждению 2, т. е. aH = bH.
+</p>
+<p>
+	Пусть d<img src=" ../../images/lk23/3.4/8712.jpg"/> Ha <img src=" ../../images/lk23/3.4/8745.jpg"/> Hb <img src=" ../../images/lk23/3.4/8660.jpg"/> <img src=" ../../images/lk23/3.4/8707.jpg"/> h<sub>5</sub>, h<sub>6</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, такие, что d = h<sub>5</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a = h<sub>6</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>b <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>6</sub><sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>5</sub> =  = b<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> H <img src=" ../../images/lk23/3.4/8660.jpg"/> Ha = Hb.
+</p>
+<p>
+	Либо возможен вариант aH <img src=" ../../images/lk23/3.4/8745.jpg"/> bH = <img src=" ../../images/lk23/3.4/8709.jpg"/> (Ha <img src=" ../../images/lk23/3.4/8745.jpg"/> Hb = <img src=" ../../images/lk23/3.4/8709.jpg"/>);
+</p>
+<p>
+	4) следует из утверждений 1 и 3 данной теоремы. 
+</p>
+<p>
+	<strong>Определение 3.4.2.</strong> Мощность множества всех различных левых (правых) смежных классов группы G по подгруппе H называется индексом подгруппы H в группе G и обозначается G : H.
+</p>
+<p>
+	К важнейшим в теории групп относится следующая теорема, доказанная известным французским математиком и механиком Жозефом Лагранжем (1736–1813).
+</p>
+<p>
+	<strong>Теорема 3.4.2 (Ж. Лагранж).</strong> Порядок конечной группы равен произведению порядка и индекса любой ее подгруппы.
+</p>
+<p>
+	<img src=" ../../images/lk23/3.4/3.4.002.jpg" width="16" height="16" alt="" />Пусть H <img src=" ../../images/lk23/3.4/8804.jpg"/> G, | G | = n, | H | = k, где n, k <img src=" ../../images/lk23/3.4/8712.jpg"/> N, и H = {e = h<sub>1</sub>, h<sub>2</sub>,…, h<sub>k</sub>}.
+</p>
+<p>
+	Для любого a <img src=" ../../images/lk23/3.4/8712.jpg"/> G смежные классы aH = {a, a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub>,…, a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>k</sub>}, Ha = {a, h<sub>2</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a,… …, h<sub>k</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a}. Покажем, что | H | = | aH | = | Ha |. Действительно, a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>i</sub> = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>j</sub> <img src=" ../../images/lk23/3.4/8660.jpg"/> a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>(a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>i</sub>) = = a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>(a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>j</sub>) <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>i</sub> = h<sub>j</sub>, аналогично, h<sub>i</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a = h<sub>j</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>i</sub> = h<sub>j</sub> для всех <img src=" ../../images/lk23/3.4/3.4.003.jpg" width="80" height="24" alt="" />. В общем случае, даже если подгруппа H бесконечна, H <img src=" ../../images/lk23/3.4/8596.jpg"/> aH <img src=" ../../images/lk23/3.4/8596.jpg"/> Ha.
+</p>
+<p>
+	Согласно утверждению 4 теоремы 3.4.1 G есть объединение попарно непересекающихся левых (правых) смежных классов по подгруппе H. Таким образом, <img src=" ../../images/lk23/3.4/3.4.004.jpg" width="152" height="34" alt="" /> (объединение всех различных смежных классов), значит, | G | = | H | (G : H) и G : H = n/k. 
+</p>
+<p>
+	<strong>Следствие 1.</strong> Порядок конечной группы делится на порядок любой ее подгруппы.
+</p>
+<p>
+	<strong>Следствие 2.</strong> Если G – конечная группа порядка n, то порядок любого элемента группы делит порядок группы и a<sup>n</sup> = e для каждого a <img src=" ../../images/lk23/3.4/8712.jpg"/> G.
+</p>
+<p>
+	Пусть | G | = n. Рассмотрим &lt; a &gt; для произвольного a <img src=" ../../images/lk23/3.4/8712.jpg"/> G, очевидно, что ord(a) <img src=" ../../images/lk23/3.4/8804.jpg"/> n. Согласно теореме 3.3.3 | &lt; a &gt; | = ord(a). Поскольку &lt; a &gt; <img src=" ../../images/lk23/3.4/8804.jpg"/> G, то по следствию 1 из теоремы 3.4.2 ord(a) | n. Отсюда следует, что <img src=" ../../images/lk23/3.4/3.4.005.jpg" width="112" height="23" alt="" /> <img src=" ../../images/lk23/3.4/3.4.006.jpg" width="155" height="27" alt="" />, где соответствующее <img src=" ../../images/lk23/3.4/3.4.007.jpg" width="49" height="20" alt="" />.
+</p>
+<p>
+	<strong>Следствие 3.</strong> Любая группа G простого порядка p является циклической и не содержит собственных подгрупп.
+</p>
+<p>
+	Пусть | G | = p – простое число. Рассмотрим произвольный элемент a <img src=" ../../images/lk23/3.4/8712.jpg"/> <img src=" ../../images/lk23/3.4/8712.jpg"/> G\{e}. Согласно следствию 1 из теоремы 3.4.2 | &lt; a &gt; | | p, откуда | &lt; a &gt; | = 1 или | &lt; a &gt; | = p. Но в первом случае &lt; a &gt; = &lt; e &gt; и a = e, что не так. Поэтому | &lt; a &gt; | = p, значит, G = &lt; a &gt;.
+</p>
+<p>
+	По следствию 1 из теоремы 3.4.2 в группе G порядок любой подгруппы H равен 1 или p, т. е. H = {e} или H = G. 
+</p>
+<p>
+	Так как для произвольной группы (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>) и любого a <img src=" ../../images/lk23/3.4/8712.jpg"/> G, следуя доказательству теоремы 3.4.2, G <img src=" ../../images/lk23/3.4/8596.jpg"/> aG <img src=" ../../images/lk23/3.4/8596.jpg"/> Ga, то aG = G = Ga и G : G = 1.
+</p>
+<p>
+	<strong>Пример 3.4.1.</strong> Рассмотрим (nZ, +) <img src=" ../../images/lk23/3.4/8804.jpg"/> (Z, +) для произвольного n <img src=" ../../images/lk23/3.4/8712.jpg"/> N и найдем все смежные классы Z по nZ. Поскольку (Z, +) – абелева группа, то для одинаковых представителей левые смежные классы совпадают с соответствующими правыми. Таким образом, для любого z <img src=" ../../images/lk23/3.4/8712.jpg"/> Z имеем z = nq + r, где q, r <img src=" ../../images/lk23/3.4/8712.jpg"/> Z, 0 <img src=" ../../images/lk23/3.4/8804.jpg"/> r &lt; n, согласно теореме 1.1.1, и z + nZ = nZ + z = {nm + r | m <img src=" ../../images/lk23/3.4/8712.jpg"/> Z} = = <img src=" ../../images/lk23/3.4/3.4.008.jpg" width="13" height="23" alt="" /> <img src=" ../../images/lk23/3.4/8712.jpg"/> Z/nZ. В частности, nZ = <img src=" ../../images/lk23/3.4/3.4.009.jpg" width="13" height="24" alt="" /> в Z/nZ. Итак, <img src=" ../../images/lk23/3.4/3.4.010.jpg" width="127" height="30" alt="" /> = Z/nZ – множество всех различных смежных классов группы (Z, +) по подгруппе (nZ, +). Значит, Z : nZ = n.
+</p>
+<p>
+	Здесь (Z, +) – бесконечная группа, (nZ, +) – ее бесконечная подгруппа, а индекс Z : nZ конечен.
+</p>
+<p>
+	<strong>Пример 3.4.2.</strong> Пусть (V<sub>4</sub>(Z/2Z), +) – аддитивная группа всех 4-мерных векторов с коомпонентами из Z/2Z. Рассмотрим следующее подмножество в V<sub>4</sub>(Z/2Z): <img src=" ../../images/lk23/3.4/3.4.011.jpg" width="517" height="28" alt="" />. Легко проверить, например, по критерию подгруппы (теорема 3.3.1), что H &lt; V<sub>4</sub>(Z/2Z). | V<sub>4</sub>(Z/2Z) | = 2<sup>4</sup> = 16, | H | = 4, значит, V<sub>4</sub>(Z/2Z) : H = 16 / 4 = 4. Для одинаковых представителей левые смежные классы совпадают с правыми, поскольку (V<sub>4</sub>(Z/2Z), +) – абелева группа.
+</p>
+<p>
+	Построим табл. 3.4.1 смежных классов группы (V<sub>4</sub>(Z/2Z), +) по подгруппе (H, +).
+</p>
+
+<p>
+<img src=" ../../images/lk23/3.4/table.jpg" />
+</p>
+
+<p>
+	Таблицы смежных классов играют важную роль в теории и практике помехоустойчивого кодирования при коррекции и обнаружении ошибок (например, в телекоммуникационных, радиотехнических и вычислительных системах для синхронизации, передачи информации, локации и диагностики). Так, табл. 3.4.1 можно рассматривать в качестве таблицы декодирования, или стандартного расположения, для кода, слова которого образуют подгруппу H группы (V<sub>n</sub>(P), +), где P – конечное поле, | P | = q <img src=" ../../images/lk23/3.4/8712.jpg"/> N. В данном случае n = 4, P = (Z/2Z, +, <img src=" ../../images/lk23/3.4/183.jpg"/>). Из соображений простоты и надежности большинство систем связи конструируется для передачи двоичных последовательностей: q = 2. При передаче кодовых слов по каналам связи на них в результате помех могут налагаться векторы ошибок из (V<sub>n</sub>(P), +), так что принятое сообщение представляется в виде суммы в (V<sub>n</sub>(P), +) кодового слова и вектора ошибок. При математическом анализе систем связи обычно рассматривается модель q-ичного симметричного канала, когда каждый символ принимается правильно с вероятностью p и ошибочно с вероятностью (1 – p)/(q – 1) и ошибки в передаче последовательных символов происходят независимо. Тогда при построении таблиц декодирования в качестве представителей смежных классов группы по подгруппе берутся лидеры – представители смежных классов с минимальным весом, т. е. числом ненулевых компонент (при наличии нескольких таких векторов выбирается любой из них случайным образом). Метод декодирования принятого слова по максимуму правдоподобия заключается в отыскании данного слова в таблице и выборе в качестве переданного кодового слова в том же столбце и в первой строке, при этом вектором ошибок считается лидер смежного класса, находящийся в той же строке и в первом столбце. Данный метод сводится к выбору ближайшего к полученному вектору по расстоянию, т. е. весу разности, кодового слова в качестве результата декодирования. Такой выбор оптимален, поскольку он минимизирует вероятность ошибки при передаче по q-ичному симметричному каналу. При этом ошибка декодирования происходит тогда и только тогда, когда вектор ошибок не является лидером смежного класса, и незамеченными остаются в точности те векторы ошибок, которые сами являются ненулевыми кодовыми словами.
+</p>
+<p>
+	<strong>Определение 3.4.3.</strong> Подгруппа H группы G называется нормальной, если <img src=" ../../images/lk23/3.4/3.4.031.jpg" width="72" height="20" alt="" /> для всякого <img src=" ../../images/lk23/3.4/3.4.032.jpg" width="47" height="20" alt="" />, т. е. каждый левый смежный класс по подгруппе H совпадает с правым смежным классом с тем же представителем. В этом случае используется обозначение H <img src=" ../../images/lk23/3.4/3.4.033.jpg" width="16" height="16" alt="" />G.
+</p>
+<p>
+	Ясно, что у абелевых групп все подгруппы нормальны.
+</p>
+<p>
+	В любой группе (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>) тривиальные подгруппы {e} и G являются нормальными, т. к. a{e} = {a} = {e}a и aG = G = Ga для всех a <img src=" ../../images/lk23/3.4/8712.jpg"/> G. Итак, {e}<img src=" ../../images/lk23/3.4/3.4.033.jpg" width="16" height="16" alt="" />G и G<img src=" ../../images/lk23/3.4/3.4.033.jpg" width="16" height="16" alt="" />G.
+</p>
+<p>
+	<strong>Пример 3.4.3.</strong> Если G : H = 2, то H<img src=" ../../images/lk23/3.4/3.4.033.jpg" width="16" height="16" alt="" />G для произвольной группы (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>). Поскольку для любого g <img src=" ../../images/lk23/3.4/8712.jpg"/> G\H имеем H <img src=" ../../images/lk23/3.4/8745.jpg"/> gH = H <img src=" ../../images/lk23/3.4/8745.jpg"/> Hg = <img src=" ../../images/lk23/3.4/8709.jpg"/> и G = H ? gH = H ? Hg согласно утверждениям 3 и 4 теоремы 3.4.1, следовательно, gH = Hg и, таким образом, aH = Ha для всех a <img src=" ../../images/lk23/3.4/8712.jpg"/> G.<img src=" ../../images/lk23/3.4/8226.jpg"/>
+</p>
+<p>
+	<strong>Теорема 3.4.3 (критерий нормальной подгруппы).</strong> H<img src=" ../../images/lk23/3.4/3.4.034.jpg" width="16" height="16" alt="" />G тогда и только тогда, когда <img src=" ../../images/lk23/3.4/3.4.035.jpg" width="89" height="23" alt="" /> для каждого <img src=" ../../images/lk23/3.4/3.4.036.jpg" width="47" height="20" alt="" /> (a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> H для всех a <img src=" ../../images/lk23/3.4/8712.jpg"/> G, h <img src=" ../../images/lk23/3.4/8712.jpg"/> H).
+</p>
+<p>
+	<strong>Необходимость.</strong> Пусть H<img src=" ../../images/lk23/3.4/3.4.034.jpg" width="16" height="16" alt="" />G, тогда <img src=" ../../images/lk23/3.4/3.4.031.jpg" width="72" height="20" alt="" /> для всех <img src=" ../../images/lk23/3.4/3.4.037.jpg" width="45" height="20" alt="" />. Значит, для любого h <img src=" ../../images/lk23/3.4/8712.jpg"/> H найдется h<sub>1</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, что a<img src=" ../../images/lk23/3.4/8226.jpg"/>h = h<sub>1</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a <img src=" ../../images/lk23/3.4/8660.jpg"/> a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> = h<sub>1</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H. Таким образом, aHa<sup>–1</sup> = {a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> | h <img src=" ../../images/lk23/3.4/8712.jpg"/> H} <img src=" ../../images/lk23/3.4/8838.jpg"/> H для любого a <img src=" ../../images/lk23/3.4/8712.jpg"/> G. Поскольку для всех h<sub>i</sub>, h<sub>j</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H справедливо a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>i</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>j</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> <img src=" ../../images/lk23/3.4/8660.jpg"/> a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>(a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>i</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup>)<img src=" ../../images/lk23/3.4/8226.jpg"/>a = a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>(a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>j</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup>)<img src=" ../../images/lk23/3.4/8226.jpg"/>a <img src=" ../../images/lk23/3.4/8660.jpg"/> h<sub>i</sub> = h<sub>j</sub>, то | aHa<sup>–1</sup> | = | H | и, значит, aHa<sup>–1</sup> = H.
+</p>
+<p>
+	<strong>Достаточность.</strong> Пусть a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> H (aHa<sup>–1</sup> = H) для всех a <img src=" ../../images/lk23/3.4/8712.jpg"/> G, h <img src=" ../../images/lk23/3.4/8712.jpg"/> H. Докажем, что aH <img src=" ../../images/lk23/3.4/8838.jpg"/> Ha и Ha <img src=" ../../images/lk23/3.4/8838.jpg"/> aH. Для любого b <img src=" ../../images/lk23/3.4/8712.jpg"/> aH найдется h<sub>2</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, что b = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub> <img src=" ../../images/lk23/3.4/8660.jpg"/> <img src=" ../../images/lk23/3.4/8660.jpg"/> b<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup> = h<sub>3</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H <img src=" ../../images/lk23/3.4/8658.jpg"/> <img src=" ../../images/lk23/3.4/8707.jpg"/> h<sub>3</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, что b = h<sub>3</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a <img src=" ../../images/lk23/3.4/8712.jpg"/> Ha. Значит, aH <img src=" ../../images/lk23/3.4/8838.jpg"/> Ha. Для любого c <img src=" ../../images/lk23/3.4/8712.jpg"/> Ha найдется h<sub>4</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, что c = h<sub>4</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a <img src=" ../../images/lk23/3.4/8660.jpg"/> a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>c = a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>4</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>a = h<sub>5</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H <img src=" ../../images/lk23/3.4/8658.jpg"/> <img src=" ../../images/lk23/3.4/8658.jpg"/> <img src=" ../../images/lk23/3.4/8707.jpg"/> h<sub>5</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H, что c = a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>5</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> aH. Значит, Ha <img src=" ../../images/lk23/3.4/8838.jpg"/> aH. Итак, aH <img src=" ../../images/lk23/3.4/8838.jpg"/> Ha и Ha <img src=" ../../images/lk23/3.4/8838.jpg"/> aH, следовательно, aH = Ha для всех a <img src=" ../../images/lk23/3.4/8712.jpg"/> G, т. е. H<img src=" ../../images/lk23/3.4/3.4.034.jpg" width="16" height="16" alt="" />G. 
+</p>
+<p>
+	<strong>Пример 3.4.4.</strong>
+</p>
+<p>
+	1. Если K – одно из множеств: Q, R, C или Z/kZ при любом k <img src=" ../../images/lk23/3.4/8712.jpg"/> N, то с помощью критерия нормальной подгруппы легко убедиться в том, что SL<sub>n</sub>(K)<img src=" ../../images/lk23/3.4/3.4.038.jpg" width="16" height="16" alt="" />GL<sub>n</sub>(K) при всех n <img src=" ../../images/lk23/3.4/8712.jpg"/> N. Действительно, для произвольных матриц A <img src=" ../../images/lk23/3.4/8712.jpg"/> GL<sub>n</sub>(K) и B <img src=" ../../images/lk23/3.4/8712.jpg"/> SL<sub>n</sub>(K) в силу свойств определителей имеем
+</p>
+<p>
+	det(A B A<sup>–1</sup>) = det(A) det(B) (det(A))<sup>–1</sup> = det(B) = 1 (<img src=" ../../images/lk23/3.4/3.4.039.jpg" width="11" height="23" alt="" />),
+</p>
+<p>
+	откуда следует, что A B A<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> SL<sub>n</sub>(K).
+</p>
+<p>
+	2. SL<sub>n</sub>(Z) не является нормальной подгруппой GL<sub>n</sub>(Q) при <img src=" ../../images/lk23/3.4/3.4.040.jpg" width="41" height="20" alt="" />. Рассмотрим, например, матрицы <img src=" ../../images/lk23/3.4/3.4.041.jpg" width="167" height="50" alt="" /> и <img src=" ../../images/lk23/3.4/3.4.042.jpg" width="158" height="50" alt="" />. Тогда <img src=" ../../images/lk23/3.4/3.4.043.jpg" width="155" height="50" alt="" /> и <img src=" ../../images/lk23/3.4/3.4.044.jpg" width="261" height="50" alt="" />, но A B A<sup>–1</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> SL<sub>2</sub>(Q).
+</p>
+<p>&nbsp;</p>
+<h4 >
+	3.5. Факторгруппы
+</h4>
+<p >
+	 
+</p>
+<p>
+	<strong>Определение 3.5.1.</strong> Пусть (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>) – группа и H – ее нормальная подгруппа. Множество <img src=" ../../images/lk23/3.4/3.4.045.jpg" width="121" height="24" alt="" /> всех левых или, что то же самое, правых смежных классов (в этом параграфе будем говорить просто «смежных классов») называется фактормножеством группы G по подгруппе H и обозначается G/H.
+</p>
+<p>
+	<strong>Теорема 3.5.1.</strong> Пусть H<img src=" ../../images/lk23/3.4/3.4.046.jpg" width="16" height="16" alt="" />G. Тогда фактормножество G/H является группой относительно индуцированной операции, определенной формулой
+</p>
+<p>
+	aH<img src=" ../../images/lk23/3.4/111.jpg"/>bH = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)H.                                          (3.5.1)
+</p>
+<p>
+	Пусть aH, bH <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H – произвольные смежные классы, где a, b <img src=" ../../images/lk23/3.4/8712.jpg"/> G – фиксированные элементы группы (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>). Тогда для любых h<sub>1</sub>, h<sub>2</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H и подходящего h<sub>3</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H имеем
+</p>
+<p>
+	(a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>1</sub>)<img src=" ../../images/lk23/3.4/8226.jpg"/>(b<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub>) = a<img src=" ../../images/lk23/3.4/8226.jpg"/>(h<sub>1</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>b)<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub> = a<img src=" ../../images/lk23/3.4/8226.jpg"/>(b<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>3</sub>)<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub> = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)<img src=" ../../images/lk23/3.4/8226.jpg"/>(h<sub>3</sub><img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub>) <img src=" ../../images/lk23/3.4/8712.jpg"/> (a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)H.
+</p>
+<p>
+	То есть результат операции <img src=" ../../images/lk23/3.4/8226.jpg"/> для элементов a<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>1</sub> и b<img src=" ../../images/lk23/3.4/8226.jpg"/>h<sub>2</sub> из смежных классов не зависит от выбора элементов h<sub>1</sub>, h<sub>2</sub> <img src=" ../../images/lk23/3.4/8712.jpg"/> H и принадлежит смежному классу (a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)H, определяемому представителями a и b. Значит, формулой (3.5.1) определена бинарная алгебраическая операция на множестве G/H.
+</p>
+<p>
+	Далее проверим для (G/H, <img src=" ../../images/lk23/3.4/111.jpg"/>) определение 3.2.1 группы:
+</p>
+<p>
+	1) для любых смежных классов aH, bH, cH <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H
+</p>
+<p>
+	(aH<img src=" ../../images/lk23/3.4/111.jpg"/>bH)<img src=" ../../images/lk23/3.4/111.jpg"/>cH = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)H<img src=" ../../images/lk23/3.4/111.jpg"/>cH = ((a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)<img src=" ../../images/lk23/3.4/8226.jpg"/>c)H,
+</p>
+<p>
+	aH<img src=" ../../images/lk23/3.4/111.jpg"/>(bH<img src=" ../../images/lk23/3.4/111.jpg"/>cH) = aH<img src=" ../../images/lk23/3.4/111.jpg"/>(b<img src=" ../../images/lk23/3.4/8226.jpg"/>c)H = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>(b<img src=" ../../images/lk23/3.4/8226.jpg"/>c))H,
+</p>
+<p>
+	значит, (aH<img src=" ../../images/lk23/3.4/111.jpg"/>bH)<img src=" ../../images/lk23/3.4/111.jpg"/>cH = aH<img src=" ../../images/lk23/3.4/111.jpg"/>(bH<img src=" ../../images/lk23/3.4/111.jpg"/>cH).
+</p>
+<p>
+	То есть индуцированная операция <img src=" ../../images/lk23/3.4/111.jpg"/> на фактормножестве G/H ассоциативна, поскольку групповая операция <img src=" ../../images/lk23/3.4/8226.jpg"/> на G ассоциативна;
+</p>
+<p>
+	2) H <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H – нейтральный элемент относительно данной индуцированной операции. Действительно, для любого aH <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H имеем
+</p>
+<p>
+	aH<img src=" ../../images/lk23/3.4/111.jpg"/>H = aH<img src=" ../../images/lk23/3.4/111.jpg"/>eH = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>e)H = aH,  H<img src=" ../../images/lk23/3.4/111.jpg"/>aH = eH<img src=" ../../images/lk23/3.4/111.jpg"/>aH = (e<img src=" ../../images/lk23/3.4/8226.jpg"/>a)H = aH;
+</p>
+<p>
+	3) для любого aH <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H существует (aH)<sup>–1</sup> = a<sup>–1</sup>H <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H – обратный элемент относительно данной индуцированной операции. Действительно,
+</p>
+<p>
+	aH<img src=" ../../images/lk23/3.4/111.jpg"/>a<sup>–1</sup>H = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>a<sup>–1</sup>)H = eH = H,  a<sup>–1</sup>H<img src=" ../../images/lk23/3.4/111.jpg"/>aH = (a<sup>–1</sup><img src=" ../../images/lk23/3.4/8226.jpg"/>a)H = eH = H.
+</p>
+<p>
+	Итак, согласно определению 3.2.1 (G/H, <img src=" ../../images/lk23/3.4/111.jpg"/>) – группа. 
+</p>
+<p>
+	<strong>Определение 3.5.2.</strong> Группа (G/H, <img src=" ../../images/lk23/3.4/111.jpg"/>) из теоремы 3.5.1 называется факторгруппой группы G по нормальной подгруппе H.
+</p>
+<p >
+	Свойства факторгрупп
+</p>
+<p>
+	1. Факторгруппа абелевой группы является абелевой.
+</p>
+<p>
+	Пусть (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>) – абелева группа, <img src=" ../../images/lk23/3.4/3.4.047.jpg" width="53" height="20" alt="" /> (любая подгруппа абелевой группы нормальна согласно определению 3.4.3). Для всех aH, bH <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H имеем
+</p>
+<p>
+	aH<img src=" ../../images/lk23/3.4/111.jpg"/>bH = (a<img src=" ../../images/lk23/3.4/8226.jpg"/>b)H = (b<img src=" ../../images/lk23/3.4/8226.jpg"/>a)H = bH<img src=" ../../images/lk23/3.4/111.jpg"/>aH,
+</p>
+<p>
+	поскольку (G, <img src=" ../../images/lk23/3.4/8226.jpg"/>) – абелева группа. Итак, (G/H, <img src=" ../../images/lk23/3.4/111.jpg"/>) – абелева группа. 
+</p>
+<p>
+	2. Факторгруппа циклической группы является циклической.
+</p>
+<p>
+	Пусть G = &lt; a &gt; – циклическая группа, <img src=" ../../images/lk23/3.4/3.4.048.jpg" width="53" height="20" alt="" /> (любая подгруппа циклической группы нормальна, поскольку циклическая группа является абелевой). Докажем, что G/H = &lt; aH &gt;.
+</p>
+<p>
+	&lt; aH &gt; <img src=" ../../images/lk23/3.4/8838.jpg"/> G/H, т. к. (aH)<sup>k</sup> = a<sup>k</sup>H <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H для всех k <img src=" ../../images/lk23/3.4/8712.jpg"/> Z. Рассмотрим произвольный смежный класс bH <img src=" ../../images/lk23/3.4/8712.jpg"/> G/H. Так как G = &lt; a &gt; – циклическая группа, то b = a<sup>m</sup> для некоторого m <img src=" ../../images/lk23/3.4/8712.jpg"/> Z. Тогда bH = a<sup>m</sup>H = (aH)<sup>m</sup> <img src=" ../../images/lk23/3.4/8712.jpg"/> &lt; aH &gt; <img src=" ../../images/lk23/3.4/8658.jpg"/> G/H <img src=" ../../images/lk23/3.4/8838.jpg"/> &lt; aH &gt;. Итак, G/H = &lt; aH &gt;.
+</p>
+<p>
+	<strong>Пример 3.5.1.</strong> Абелева группа (Z, +) содержит для всякого n <img src=" ../../images/lk23/3.4/8712.jpg"/> N нормальную подгруппу (nZ, +), как было показано в примере 3.4.1. Следовательно, факторгруппа (Z/nZ, <img src=" ../../images/lk23/3.4/8853.jpg"/>) – группа классов вычетов с индуцированной операцией сложения. Для всех представителей <img src=" ../../images/lk23/3.4/3.4.049.jpg" width="104" height="24" alt="" /> имеем сумму классов вычетов
+</p>
+<p>
+	<img src=" ../../images/lk23/3.4/3.4.050.jpg" width="56" height="28" alt="" /><img src=" ../../images/lk23/3.4/3.4.051.jpg" width="248" height="24" alt="" /><img src=" ../../images/lk23/3.4/3.4.052.jpg" width="52" height="28" alt="" />.
+</p>
+<p>
+	(Z/nZ, <img src=" ../../images/lk23/3.4/8853.jpg"/>) – абелева и циклическая группа порядка n по свойствам 1 и 2 факторгрупп, поскольку (Z, +) – абелева и циклическая группа. Поскольку (Z, +) = &lt; 1 &gt; = &lt; – 1 &gt; (п. 1 примера 3.3.5), то, следуя доказательству свойства 2 факторгрупп, <img src=" ../../images/lk23/3.4/3.4.053.jpg" width="11" height="23" alt="" /> и <img src=" ../../images/lk23/3.4/3.4.054.jpg" width="77" height="24" alt="" /> – образующие элементы (Z/nZ, <img src=" ../../images/lk23/3.4/8853.jpg"/>) (<img src=" ../../images/lk23/3.4/3.4.055.jpg" width="45" height="23" alt="" /> при n <img src=" ../../images/lk23/3.4/8804.jpg"/> 2). Вообще же, как было указано в п. 2 примера 3.3.5, (Z/nZ, <img src=" ../../images/lk23/3.4/8853.jpg"/>) = &lt; <img src=" ../../images/lk23/3.4/3.4.056.jpg" width="15" height="24" alt="" /> &gt; для всех <img src=" ../../images/lk23/3.4/3.4.057.jpg" width="93" height="20" alt="" /> с условием НОД (k, n) = 1, и количество всех образующих элементов равно 1 при n = 1 и <img src=" ../../images/lk23/3.4/222.jpg"/>(n) при n <img src=" ../../images/lk23/3.4/222.jpg"/> 2, где <img src=" ../../images/lk23/3.4/222.jpg"/> – функция Эйлера.
+</p>
+<p>
+	Индуцированная операция сложения в (Z/nZ, <img src=" ../../images/lk23/3.4/8853.jpg"/>) может быть задана таблицей Кэли, как отмечалось в §1.7 и в §3.2.
+</p>
+
+
+</div>
+
+<p>&nbsp;</p>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY></HTML>
