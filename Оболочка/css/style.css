@@ -4,7 +4,7 @@ h2 { text-align: center; font-family: Times New Roman, serif; font-size: 180%;  
 .picture { text-align: center; } /*Стиль для одиночных изображений-формул */
 .text{ font-family: Times New Roman, serif; font-size: 130%;       text-indent: 3em; text-align: justify; }
 
-caption {
+.WordSection1 caption {
 	caption-side: right;
 	text-align: right;
 	padding: 0 0 13px 0;
@@ -12,11 +12,11 @@ caption {
 	font-size: small;
 }
 
-table {
+.WordSection1 table {
     border-collapse: collapse;
 }
 
-table, th, td {
+.WordSection1 table, .WordSection1 th, .WordSection1 td {
 	padding: 1px 5px;
 	text-align: center;
 	border: 1px solid black;
