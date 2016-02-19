@@ -1,26 +1,110 @@
-<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
 <HTML>
 <HEAD>
-<LINK rel=stylesheet href="../../../Оболочка/css/style.css" type=text/css>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
-<META HTTP-EQUIV="Content-Language" CONTENT="ru">
-<title>Теория по дисциплине "Высшая матемaтика"</title>
-<base target="_top">
-</HEAD><BODY>
-<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+  <LINK rel=stylesheet href="../../../РћР±РѕР»РѕС‡РєР°/css/style.css" type=text/css>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+  <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+  <title>РўРµРѕСЂРёСЏ РїРѕ РґРёСЃС†РёРїР»РёРЅРµ "Р’С‹СЃС€Р°СЏ РјР°С‚РµРјaС‚РёРєР°"</title>
+  <base target="_top">
+    <style>
+	  body {
+			font-family: "Times New Roman", "Times", serif;
+			letter-spacing: 0 !important;
+			font-size: 14pt;
+		}
+		h1 {
+			font-size: 16pt;
+		}
+		h2 {
+			font-size: 15pt;
+		}
+		h3 {
+			font-size: 16pt;
+		}
+		h4 {
+			margin: 5;
+		}
+		h1, h2, h3, h4 {
+			text-align: center;
+		}
+		p {
+			text-indent: 35.5pt;
+			margin: 5px;
+		}
+    em {
+      font-family: "Times New Roman", "Times", serif;
+      font-style: italic;
+      font-size: 14pt;
+      color: black;
+    }
+    img.ris {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+		.no_indent {
+			text-indent: 0;
+		}
+		.formula_container {
+			position: relative;
+		}
+		.formula_id {
+			width: 50%;
+			height: 50%;
+			min-height: 25px;
+			overflow: auto;
+			margin: auto;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: auto;
+			text-align: right;
+		}
+		.formula {
+			text-align: center;
+		}
+		.grn {
+			color: green;
+		}
+	</style>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {Augment: {
+        Definitions: {macros: {bfit: ['SetFont','bold-italic']}}
+      }}
+    });
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    MathJax.Hub.Config({
+      TeX: {
+        Macros: {
+          bx: ["{{\\bfit x}}"],
+          by: ["{{\\bfit y}}"],
+          vareps: ["{\\unicode[Times]{949}}"],
+          varlambda: ["{\\unicode[Times]{955}}"],
+          varv: ["{{\\it \\unicode[Times]{118} }}"],
+          varbv: ["{{\\bfit \\unicode[Times]{118} }}"],
+          varbu: ["{{\\bfit \\unicode[Times]{117} }}"],
+          RR: ["{{\\bf R}}"]
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" async src="../../../mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+</HEAD>
+<BODY>
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../РћР±РѕР»РѕС‡РєР°/images/background.jpg">
   <tr> 
-    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.jpg" width=117 align="middle"></td>
+    <td width="13%" rowspan=3 align="center" ><img src="../../../РћР±РѕР»РѕС‡РєР°/images/logo_new.jpg" width=117 align="middle"></td>
   <tr> 
-     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный
-         ресурс по учебной дисциплине<BR>
-         "Математика. Геометрия и Алгебра"<BR>
-         для специальности</H1>
-         1-40 04 01 «Информатика и технологии программирования».
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >СЌР»РµРєС‚СЂРѕРЅРЅС‹Р№
+         СЂРµСЃСѓСЂСЃ РїРѕ СѓС‡РµР±РЅРѕР№ РґРёСЃС†РёРїР»РёРЅРµ<BR>
+         "РњР°С‚РµРјР°С‚РёРєР°. Р“РµРѕРјРµС‚СЂРёСЏ Рё РђР»РіРµР±СЂР°"<BR>
+         РґР»СЏ СЃРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё</H1>
+         1-40 04 01 В«РРЅС„РѕСЂРјР°С‚РёРєР° Рё С‚РµС…РЅРѕР»РѕРіРёРё РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏВ».
     </td>
     <td width="12%" rowspan=3 align="center" >&nbsp;</td>
   <Tr>
-    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">РћРіР»Р°РІР»РµРЅРёРµ</A> | <A HREF="../../../РџСЂРѕРіСЂР°РјРјР°/program.htm" TITLE="РџСЂРѕРіСЂР°РјРјР° РєСѓСЂСЃР° (РћС‚РєСЂРѕРµС‚СЃСЏ РІ РЅРѕРІРѕРј РѕРєРЅРµ)">РџСЂРѕРіСЂР°РјРјР°</A> | <strong>РўРµРѕСЂРёСЏ</strong> | <A HREF="../../../РџСЂР°РєС‚РёРєР°/practice.htm">РџСЂР°РєС‚РёРєР°</A> | <A HREF="../../../РљРѕРЅС‚СЂРѕР»СЊ_Р·РЅР°РЅРёР№/test.htm">РљРѕРЅС‚СЂРѕР»СЊ Р·РЅР°РЅРёР№</A> | <A HREF="../../../РћР± Р°РІС‚РѕСЂР°С…/author.htm">РћР± Р°РІС‚РѕСЂР°С…</A></var></var> </td>
   <tr>
 </table>
 <P class="margined"><FONT SIZE=4><CENTER>
@@ -28,298 +112,400 @@
 </FONT>
 <div class="WordSection1 style1" style="width: 900px; margin: 0 auto">
 
-<h3>Тема 15. Квадратичные формы</h3>
-<h4>15.1. Квадратичные формы и их матрицы</h4>
+<h1>РўРµРјР° 15. РљРІР°РґСЂР°С‚РёС‡РЅС‹Рµ С„РѕСЂРјС‹</h1>
+<h2>В§15.1. РљРІР°РґСЂР°С‚РёС‡РЅС‹Рµ С„РѕСЂРјС‹ Рё РёС… РјР°С‚СЂРёС†С‹</h2>
 
-<p>
-	<strong>Определение 15.1.</strong> Квадратичной формой от n переменных x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,…, x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">n</span>называется многочлен
-</p>
-<p>
-	<img src="../../images/lk15/15.1/15.1.001.jpg" width="217" height="53" alt="" /> ,                                (15.1)
-</p>
-<p>
-	 где все a<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">ij</span> =a<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">ji</span> –  действительные числа, называемые коэффициентами квадратичной формы.
-</p>
+<p><a name="quadratic_form"></a><strong>РћРїСЂРµРґРµР»РµРЅРёРµ 15.1.</strong> 
+<em>РљРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјРѕР№</em> РѕС‚ $n$ РїРµСЂРµРјРµРЅРЅС‹С… $x_1$, $x_2$, вЂ¦, $x_n$ 
+РЅР°Р·С‹РІР°РµС‚СЃСЏ РјРЅРѕРіРѕС‡Р»РµРЅ</p>
+<div class="formula_container">
+	<p class="formula_id">(15.1)</p>
+  <p class="formula"><a name="form15_1"></a>$$Q(x_1,x_2,\dots,x_n)=
+  \sum_{i=1}^n\sum_{j=1}^n a_{ij}x_ix_j,$$</p>
+</div>
+<p class="no_indent">РіРґРµ РІСЃРµ $a_{ij}=a_{ji}$ вЂ“  РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹Рµ С‡РёСЃР»Р°, 
+РЅР°Р·С‹РІР°РµРјС‹Рµ <em>РєРѕСЌС„С„РёС†РёРµРЅС‚Р°РјРё РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹</em>.</p>
 
-<p>
-	 Для записи квадратичной формы в матричном виде из переменных x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">2</span> ,… ,  x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">n</span>  образуем вектор-столбец  X, а из коэффициентов  a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">ij</span>  –  матрицу
-</p>
-<p>
-	А <img src="../../images/lk15/15.1/15.1.002.jpg" width="145" height="96" alt="" /> ,
-</p>
-<p>
-	 которая  называется матрицейквадратичной формыи является в силу равенств a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ij</span> = a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ji</span> , i , j  = 1,2,... ,n,  симметрической.
-</p>
-
-<p>
-	 Учитывая правило умножения матрицы на вектор, получаем
-</p>
-<p>
-	Аx<img src="../../images/lk15/15.1/15.1.003.jpg" width="357" height="96" alt="" /> .
-</p>
-
-<p>
-	 Тогда выражение (15.1) запишется в виде
-</p>
-<p>
-	<img src="../../images/lk15/15.1/15.1.004.jpg" width="477" height="51" alt="" /> (x , Аx ),
-</p>
-<p>
-	 или в виде
-</p>
-<p>
-	<img src="../../images/lk15/15.1/15.1.005.jpg" width="397" height="96" alt="" />  x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">*</span>Аx ,
+<p>Р”Р»СЏ Р·Р°РїРёСЃРё РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ РІ РјР°С‚СЂРёС‡РЅРѕРј РІРёРґРµ РёР· РїРµСЂРµРјРµРЅРЅС‹С… $x_1$, $x_2$, 
+вЂ¦, $x_n$ РѕР±СЂР°Р·СѓРµРј РІРµРєС‚РѕСЂ-СЃС‚РѕР»Р±РµС† $\bx$, Р° РёР· РєРѕСЌС„С„РёС†РёРµРЅС‚РѕРІ $a_{ij}$ вЂ“ 
+<a name="matrix_of_quadratic_form"></a>РјР°С‚СЂРёС†Сѓ
+$$
+  A=\begin{bmatrix}
+    a_{11} & a_{12} & \dots & a_{1n} \\
+    a_{21} & a_{22} & \dots & a_{2n} \\
+    \dots & \dots & \dots & \dots \\
+    a_{n1} & a_{n2} & \dots & a_{nn} \\
+  \end{bmatrix},
+$$
+РєРѕС‚РѕСЂР°СЏ  РЅР°Р·С‹РІР°РµС‚СЃСЏ <em>РјР°С‚СЂРёС†РµР№ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹</em> Рё СЏРІР»СЏРµС‚СЃСЏ РІ СЃРёР»Сѓ 
+СЂР°РІРµРЅСЃС‚РІ $a_{ij}=a_{ji}=1,2,\dots,n$, СЃРёРјРјРµС‚СЂРёС‡РµСЃРєРѕР№.
 </p>
 
-<p>
-	где x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:super">*</span> – вектор-строка из переменных x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub">1, x</span><span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub">2,…,x</span><span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub">n</span>, знак «</span><span style="font-family:Symbol; font-size:9.5pt; letter-spacing:-0.5pt">*</span><span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.5pt; vertical-align:sub"></span>» означает транспонирование.</span>
-</p>
+<p>РЈС‡РёС‚С‹РІР°СЏ <span class="grn">РїСЂР°РІРёР»Рѕ СѓРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС†С‹ РЅР° РІРµРєС‚РѕСЂ</span>, 
+РїРѕР»СѓС‡Р°РµРј
+$$
+  A\bx=\begin{bmatrix}
+    a_{11} & a_{12} & \dots & a_{1n} \\
+    a_{21} & a_{22} & \dots & a_{2n} \\
+    \dots & \dots & \dots & \dots \\
+    a_{n1} & a_{n2} & \dots & a_{nn} \\
+  \end{bmatrix} \begin{pmatrix}x_1\\x_2\\\dots\\x_n\end{pmatrix} =
+  \begin{pmatrix}
+    a_{11}x_1+a_{12}x_2+\dots+a_{1n}x_n \\
+    a_{21}x_1+a_{22}x_2+\dots+a_{2n}x_n \\
+    \dots\dots\;\dots\dots\;\dots\dots\;\dots\dots\; \\
+    a_{n1}x_1+a_{n2}x_2+\dots+a_{nn}x_n \\
+  \end{pmatrix}.
+$$
+РўРѕРіРґР° РІС‹СЂР°Р¶РµРЅРёРµ <a href="#form15_1">(15.1)</a> Р·Р°РїРёС€РµС‚СЃСЏ РІ РІРёРґРµ
+$$ Q(x_1,x_2,\dots,x_n)=\sum_{i=1}^n\left(\sum_{j=1}^n a_{ij}x_j\right)x_i=
+x_1\sum_{j=1}^n a_{1j}x_j+x_2\sum_{j=1}^n a_{2j}x_j+\dots+
+x_n\sum_{j=1}^n a_{nj}x_j=(\bx,A\bx), $$
+РёР»Рё РІ РІРёРґРµ
+$$ Q(x_1,x_2,\dots,x_n)=(\begin{array}{c}x_1 & x_2 & \dots & x_n\end{array})
+\begin{pmatrix}
+  a_{11}x_1+a_{12}x_2+\dots+a_{1n}x_n \\
+  a_{21}x_1+a_{22}x_2+\dots+a_{2n}x_n \\
+  \dots\dots\;\dots\dots\;\dots\dots\;\dots\dots\; \\
+  a_{n1}x_1+a_{n2}x_2+\dots+a_{nn}x_n \\
+\end{pmatrix} = \bx^*A\bx, $$
+РіРґРµ $\bx^*$ вЂ“ РІРµРєС‚РѕСЂ-СЃС‚СЂРѕРєР° РёР· РїРµСЂРµРјРµРЅРЅС‹С… $x_1$, $x_2$, $\dots$, $x_n$, Р·РЅР°Рє 
+В«$^*$В» РѕР·РЅР°С‡Р°РµС‚ <span class="grn">С‚СЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ</span>.</p>
 
-<p>
-	 Итак, в матричной записи квадратичная форма (15.1) имеет вид
-</p>
-<p>
-	Q   ( x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">1</span> ,  x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">2</span> ,…,  x<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:0.2pt; vertical-align:sub">n</span> ) =(x ,Аx ) = x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">*</span>Аx.                                 (15.2)
-</p>
-<p>
-	 Таким образом, квадратичная форма полностью определяется своей матрицей, и, наоборот, любая квадратичная форма определяет однозначно симметрическую матрицу.
-</p>
-
-<p>
-	<strong>Пример 1.</strong> Составить матрицу квадратичной формы
-</p>
-<p>
-	Q(x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ) = <img src="../../images/lk15/15.1/15.1.006.jpg" width="224" height="27" alt="" /> .
-</p>
-
-<p>
-	 <strong>Решение.</strong> Учитывая, что в квадратичной форме коэффициенты a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ij</span> = a<span style="font-family:Tahoma; font-size:6.33pt; letter-spacing:-0.7pt; vertical-align:sub">ji</span> , получаем а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">11</span>  = 1, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">12</span>  = а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">21</span> = – 1, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">13</span>  = а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">31</span> = 0, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">22 </span> = – 3, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">23</span>  = а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">32</span> = 2, а<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">33</span>  = 5. То есть искомая матрица имеет вид
-</p>
-<p>
-	<img src="../../images/lk15/15.1/15.1.007.jpg" width="120" height="75" alt="" /> .</span>
-</p>
-<p>
-	 Можно проверить по формуле (15.2), что
-</p>
-<p>
-	 (x , Аx ) = (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x</span><span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> )<span style="font-family:Symbol; font-size:9.5pt">&#215;</span>(x</span><span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> – x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span>  –3x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> + 2x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> , 2x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> +   5x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> )   = Q (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ),
-</p>
-<p>
-	x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:super">*</span>Аx  = <img src="../../images/lk15/15.1/15.1.008.jpg" width="204" height="75" alt="" />  = Q (x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ).
-</p>
-
-<p>
-	 <strong>Пример 2.</strong> Найти квадратичную форму, соответствующую матрице
-</p>
-<p>
-	<img src="../../images/lk15/15.1/15.1.009.jpg" width="144" height="96" alt="" /> .
-</p>
-
-<p>
-	 <strong>Решение.</strong> Данной матрице соответствует квадратичная форма
-</p>
-<p>
-	Q(x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">1</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">2</span> , x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">3</span> ,x<span style="font-family:Tahoma; font-size:6.33pt; vertical-align:sub">4</span> ) =<img src="../../images/lk15/15.1/15.1.010.jpg" width="327" height="27" alt="" /> .
-</p>
-
-
-<p>&nbsp</p>
-<h4>15.2. Приведение квадратичной формы к каноническому виду ортогональным преобразованием</h3>
-<p>
-	<strong>Определение 15.2.</strong> Квадратичная форма называется <i>канонической</i> (или имеет <i>канонический вид)</i>, если все
-	<img src=../../images/lk15/p15.2/15.2_1.PNG> Таким образом, канонический вид квадратичной формы следующий:
-	<img class="centr" src=../../images/lk15/p15.2/15.2_2.PNG>
-</p>
-<p>
-	Очевидно, что канонической квадратичной форме соответствует диагональная матрица
-	<img class="centr" src=../../images/lk15/p15.2/15.2_3.PNG>
-	Нахождение канонического вида квадратичной формы называется <i>приведением формы к каноническому виду</i>.
-</p>
-<p>
-	<strong>Теоремa 15.1.</strong> Любая квадратичная форма с помощью ортогонального преобразования может быть приведена к каноническому виду
-	<img class="centr" src=../../images/lk15/p15.2/15.2_4.PNG>
-	где <img src=../../images/lk15/p15.2/15.2_5.PNG> – собственные значения матрицы квадратичной формы.
-</p>
-<p>
-	<strong>Доказательство.</strong> Так как матрица А квадратичной формы является симметрической, 
-	то в силу теоремы 14.2 для нее существует ортогональная матрица Т, такая, что выполнено равенство
-	<img src=../../images/lk15/p15.2/15.2_6.PNG> Пусть <img src=../../images/lk15/p15.2/15.2_7.PNG>
-	где <img src=../../images/lk15/p15.2/15.2_8.PNG>
-	– это координаты <b>x</b> в новом базисе, состоящем из нормированных собственных векторов матрицы А. 
-	Тогда из соотношения (15.2) получаем
-	<img class="centr" src=../../images/lk15/p15.2/15.2_9.PNG>
-</p>
-<p>
-	Таким образом, <i>квадратичная форма в базисе, состоящем из ортонормированных собственных векторов матрицы А, 
-	приводится к каноническому виду</i>. Алгоритм приведения ее к каноническому виду заключается, очевидно, в диагонализации 
-	симметрической матрицы квадратичной формы и последующей записи квадратичной формы в виде (15.3).•
-</p>
-<p>
-	<strong>Пример 3.</strong> Привести к каноническому виду квадратичную форму
-	<img class="centr" src=../../images/lk15/p15.2/15.2_10.PNG>
-	<i>Решение.</i> Составим соответствующую этой форме матрицу
-	<img class="centr" src=../../images/lk15/p15.2/15.2_11.PNG>
-	Характеристическое уравнение <img src=../../images/lk15/p15.2/15.2_12.PNG>
-	имеет корни <img src=../../images/lk15/p15.2/15.2_13.PNG> Для <img src=../../images/lk15/p15.2/15.2_14.PNG>
-	находим собственные векторы (см. аналогичный пример 1 из §12.2) 
-	<img src=../../images/lk15/p15.2/15.2_15.PNG> соответственно. Собственные векторы <b>v<sup>3</sup></b> и <b>v<sup>4</sup></b>, 
-	соответствующие собственному значению <img src=../../images/lk15/p15.2/15.2_16.PNG>
-	найдем из следующих соображений: по теореме 12.4 собственные векторы <img src=../../images/lk15/p15.2/15.2_17.PNG>
-	можно выбрать попарно ортогональными. Если <img src=../../images/lk15/p15.2/15.2_18.PNG>
-	 – произвольный вектор, ортогональный <b>v<sup>1</sup></b> и <b>v<sup>2</sup></b>, то для определения его координат
-	получаем систему уравнений
-	<img class="centr" src=../../images/lk15/p15.2/15.2_19.PNG>
-	общее решение которой имеет вид
-	<img class="centr" src=../../images/lk15/p15.2/15.2_20.PNG>
-	где v<sub>2</sub> и v<sub>4</sub> – произвольные действительные числа.
-</p>
-<p>	Таким образом, любой вектор <b>v</b>, ортогональный <b>v<sup>1</sup></b> и <b>v<sup>2</sup></b>, 
-	является линейной комбинацией векторов <img src=../../images/lk15/p15.2/15.2_21.PNG>
-	Попарная ортогональность векторов <img src=../../images/lk15/p15.2/15.2_22.PNG>
-	очевидна. Итак, найдены все четыре попарно ортогональных собственных вектора матрицы A. Нормируя их, получим векторы
-	<img class="centr" src=../../images/lk15/p15.2/15.2_23.PNG>
-	которые являются столбцами матрицы ортогонального преобразования Т, т. е.
-	<img class="centr" src=../../images/lk15/p15.2/15.2_24.PNG>
-	Тогда в силу формулы (15.4) квадратичная форма Q в базисе
-	<img src=../../images/lk15/p15.2/15.2_25.PNG> приводится к каноническому виду
-	<img class="centr" src=../../images/lk15/p15.2/15.2_26.PNG>
-</p>
-<p>&nbsp</p>
-<h4>15.3. Знакоопределенные квадратичные формы</h4>
-<p>
-	<strong>Определение 15.3.</strong> Квадратичная форма <i>Q (<b>x</b>) = Q (x<sub>1</sub>, x<sub>2</sub>,…, x<sub>n</sub>)</i> 
-	называется <i>положительно (отрицательно) определенной</i>, если <i>Q (<b>x</b>) > 0 (Q (<b>x</b>) < 0)</i>, &forall; x&isin;
-	<b>R</b><i><sup>n</sup></i>, x &ne; 0. Квадратичная форма <i>Q</i> (<b>x</b>) называется <i>неотрицательно (неположительно) определенной</i>,
-	 если <i>Q (<b>x</b>)</i> &ge; 0 <i>(Q (<b>x</b>) &le; 0)</i>, &forall; x&isin;<b>R<i><sup>n</sup></i></b>. Матрица А, соответствующая
-	 положительно (отрицательно) определенной форме <i>Q (<b>x</b>) = (<b>x, Аx</b>)</i>, называется <i>положительно (отрицательно) 
-	определенной матрицей</i>. Положительно и отрицательно определенные квадратичные формы называются <i>знакоопределенными.</i>
-</p>
-<p>
-	Например, квадратичная форма <i>Q (x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>) = 3x<sub>1</sub><sup>2</sup> + 5x<sub>2</sub><sup>2</sup>
-	 + 4x<sub>3</sub><sup>2</sup></i> является, очевидно, положительно определенной. А форма <i>Q (x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>
-	) = (4x<sub>1</sub> – 5x<sub>2</sub> – x<sub>3</sub>)<sup>2</sup> = = 16x<sub>1</sub><sup>2</sup> – 40x<sub>1</sub>x<sub>2</sub> – 8x<sub>
-	1</sub>x<sub>3</sub> + 25x<sub>2</sub><sup>2</sup> + 10x<sub>2</sub>x<sub>3</sub> + x<sub>3</sub><sup>2</sup></i> является неотрицательно
-	 определенной, т. к. она обращается в нуль, например, при <b><i>x</i></b> = <i>(x<sub>1</sub>, 0, 4x<sub>1</sub>)</i> &ne; 0, если x<sub>1
-	</sub> &ne; 0.
-</p>
-<p>
-	<strong>Теоремa 15.2.</strong> Для того чтобы квадратичная форма <i>Q (<b>x</b>) = (<b>x</b>, А<b>x</b>)</i> была положительно (отрицательно)
-	 определенной, необходимо и достаточно, что-бы все собственные значения <i>&lambda;<sub>1</sub>, &lambda;<sub>2</sub>,…, &lambda;<sub>n</sub>
-	</i> матрицы <i>А</i> квадратичной формы были положительными (отрицательными). Для того чтобы квадратичная форма была неотрицательно
-	 (неположительно) определенной, необходимо и достаточно, чтобы все собственные значения <i>&lambda;<sub>1</sub>, &lambda;<sub>2</sub>
-	,…, &lambda;<sub>n</sub></i> матрицы квадратичной формы были неотрицательными (неположительными), среди которых найдутся нулевые.
-</p>
-<p>
-	<strong>Доказательство.</strong> Необходимость. Пусть <i>Q (<b>x</b>) = (<b>x, Аx</b>) > 0, &forall;x &ne; 0.</i> Если <i>&lambda;i</i>
-	 – собственное значение матрицы <i>А</i>, соответствующее собственному вектору <b><i>x<sup>i</sup></i></b>, <i>i = 1, 2,..., n,</i> то 
-	<i>Q (<b>x</b><sup>i</sup>) = (<b>x</b><sup>i</sup>, A<b>x</b><sup>i</sup>) = (<b>x</b><sup>i</sup>, &lambda;<sub>i</sub><b>x</b><sup>i</sup>)
-	 = &lambda;<sub>i</sub>(<b>x</b><sup>i</sup>, <b>x</b><sup>i</sup>) > 0</i>. Отсюда, т. к. <b><i>(x<sup>i</sup>, x<sup>i</sup>)</i></b> > 0,
-	 получаем, что &lambda;<sup>i</sup> > 0, <i>i = 1, 2,..., n.</i>
-</p>
-<p>
-	<strong>Достаточность.</strong> Пусть <i>&lambda;<sub>i</sub> > 0, i = 1, 2,..., n.</i> Тогда из формулы (15.4) следует, что <i>Q (<b>x</b>)
-	 > 0, <b>&forall;x &ne; 0.</b></i>
-</p>
-<p>
-	Аналогично проводится доказательство для отрицательно (неотрицательно, неположительно) определенной квадратичной формы.&diams;
-</p>
-<p>
-	<strong>Следствие.</strong> Матрица знакоопределенной квадратичной формы является <span class="grn">невырожденной.
-	 Определитель матрицы</span> положительно определенной квадратичной формы положителен. Определитель матрицы неотрицательно (неположительно)
-	 определенной квадратичной формы равен нулю.
-</p>
-<p>
-	<strong>Доказательство.</strong> Пусть <i>Т</i> – матрица ортогонального преобразования, приводящая квадратичную форму с матрицей <i>А</i>
-	 к каноническому виду с матрицей <i>&Lambda;</i> = diag (&lambda;<sub>1</sub>, &lambda;<sub>2</sub>,…, &lambda;<sub>n</sub>). Тогда имеем
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/1.PNG" width="524" height="19" class="centr">
-<p>
-	Отсюда и из теоремы 15.2 вытекает справедливость данного следствия.&diams;
-</p>
-<p>
-	Из теоремы 15.2 следует, что преобразование <img src="../../images/lk15/images/Zhyshkevich 15.3/2.PNG" width="85"
-	 height="22"> при <i>&lambda;<sub>i</sub></i> &ne; 0, <i>z<sub>i</sub> = y<sub>i</sub></i> при <i>&lambda;<sub>i</sub> = 0, i = 1, 2,..., n</i>,
-	 приводит канонический вид (15.3) квадратичной формы к виду
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/3.PNG" width="523" height="41" style="margin:0 0 0 211px" id="15.5">
-<p>
-	где <img src="../../images/lk15/images/Zhyshkevich 15.3/4.PNG" width="388" height="17">
-</p>
-<p>
-	<strong>Определение 15.4.</strong> Канонический вид (15.5) называется <i>нормальным видом квадратичной формы.</i>
-</p>
-<p>
-	<strong>Определение 15.5.</strong> Пусть <i>A = [a<sub>ij</sub>], i, j = 1, 2,..., n,</i> – квадратная матрица. <i>Угловыми минорами</i>
-	 порядков 1, 2,…, n матрицы А называются все <span class="grn">миноры</span> соответствующих порядков, расположенные в левом верхнем 
-	углу матрицы <i>А</i>:
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/5.PNG" width="377" height="42" style="margin:0 0 0 357px" id="15.6">
-<p>
-	<strong>Теоремa 15.3 (критерий Сильвестра* положительной определенности квадратичной формы).</strong> Для того чтобы квадратичная форма <i>
-	Q (<b>x</b>) = (<b>x</b>, А<b>x</b>)</i> была положительно определенной, необходимо и достаточно, чтобы все угловые миноры матрицы <i>A</i> 
-	были положительны:
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/6.PNG" width="474" height="67" style="margin:0 0 0 260px" id="15.7">
-<p>
-	<strong>Доказательство.</strong> Необходимость. Пусть квадратичная форма положи-тельно определена. Тогда | <i>А</i> | > 0 в 
-	силу следствия из теоремы 15.2. Для вектора <i><b>x</b> = (x<sub>1</sub>, 0,..., 0)</i> &ne; <b>0</b> имеем 
-	<img src="../../images/lk15/images/Zhyshkevich 15.3/7.PNG" width="203" height="18">/ Если <i><b>x</b> = (x<sub>1</sub>, x<sub>2</sub>, 0,..., 0)
-	 &ne 0</i>, то на основании того же следствия имеем
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/8.PNG" width="339" height="43" class="centr">
-<p>
-	Продолжая этот процесс последовательно, получим все соотноше-ния (15.7).
-</p>
-<p>
-	<strong>Достаточность.</strong> Доказывается методом математической индукции по числу переменных квадратичной формы с помощью теорем 15.1, 
-	15.2 и формулы (15.5).&diams;
-</p>
-<p>
-	<strong>Замечание 1.</strong> Если квадратичная форма является неотрицательно определенной, то все угловые миноры 
-	(15.6) ее матрицы неотрицательны. Доказательство проводится аналогично доказательству теоремы 15.3
-	 с учетом теорем 15.1 и 15.2.
-</p>
-<p>
-	<strong>Замечание 2.</strong> Очевидно, квадратичная форма <i>Q (<b>x</b>)</i> является отрицательно (неположительно)
-	 определенной тогда и только тогда, когда квадратичная форма    – Q (x) является положительно (неотрицательно) определенной. 
-	Матрицы этих двух форм отличаются друг от друга только множителем – 1. Следовательно, согласно <span class="grn">свойству 3 определителей
-	</span>, их угловые миноры одинакового четного порядка равны, а угловые миноры одинакового нечетного порядка различаются лишь знаком.
-</p>
-<p>
-	<strong>Следствие (критерий отрицательной определенности квадратичной формы).</strong> Для того чтобы квадратичная форма <i>Q (<b>x</b>) 
-	= (<b>x</b>, А<b>x</b>)</i> была отрицательно определенной, необходимо и достаточно, чтобы все угловые миноры нечетных порядков матрицы
-	<i>A</i> были отрицательны, а все угловые миноры четных порядков матрицы <i>A</i> были положительны:
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/9.PNG" width="357" height="67" class="centr">
-<p>
-	<strong>Замечание 3.</strong> Если квадратичная форма является неположительно определенной, то все угловые миноры нечетных порядков ее 
-	матрицы неположительны, а все угловые миноры четных порядков ее матрицы неотрицательны. Данное утверждение вытекает из замечаний 
-	1 и 2.
-</p>
-<p>
-	<strong>Пример 4.</strong> Исследовать на знакоопределенность квадратичную форму
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/10.PNG" width="415" height="18" class="centr">
-<p>
-	<i>Решение</i>. Матрица этой формы имеет вид 
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/11.PNG" width="106" height="68" class="centr">
-<p>
-	Вычислим значения всех угловых миноров матрицы <i>A</i>:
-</p>
-<img src="../../images/lk15/images/Zhyshkevich 15.3/12.PNG" width="486" height="48" class="centr">
-<p>
-	В соответствии с критерием Сильвестра данная квадратичная форма является положительно определенной.
-</p>
-
+<p>РС‚Р°Рє, РІ РјР°С‚СЂРёС‡РЅРѕР№ Р·Р°РїРёСЃРё РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° <a href="#form15_1">(15.1)</a> 
+РёРјРµРµС‚ РІРёРґ</p>
+<div class="formula_container">
+	<p class="formula_id">(15.2)</p>
+  <p class="formula"><a name="form15_2"></a>$Q(x_1,x_2,\dots,x_n)=(\bx,A\bx)=
+  \bx^*A\bx.$.</p>
 </div>
 
+<p>РўР°РєРёРј РѕР±СЂР°Р·РѕРј, РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° РїРѕР»РЅРѕСЃС‚СЊСЋ РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ СЃРІРѕРµР№ РјР°С‚СЂРёС†РµР№, Рё, 
+РЅР°РѕР±РѕСЂРѕС‚, Р»СЋР±Р°СЏ РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° РѕРїСЂРµРґРµР»СЏРµС‚ РѕРґРЅРѕР·РЅР°С‡РЅРѕ СЃРёРјРјРµС‚СЂРёС‡РµСЃРєСѓСЋ 
+РјР°С‚СЂРёС†Сѓ.</p>
 
+<p><em>РџСЂРёРјРµСЂ 1.</em> РЎРѕСЃС‚Р°РІРёС‚СЊ <a href="#matrix_of_quadratic_form">РјР°С‚СЂРёС†Сѓ 
+РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹</a>
+$$ Q(x_1,x_2,x_3)={x_1}^2-2x_1x_2-3{x_2}^2+4x_2x_3+5{x_3}^2. $$</p>
+
+<p><em>Р РµС€РµРЅРёРµ.</em> РЈС‡РёС‚С‹РІР°СЏ, С‡С‚Рѕ РІ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјРµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ 
+$a_{ij}=a{ji}$, РїРѕР»СѓС‡Р°РµРј $a_{11}=1$, $a_{12}=a_{21}=-1$, $a_{13}=a_{31}=0$, 
+$a_{22}=-3$, $a_{23}=a_{32}=2$, $a_{33}=5$. РўРѕ РµСЃС‚СЊ РёСЃРєРѕРјР°СЏ РјР°С‚СЂРёС†Р° РёРјРµРµС‚ РІРёРґ
+$$ A=\begin{bmatrix}1&-1&0\\-1&-3&2\\0&2&5\end{bmatrix}.$$</p>
+
+<p>РњРѕР¶РЅРѕ РїСЂРѕРІРµСЂРёС‚СЊ РїРѕ С„РѕСЂРјСѓР»Рµ <a href="#form15_2">(15.2)</a>, С‡С‚Рѕ
+$$ (\bx,A\bx)=(x_1,x_2,x_3)\cdot(x_1-x_2,-x_1-3x_2+2x_3,2x_2+5x_3)=
+Q(x_1,x_2,x_3), $$
+$$ \bx^*A\bx=(\begin{array}{c}x_1 & x_2 & x_3\end{array})
+\begin{bmatrix}1&-1&0\\-1&-3&2\\0&2&5\end{bmatrix}
+\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix} = Q(x_1,x_2,x_3).\bullet $$</p>
+
+<p><em>РџСЂРёРјРµСЂ 2.</em> РќР°Р№С‚Рё <a href="#quadratic_form">РєРІР°РґСЂР°С‚РёС‡РЅСѓСЋ С„РѕСЂРјСѓ</a>, 
+СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰СѓСЋ РјР°С‚СЂРёС†Рµ
+$$ A=\begin{bmatrix}1&0&-1&0\\0&2&0&3\\-1&0&-2&4\\0&3&4&5\end{bmatrix}. $$</p>
+
+<p><em>Р РµС€РµРЅРёРµ.</em> Р”Р°РЅРЅРѕР№ <a href="#matrix_of_quadratic_form">РјР°С‚СЂРёС†Рµ</a> 
+СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР°
+$$ Q(x_1,x_2,x_3,x_4)={x_1}^2-2x_1x_3+2{x_2}^2+6x_2x_4-2{x_3}^2+8x_3x_4+
+5{x_4}^2.\bullet $$</p>
+<p>&nbsp</p>
+
+<h2>В§15.2. РџСЂРёРІРµРґРµРЅРёРµ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ Рє РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅС‹Рј 
+РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµРј</h2>
+
+<p><strong>РћРїСЂРµРґРµР»РµРЅРёРµ 15.2.</strong> РљРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° РЅР°Р·С‹РІР°РµС‚СЃСЏ 
+<em>РєР°РЅРѕРЅРёС‡РµСЃРєРѕР№</em> (РёР»Рё РёРјРµРµС‚ <em>РєР°РЅРѕРЅРёС‡РµСЃРєРёР№ РІРёРґ</em>), РµСЃР»Рё РІСЃРµ $a_{ij}$ 
+РїСЂРё $i\ne j$. РўР°РєРёРј РѕР±СЂР°Р·РѕРј, РєР°РЅРѕРЅРёС‡РµСЃРєРёР№ РІРёРґ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ СЃР»РµРґСѓСЋС‰РёР№:
+$$ Q(x_1,x_2,\dots,x_n)=a_{11}{x_1}^2+a_{22}{x_2}^2+\dots+a_{nn}{x_n}^2=
+\sum_{i=1}^n a_{ii}{x_i}^2. $$</p>
+
+<!-- РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё diag -->
+<div style="display:none">
+  $\newcommand{\diag}{\mathop{\rm diag}}$
+</div>
+
+<p>РћС‡РµРІРёРґРЅРѕ, С‡С‚Рѕ РєР°РЅРѕРЅРёС‡РµСЃРєРѕР№ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РґРёР°РіРѕРЅР°Р»СЊРЅР°СЏ 
+РјР°С‚СЂРёС†Р°
+$$ A=
+\begin{bmatrix}
+  a_{11}&0&\dots&0\\
+  0&a_{22}&\dots&0\\
+  \dots&\dots&\dots&\dots\\
+  0&0&\dots&a_{nn}
+\end{bmatrix}=\diag(a_{11},a_{22},\dots,a_{nn}). $$</p>
+
+<p>РќР°С…РѕР¶РґРµРЅРёРµ РєР°РЅРѕРЅРёС‡РµСЃРєРѕРіРѕ РІРёРґР° РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ РЅР°Р·С‹РІР°РµС‚СЃСЏ <em>РїСЂРёРІРµРґРµРЅРёРµРј 
+С„РѕСЂРјС‹ Рє РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ</em>.</p>
+
+<p><a name="theor15_1"></a><strong>РўРµРѕСЂРµРјa 15.1.</strong> Р›СЋР±Р°СЏ РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ 
+С„РѕСЂРјР° СЃ РїРѕРјРѕС‰СЊСЋ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅРѕРіРѕ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂРёРІРµРґРµРЅР° Рє 
+РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ</p>
+<div class="formula_container">
+	<p class="formula_id">(15.3)</p>
+  <p class="formula"><a name="form15_3"></a>$$Q(y_1,y_2,\dots,y_n)=
+  \varlambda_1{y_1}^2+\varlambda_2{y_2}^2+\dots+\varlambda_n{y_n}^2=
+  \sum_{i=1}^n \varlambda_i{y_i}^2,$$</p>
+</div>
+<p class="no_indent">РіРґРµ $\varlambda_1$, $\varlambda_2$, вЂ¦, $\varlambda_n$ вЂ“ 
+<a href="#">СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ</a> 
+<a href="#matrix_of_quadratic_form">РјР°С‚СЂРёС†С‹ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹</a>.</p>
+
+<p><em>Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ.</em> РўР°Рє РєР°Рє РјР°С‚СЂРёС†Р° $A$ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ СЏРІР»СЏРµС‚СЃСЏ 
+СЃРёРјРјРµС‚СЂРёС‡РµСЃРєРѕР№, С‚Рѕ РІ СЃРёР»Сѓ С‚РµРѕСЂРµРјС‹ 14.2 РґР»СЏ РЅРµРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅР°СЏ 
+РјР°С‚СЂРёС†Р° $T$, С‚Р°РєР°СЏ, С‡С‚Рѕ РІС‹РїРѕР»РЅРµРЅРѕ СЂР°РІРµРЅСЃС‚РІРѕ $\Lambda=T^*AT$. РџСѓСЃС‚СЊ $\bx=T\by$, 
+$\by=(y_1,y_2,\dots,y_n)$, РіРґРµ $y_1$, $y_2$, вЂ¦, $y_n$ вЂ“ СЌС‚Рѕ 
+<span class="grn">РєРѕРѕСЂРґРёРЅР°С‚С‹</span> $\bx$ РІ <span class="grn">РЅРѕРІРѕРј 
+Р±Р°Р·РёСЃРµ</span>, СЃРѕСЃС‚РѕСЏС‰РµРј РёР· РЅРѕСЂРјРёСЂРѕРІР°РЅРЅС‹С… СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РІРµРєС‚РѕСЂРѕРІ РјР°С‚СЂРёС†С‹ $A$. 
+РўРѕРіРґР° РёР· СЃРѕРѕС‚РЅРѕС€РµРЅРёСЏ <a href="form15_2">(15.2)</a> РїРѕР»СѓС‡Р°РµРј</p>
+<div class="formula_container">
+	<p class="formula_id">(15.4)</p>
+  <p class="formula"><a name="form15_4"></a>$$Q(x_1,x_2,\dots,x_n)=(\bx,A\bx)=
+  (T\by,A(T\by))=(\by,(T^*AT)\by)=(\by,\Lambda\by)=
+  \sum_{i=1}^n\varlambda_i{y_i}^2,\:\by=T^*\bx.$$</p>
+</div>
+
+<p>РўР°РєРёРј РѕР±СЂР°Р·РѕРј, <em>РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° РІ <span class="grn">Р±Р°Р·РёСЃРµ</span>, 
+СЃРѕСЃС‚РѕСЏС‰РµРј РёР· РѕСЂС‚РѕРЅРѕСЂРјРёСЂРѕРІР°РЅРЅС‹С… СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РІРµРєС‚РѕСЂРѕРІ РјР°С‚СЂРёС†С‹ $A$, РїСЂРёРІРѕРґРёС‚СЃСЏ Рє 
+РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ</em>. РђР»РіРѕСЂРёС‚Рј РїСЂРёРІРµРґРµРЅРёСЏ РµРµ Рє РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ 
+Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ, РѕС‡РµРІРёРґРЅРѕ, РІ РґРёР°РіРѕРЅР°Р»РёР·Р°С†РёРё СЃРёРјРјРµС‚СЂРёС‡РµСЃРєРѕР№ РјР°С‚СЂРёС†С‹ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ 
+С„РѕСЂРјС‹ Рё РїРѕСЃР»РµРґСѓСЋС‰РµР№ Р·Р°РїРёСЃРё РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ РІ РІРёРґРµ (15.3).&#9670;</p>
+
+<p><em>РџСЂРёРјРµСЂ 3.</em> РџСЂРёРІРµСЃС‚Рё Рє РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ РєРІР°РґСЂР°С‚РёС‡РЅСѓСЋ С„РѕСЂРјСѓ
+$$ Q(x_1,x_2,x_3,x_4)=2x_1x_2+2x_1x_3+2x_2x_3-{x_4}^2. $$</p>
+
+<p><em>Р РµС€РµРЅРёРµ.</em> РЎРѕСЃС‚Р°РІРёРј СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰СѓСЋ СЌС‚РѕР№ С„РѕСЂРјРµ 
+<a href="#matrix_of_quadratic_form">РјР°С‚СЂРёС†Сѓ</a>
+$$ A=\begin{bmatrix}0&1&1&0\\1&0&1&0\\1&1&0&0\\0&0&0&-1\end{bmatrix}. $$</p>
+
+<p>РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёС‡РµСЃРєРѕРµ СѓСЂР°РІРЅРµРЅРёРµ $|A-\varlambda E|=0 \Leftrightarrow 
+(\varlambda+1)\left(\varlambda^3-3\varlambda-2\right)=0$ РёРјРµРµС‚ РєРѕСЂРЅРё 
+$\varlambda_1=2$, $\varlambda_2=\varlambda_3=\varlambda_4=-1$. Р”Р»СЏ 
+$\varlambda_1=2$ Рё $\varlambda_2=-1$ РЅР°С…РѕРґРёРј СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ РІРµРєС‚РѕСЂС‹ (СЃРј. 
+Р°РЅР°Р»РѕРіРёС‡РЅС‹Р№ РїСЂРёРјРµСЂ 1 РёР· В§12.2) $\varbv^1=(1,1,1,0)$ Рё $\varbv^2=(0,-1,1,0)$ 
+СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ. РЎРѕР±СЃС‚РІРµРЅРЅС‹Рµ РІРµРєС‚РѕСЂС‹ $\varbv^3$ Рё $\varbv^4$, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ 
+СЃРѕР±СЃС‚РІРµРЅРЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ $\varlambda_3=\varlambda_4=-1$, РЅР°Р№РґРµРј РёР· СЃР»РµРґСѓСЋС‰РёС… 
+СЃРѕРѕР±СЂР°Р¶РµРЅРёР№: РїРѕ С‚РµРѕСЂРµРјРµ 12.4 СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ РІРµРєС‚РѕСЂС‹ $\varbv^1$, $\varbv^2$, 
+$\varbv^3$, $\varbv^4$ РјРѕР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ <span class="grn">РїРѕРїР°СЂРЅРѕ 
+РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅС‹РјРё</span>. Р•СЃР»Рё $\varbv=(\varv_1,\varv_2,\varv_3,\varv_4)$ вЂ“ 
+РїСЂРѕРёР·РІРѕР»СЊРЅС‹Р№ РІРµРєС‚РѕСЂ, <span class="grn">РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅС‹Р№</span> $\varbv^1$ Рё 
+$\varbv^2$, С‚Рѕ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРёСЏ РµРіРѕ РєРѕРѕСЂРґРёРЅР°С‚ РїРѕР»СѓС‡Р°РµРј СЃРёСЃС‚РµРјСѓ СѓСЂР°РІРЅРµРЅРёР№
+$$
+  \begin{cases}
+    (\varbv,\varbv^1)=\varv_1+\varv_2+\varv_3=0\\
+    (\varbv,\varbv^2)=-\varv_2+\varv_3=0,
+  \end{cases}
+$$
+РѕР±С‰РµРµ СЂРµС€РµРЅРёРµ РєРѕС‚РѕСЂРѕР№ РёРјРµРµС‚ РІРёРґ
+$$ \varbv=\begin{pmatrix}\varv_1\\\varv_2\\\varv_3\\\varv_4\end{pmatrix}=
+\begin{pmatrix}-2\varv_2\\\varv_2\\\varv_2\\\varv_4\end{pmatrix}=
+\varv_2\begin{pmatrix}-2\\1\\1\\0\end{pmatrix}+
+\varv_4\begin{pmatrix}0\\0\\0\\1\end{pmatrix}, $$
+РіРґРµ $\varv_2$ Рё $\varv_4$ вЂ“ РїСЂРѕРёР·РІРѕР»СЊРЅС‹Рµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹Рµ С‡РёСЃР»Р°.</p>
+
+<p>РўР°РєРёРј РѕР±СЂР°Р·РѕРј, Р»СЋР±РѕР№ РІРµРєС‚РѕСЂ $\varbv$, РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅС‹Р№ $\varbv^1$ Рё 
+$\varbv^2$, СЏРІР»СЏРµС‚СЃСЏ <span class="grn">Р»РёРЅРµР№РЅРѕР№ РєРѕРјР±РёРЅР°С†РёРµР№</span> РІРµРєС‚РѕСЂРѕРІ 
+$\varbv^3=(-2,1,1,0)$ Рё $\varbv^4=(0,0,0,1)$. РџРѕРїР°СЂРЅР°СЏ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅРѕСЃС‚СЊ 
+РІРµРєС‚РѕСЂРѕРІ $\varbv^1$, $\varbv^2$, $\varbv^3$, $\varbv^4$ РѕС‡РµРІРёРґРЅР°. РС‚Р°Рє, 
+РЅР°Р№РґРµРЅС‹ РІСЃРµ С‡РµС‚С‹СЂРµ РїРѕРїР°СЂРЅРѕ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅС‹С… СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РІРµРєС‚РѕСЂР° РјР°С‚СЂРёС†С‹ $A$. 
+РќРѕСЂРјРёСЂСѓСЏ РёС…, РїРѕР»СѓС‡РёРј РІРµРєС‚РѕСЂС‹
+$$ \varbu^1=\frac{1}{\left\lVert\varbv^1\right\rVert}\varbv^1=
+\frac{1}{\sqrt{3}}\begin{pmatrix}1\\1\\1\\0\end{pmatrix},
+\varbu^2=\frac{1}{\left\lVert\varbv^2\right\rVert}\varbv^2=
+\frac{1}{\sqrt{2}}\begin{pmatrix}0\\-1\\1\\0\end{pmatrix},
+\varbu^3=\frac{1}{\left\lVert\varbv^3\right\rVert}\varbv^3=
+\frac{1}{\sqrt{6}}\begin{pmatrix}-2\\1\\1\\0\end{pmatrix},
+\varbu^4=\varbv^4=\begin{pmatrix}0\\0\\0\\1\end{pmatrix}, $$
+РєРѕС‚РѕСЂС‹Рµ СЏРІР»СЏСЋС‚СЃСЏ СЃС‚РѕР»Р±С†Р°РјРё РјР°С‚СЂРёС†С‹ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅРѕРіРѕ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ $T$, С‚. Рµ.
+$$ 
+  T=
+  \begin{bmatrix}
+    1/\sqrt{3} & 0 & -2/\sqrt{6} & 0\\
+    1/\sqrt{3} & -1/\sqrt{2} & 1/\sqrt{6} & 0\\
+    1/\sqrt{3} & 1/\sqrt{2} & 1/\sqrt{6} & 0\\
+    0 & 0 & 0 & 1
+  \end{bmatrix} 
+$$.</p>
+<p>РўРѕРіРґР° РІ СЃРёР»Сѓ С„РѕСЂРјСѓР»С‹ <a href="#form15_4">(15.4)</a> РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° $Q$ 
+РІ Р±Р°Р·РёСЃРµ $\varbu^1$, $\varbu^2$, $\varbu^3$, $\varbu^4$ РїСЂРёРІРѕРґРёС‚СЃСЏ Рє 
+<a href="#theor15_1">РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ</a>
+$$ Q(y_1,y_2,y_3,y_4)=2{y_1}^2-{y_2}^2-{y_3}^2-{y_4}^2.\bullet $$</p>
+<p>&nbsp</p>
+
+<h2>В§15.3. Р—РЅР°РєРѕРѕРїСЂРµРґРµР»РµРЅРЅС‹Рµ РєРІР°РґСЂР°С‚РёС‡РЅС‹Рµ С„РѕСЂРјС‹</h2>
+
+<p><strong>РћРїСЂРµРґРµР»РµРЅРёРµ 15.3.</strong> <a href="#quadratic_form">РљРІР°РґСЂР°С‚РёС‡РЅР°СЏ 
+С„РѕСЂРјР°</a> $Q(\bx)=Q(x_1,x_2,\dots,x_n)$ РЅР°Р·С‹РІР°РµС‚СЃСЏ <em>РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ 
+(РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№</em>, РµСЃР»Рё $Q(\bx)>0\:(Q(\bx)<0)$, 
+$\forall\bx\in\RR^n$, $\bx\ne 0$. РљРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° $Q(\bx)$ РЅР°Р·С‹РІР°РµС‚СЃСЏ 
+<em>РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ (РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№</em>, РµСЃР»Рё 
+$Q(\bx)\geq 0\;(Q(\bx)\leq 0)$, $\forall\bx\in\RR^n$. 
+<a href="#matrix_of_quadratic_form">РњР°С‚СЂРёС†Р°</a> $A$, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰Р°СЏ 
+РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ (РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ С„РѕСЂРјРµ $Q(\bx)=(\bx,A\bx)$, РЅР°Р·С‹РІР°РµС‚СЃСЏ 
+<em>РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ (РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РјР°С‚СЂРёС†РµР№</em>. РџРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ Рё 
+РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рµ РєРІР°РґСЂР°С‚РёС‡РЅС‹Рµ С„РѕСЂРјС‹ РЅР°Р·С‹РІР°СЋС‚СЃСЏ 
+<em>Р·РЅР°РєРѕРѕРїСЂРµРґРµР»РµРЅРЅС‹РјРё.</em></p>
+
+<p>РќР°РїСЂРёРјРµСЂ, РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° $Q(x_1,x_2,x_3)=3{x_1}^2+5{x_2}^2+4{x_3}^2$ 
+СЏРІР»СЏРµС‚СЃСЏ, РѕС‡РµРІРёРґРЅРѕ, РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№. Рђ С„РѕСЂРјР° $Q(x_1,x_2,x_3)=
+(4x_1вЂ“5x_2вЂ“x_3)^2=16{x_1}^2вЂ“40x_1x_2вЂ“8x_1x_3+25{x_2}^2+10x_2x_3+{x_3}^2$ 
+СЏРІР»СЏРµС‚СЃСЏ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, С‚. Рє. РѕРЅР° РѕР±СЂР°С‰Р°РµС‚СЃСЏ РІ РЅСѓР»СЊ, РЅР°РїСЂРёРјРµСЂ, 
+РїСЂРё $\bx=(x_1,0,4x_1)\ne {\bf 0}$, РµСЃР»Рё $x_1\ne 0$.</p>
+
+<p><a name="theor15_2"></a><strong>РўРµРѕСЂРµРјa 15.2.</strong> Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° 
+$Q(\bx)=(\bx,A\bx)$ Р±С‹Р»Р° РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ (РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, РЅРµРѕР±С…РѕРґРёРјРѕ 
+Рё РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІСЃРµ СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ $\varlambda_1$, $\varlambda_2$, 
+вЂ¦, $\varlambda_n$ РјР°С‚СЂРёС†С‹ $A$ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ Р±С‹Р»Рё РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё 
+(РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹РјРё). Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° Р±С‹Р»Р° РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ 
+(РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, РЅРµРѕР±С…РѕРґРёРјРѕ Рё РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІСЃРµ СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ 
+Р·РЅР°С‡РµРЅРёСЏ $\varlambda_1$, $\varlambda_2$, вЂ¦, $\varlambda_n$ РјР°С‚СЂРёС†С‹ 
+РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ Р±С‹Р»Рё РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹РјРё (РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё), СЃСЂРµРґРё РєРѕС‚РѕСЂС‹С… 
+РЅР°Р№РґСѓС‚СЃСЏ РЅСѓР»РµРІС‹Рµ.</p>
+
+<p><em>Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ.</em> РќРµРѕР±С…РѕРґРёРјРѕСЃС‚СЊ. РџСѓСЃС‚СЊ $Q(\bx)=(\bx,A\bx)>0$, 
+$\forall\bx\ne 0$. Р•СЃР»Рё $\varlambda_i$ вЂ“ СЃРѕР±СЃС‚РІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°С‚СЂРёС†С‹ $A$, 
+СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРµ СЃРѕР±СЃС‚РІРµРЅРЅРѕРјСѓ РІРµРєС‚РѕСЂСѓ $\bx^i$, $i=1,2,\dots,n$, С‚Рѕ 
+$Q(\bx^i)=(\bx^i,A\bx^i)=(\bx^i,\varlambda_i\bx^i)=
+\varlambda_i(\bx^i,\bx^i)>0$. РћС‚СЃСЋРґР°, С‚. Рє. $(\bx^i,\bx^i)>0$, РїРѕР»СѓС‡Р°РµРј, С‡С‚Рѕ 
+$\varlambda_i>0$, $i=1,2,\dots,n$.</p>
+
+<p>Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕСЃС‚СЊ. РџСѓСЃС‚СЊ $\varlambda_i>0$, $i=1,2,\dots,n$. 
+РўРѕРіРґР° РёР· С„РѕСЂРјСѓР»С‹ <a href="#form15_4">(15.4)</a> СЃР»РµРґСѓРµС‚, С‡С‚Рѕ $Q(\bx)>0$, 
+$\forall\bx\ne 0$.</p>
+
+<p>РђРЅР°Р»РѕРіРёС‡РЅРѕ РїСЂРѕРІРѕРґРёС‚СЃСЏ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ РґР»СЏ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ (РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ, 
+РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹.&diams;</p>
+
+<p><a name="consequence_of_theor15_2"></a><strong>РЎР»РµРґСЃС‚РІРёРµ.</strong> РњР°С‚СЂРёС†Р° 
+Р·РЅР°РєРѕРѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ СЏРІР»СЏРµС‚СЃСЏ 
+<span class="grn">РЅРµРІС‹СЂРѕР¶РґРµРЅРЅРѕР№</span>. <span class="grn">РћРїСЂРµРґРµР»РёС‚РµР»СЊ 
+РјР°С‚СЂРёС†С‹</span> РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ РїРѕР»РѕР¶РёС‚РµР»РµРЅ. 
+РћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ (РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ 
+С„РѕСЂРјС‹ СЂР°РІРµРЅ РЅСѓР»СЋ.</p>
+
+<p><em>Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ.</em> РџСѓСЃС‚СЊ $T$ вЂ“ РјР°С‚СЂРёС†Р° РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅРѕРіРѕ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ, 
+РїСЂРёРІРѕРґСЏС‰Р°СЏ РєРІР°РґСЂР°С‚РёС‡РЅСѓСЋ С„РѕСЂРјСѓ СЃ РјР°С‚СЂРёС†РµР№ $Рђ$ Рє 
+<a href="#theor15_1">РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ</a> СЃ РјР°С‚СЂРёС†РµР№ $\Lambda=
+\diag(\varlambda_1,\varlambda_2,\dots,\varlambda_n)$. РўРѕРіРґР° РёРјРµРµРј
+$$ \Lambda=T^{-1}AT\; \Leftrightarrow\; A=T\Lambda T^{-1} \Rightarrow 
+|A|=|T|\cdot|\Lambda|\cdot|T^{-1}|=|\Lambda|=
+\varlambda_1\varlambda_2\dots\varlambda_n. $$
+РћС‚СЃСЋРґР° Рё РёР· <a href="#theor15_2">С‚РµРѕСЂРµРјС‹ 15.2</a> РІС‹С‚РµРєР°РµС‚ СЃРїСЂР°РІРµРґР»РёРІРѕСЃС‚СЊ 
+РґР°РЅРЅРѕРіРѕ СЃР»РµРґСЃС‚РІРёСЏ.&diams;</p>
+
+<p>РР· <a href="#theor15_2">С‚РµРѕСЂРµРјС‹ 15.2</a> СЃР»РµРґСѓРµС‚, С‡С‚Рѕ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ 
+$z_i=\sqrt{|\varlambda_i|}y_i$ РїСЂРё $\varlambda_i\ne 0$, $z_i=y_i$ РїСЂРё 
+$\varlambda_i=0$, $i=1,2,\dots,n$, РїСЂРёРІРѕРґРёС‚ РєР°РЅРѕРЅРёС‡РµСЃРєРёР№ РІРёРґ 
+<a href="#form15_3">(15.3)</a> РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ Рє РІРёРґСѓ</p>
+<div class="formula_container">
+	<p class="formula_id">(15.5)</p>
+  <p class="formula"><a name="form15_5"></a>$Q(z_1,z_2,\dots,z_n)=
+  \vareps_1{z_1}^2+\vareps_2{z_2}^2+\dots+\vareps_n{z_n}^2=
+  \sum_{i=1}^n\vareps_i{z_i}^2$,</p>
+</div>
+<p class="no_indent">РіРґРµ $\vareps_i=\pm1$ РїСЂРё $\varlambda_i\ne 0$, 
+$\vareps_i=0$ РїСЂРё $\varlambda_i=0$, $i=1,2,\dots,n$.</p>
+
+<p><strong>РћРїСЂРµРґРµР»РµРЅРёРµ 15.4.</strong> РљР°РЅРѕРЅРёС‡РµСЃРєРёР№ РІРёРґ (15.5) РЅР°Р·С‹РІР°РµС‚СЃСЏ 
+<em>РЅРѕСЂРјР°Р»СЊРЅС‹Рј РІРёРґРѕРј РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹.</em></p>
+
+<p><strong>РћРїСЂРµРґРµР»РµРЅРёРµ 15.5.</strong> РџСѓСЃС‚СЊ $A=[a_{ij}],\;i,j=1,2,\dots,n$, вЂ“ 
+РєРІР°РґСЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р°. <em>РЈРіР»РѕРІС‹РјРё РјРёРЅРѕСЂР°РјРё</em> РїРѕСЂСЏРґРєРѕРІ 1, 2,вЂ¦, $n$ РјР°С‚СЂРёС†С‹ 
+$A$ РЅР°Р·С‹РІР°СЋС‚СЃСЏ РІСЃРµ <span class="grn">РјРёРЅРѕСЂС‹</span> СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… РїРѕСЂСЏРґРєРѕРІ, 
+СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹Рµ РІ Р»РµРІРѕРј РІРµСЂС…РЅРµРј СѓРіР»Сѓ РјР°С‚СЂРёС†С‹ $A$:</p>
+<div class="formula_container">
+	<p class="formula_id">(15.6)</p>
+  <p class="formula"><a name="form15_6"></a>$a_{11},\;
+  \left\lvert\begin{array}{c}a_{11}&a_{12}\\
+  a_{21}&a_{22}\end{array}\right\rvert,\dots,\;|A|$.</p>
+</div>
+
+<p><a name="theor15_3"></a><strong>РўРµРѕСЂРµРјa 15.3 (РєСЂРёС‚РµСЂРёР№ РЎРёР»СЊРІРµСЃС‚СЂР° 
+РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕР№ РѕРїСЂРµРґРµР»РµРЅРЅРѕСЃС‚Рё РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹).</strong> Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ 
+<a href="#quadratic_form">РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР°</a> $Q(\bx)=(\bx,A\bx)$ Р±С‹Р»Р° 
+РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, РЅРµРѕР±С…РѕРґРёРјРѕ Рё РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІСЃРµ СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ 
+РјР°С‚СЂРёС†С‹ $A$ Р±С‹Р»Рё РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹:</p>
+<div class="formula_container">
+	<p class="formula_id">(15.7)</p>
+  <p class="formula"><a name="form15_7"></a>$a_{11}>0,
+  \left\lvert\begin{array}{c}a_{11}&a_{12}\\
+  a_{21}&a_{22}\end{array}\right\rvert>0,
+  \left\lvert\begin{array}{c}a_{11}&a_{12}&a_{13}\\
+  a_{21}&a_{22}&a_{23}\\
+  a_{31}&a_{32}&a_{33}\\\end{array}\right\rvert>0,\dots,|A|>0$.</p>
+</div>
+
+<p><a name="theor15_3_proof"></a><em>Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ.</em> РќРµРѕР±С…РѕРґРёРјРѕСЃС‚СЊ. РџСѓСЃС‚СЊ 
+РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅР°. РўРѕРіРґР° $|A|>0$ РІ СЃРёР»Сѓ 
+<a href="#consequence_of_theor15_2">СЃР»РµРґСЃС‚РІРёСЏ РёР· С‚РµРѕСЂРµРјС‹ 15.2</a>. Р”Р»СЏ РІРµРєС‚РѕСЂР° 
+$\bx=(x_1,0,\dots,0)\ne{\bf 0}$ РёРјРµРµРј $Q(\bx)=a_{11}{x_1}^2>0\:\Rightarrow\:
+a_{11}>0$. Р•СЃР»Рё $\bx=(x_1,x_2,0,\dots,0)\ne {\bf 0}$, С‚Рѕ РЅР° РѕСЃРЅРѕРІР°РЅРёРё 
+<a href="#consequence_of_theor15_2">С‚РѕРіРѕ Р¶Рµ СЃР»РµРґСЃС‚РІРёСЏ</a> РёРјРµРµРј
+$$ Q(\bx)=\begin{pmatrix}x_1&x_2\end{pmatrix}
+\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{bmatrix}
+\begin{pmatrix}x_1\\x_2\end{pmatrix}>0\:\Rightarrow\:
+\left\lvert\begin{array}{c}a_{11}&a_{12}\\
+a_{21}&a_{22}\end{array}\right\rvert>0. $$</p>
+
+<p>РџСЂРѕРґРѕР»Р¶Р°СЏ СЌС‚РѕС‚ РїСЂРѕС†РµСЃСЃ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, РїРѕР»СѓС‡РёРј РІСЃРµ СЃРѕРѕС‚РЅРѕС€РµРЅРёСЏ 
+<a href="#form15_7">(15.7)</a>.</p>
+
+<p>Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕСЃС‚СЊ. Р”РѕРєР°Р·С‹РІР°РµС‚СЃСЏ РјРµС‚РѕРґРѕРј РјР°С‚РµРјР°С‚РёС‡РµСЃРєРѕР№ РёРЅРґСѓРєС†РёРё РїРѕ С‡РёСЃР»Сѓ 
+РїРµСЂРµРјРµРЅРЅС‹С… РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ С„РѕСЂРјС‹ СЃ РїРѕРјРѕС‰СЊСЋ С‚РµРѕСЂРµРј <a href="#theor15_1">15.1</a>, 
+<a href="#theor15_2">15.2</a> Рё С„РѕСЂРјСѓР»С‹ <a href="#form15_5">(15.5)</a>.&diams;
+</p>
+
+<p><a name="note1"></a><strong>Р—Р°РјРµС‡Р°РЅРёРµ 1.</strong> Р•СЃР»Рё РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° 
+СЏРІР»СЏРµС‚СЃСЏ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, С‚Рѕ РІСЃРµ СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ 
+<a href="#form15_6">(15.6)</a> РµРµ РјР°С‚СЂРёС†С‹ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹. Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ 
+РїСЂРѕРІРѕРґРёС‚СЃСЏ Р°РЅР°Р»РѕРіРёС‡РЅРѕ <a href="#theor15_3_proof">РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІСѓ С‚РµРѕСЂРµРјС‹ 
+15.3</a> СЃ СѓС‡РµС‚РѕРј С‚РµРѕСЂРµРј <a href="#theor15_1">15.1</a> Рё 
+<a href="#theor15_2">15.2.</a></p>
+
+<p><a name="note2"></a><strong>Р—Р°РјРµС‡Р°РЅРёРµ 2.</strong> РћС‡РµРІРёРґРЅРѕ, РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ 
+С„РѕСЂРјР° $Q(\bx)$ СЏРІР»СЏРµС‚СЃСЏ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ (РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ С‚РѕРіРґР° Рё 
+С‚РѕР»СЊРєРѕ С‚РѕРіРґР°, РєРѕРіРґР° РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° $вЂ“Q(\bx)$ СЏРІР»СЏРµС‚СЃСЏ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ 
+(РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ) РѕРїСЂРµРґРµР»РµРЅРЅРѕР№. РњР°С‚СЂРёС†С‹ СЌС‚РёС… РґРІСѓС… С„РѕСЂРј РѕС‚Р»РёС‡Р°СЋС‚СЃСЏ РґСЂСѓРі РѕС‚ РґСЂСѓРіР° 
+С‚РѕР»СЊРєРѕ РјРЅРѕР¶РёС‚РµР»РµРј вЂ“1. РЎР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, СЃРѕРіР»Р°СЃРЅРѕ <span class="grn">СЃРІРѕР№СЃС‚РІСѓ 3 
+РѕРїСЂРµРґРµР»РёС‚РµР»РµР№</span>, РёС… СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ РѕРґРёРЅР°РєРѕРІРѕРіРѕ С‡РµС‚РЅРѕРіРѕ РїРѕСЂСЏРґРєР° СЂР°РІРЅС‹, Р° 
+СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ РѕРґРёРЅР°РєРѕРІРѕРіРѕ РЅРµС‡РµС‚РЅРѕРіРѕ РїРѕСЂСЏРґРєР° СЂР°Р·Р»РёС‡Р°СЋС‚СЃСЏ Р»РёС€СЊ Р·РЅР°РєРѕРј.</p>
+
+<p><strong>РЎР»РµРґСЃС‚РІРёРµ (РєСЂРёС‚РµСЂРёР№ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕР№ РѕРїСЂРµРґРµР»РµРЅРЅРѕСЃС‚Рё РєРІР°РґСЂР°С‚РёС‡РЅРѕР№ 
+С„РѕСЂРјС‹).</strong> Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ <a href="#quadratic_form">РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ 
+С„РѕСЂРјР°</a> $Q(\bx)=(\bx,A\bx)$ Р±С‹Р»Р° РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, РЅРµРѕР±С…РѕРґРёРјРѕ Рё 
+РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІСЃРµ СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ РЅРµС‡РµС‚РЅС‹С… РїРѕСЂСЏРґРєРѕРІ РјР°С‚СЂРёС†С‹ $A$ Р±С‹Р»Рё 
+РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹, Р° РІСЃРµ СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ С‡РµС‚РЅС‹С… РїРѕСЂСЏРґРєРѕРІ РјР°С‚СЂРёС†С‹ $A$ Р±С‹Р»Рё 
+РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹:
+$$ a_{11}<0,\:\left\lvert\begin{array}{c}a_{11}&a_{12}\\
+a_{21}&a_{22}\end{array}\right\rvert>0,\;
+\left\lvert\begin{array}{c}a_{11}&a_{12}&a_{13}\\
+a_{21}&a_{22}&a_{23}\\
+a_{31}&a_{32}&a_{33}\end{array}\right\rvert<0,\dots,\:(-1)^n|A|>0. $$</p>
+
+<p><strong>Р—Р°РјРµС‡Р°РЅРёРµ 3.</strong> Р•СЃР»Рё РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° СЏРІР»СЏРµС‚СЃСЏ 
+РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№, С‚Рѕ РІСЃРµ СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ РЅРµС‡РµС‚РЅС‹С… РїРѕСЂСЏРґРєРѕРІ РµРµ 
+РјР°С‚СЂРёС†С‹ РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹, Р° РІСЃРµ СѓРіР»РѕРІС‹Рµ РјРёРЅРѕСЂС‹ С‡РµС‚РЅС‹С… РїРѕСЂСЏРґРєРѕРІ РµРµ РјР°С‚СЂРёС†С‹ 
+РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹. Р”Р°РЅРЅРѕРµ СѓС‚РІРµСЂР¶РґРµРЅРёРµ РІС‹С‚РµРєР°РµС‚ РёР· Р·Р°РјРµС‡Р°РЅРёР№ 
+<a href="#note1">1</a> Рё <a href="#note2">2</a>.</p>
+
+<p><em>РџСЂРёРјРµСЂ 4.</em> РСЃСЃР»РµРґРѕРІР°С‚СЊ РЅР° Р·РЅР°РєРѕРѕРїСЂРµРґРµР»РµРЅРЅРѕСЃС‚СЊ РєРІР°РґСЂР°С‚РёС‡РЅСѓСЋ С„РѕСЂРјСѓ
+$$ Q(x_1,x_2,x_3)={x_1}^2+2x_1x_2+2x_1x_3+2{x_2}^2+4x_2x_3+3{x_3}^2. $$</p>
+
+<p><em>Р РµС€РµРЅРёРµ</em>. <a href="#matrix_of_quadratic_form">РњР°С‚СЂРёС†Р°</a> СЌС‚РѕР№ 
+С„РѕСЂРјС‹ РёРјРµРµС‚ РІРёРґ $A=\begin{bmatrix}1&1&1\\1&2&2\\1&2&3\end{bmatrix}$.</p>
+
+<p>Р’С‹С‡РёСЃР»РёРј Р·РЅР°С‡РµРЅРёСЏ РІСЃРµС… СѓРіР»РѕРІС‹С… РјРёРЅРѕСЂРѕРІ РјР°С‚СЂРёС†С‹ $A$:
+$$ a_{11}=1>0,\:\left\lvert\begin{array}{c}1&1\\1&2\end{array}\right\rvert=
+2-1=1>0,\:|A|=6+2+2-2-4-3=1>0. $$</p>
+
+<p>Р’ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ <a href="#theor15_3">РєСЂРёС‚РµСЂРёРµРј РЎРёР»СЊРІРµСЃС‚СЂР°</a> РґР°РЅРЅР°СЏ 
+РєРІР°РґСЂР°С‚РёС‡РЅР°СЏ С„РѕСЂРјР° СЏРІР»СЏРµС‚СЃСЏ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№.&bullet;</p>
+</div>
 
 <p>&nbsp;</p>
-<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../Оболочка/images/background.jpg">
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../../../РћР±РѕР»РѕС‡РєР°/images/background.jpg">
   <tr >
-  <td align=center><var><b>(С)  БГУИР</b></var></td>
+  <td align=center><var><b>(РЎ)  Р‘Р“РЈРР </b></var></td>
   </tr>
 </table>
-</BODY></HTML>
+</BODY>
+</HTML>
