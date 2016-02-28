@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- прямые phi, gamma и т.д -->
+<!-- Размеры скоробок увеличить-->
+<!-- Ещё раз размеры дробных формул -->
+<!-- Прямые скобки с векторами-->
+<!-- параграф посередине -->
+<!-- отспупы перед и после картинок-->
+<!-- Совершенно аналогичная картина получается... увеличить формулу-->
+<!-- Совершенно аналогично исследуется форма двуполостного гиперболоида... аналогично-->
+<!-- (7.6) -  увеличить скобки-->
+<!-- (7.7) + (7,8) - ув. формулу-->
+
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="my_style.css">
+	<script type="text/javascript" src="../../../Оболочка/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		processEscapes: true,
+		mtextFontInherit: true 
+		}
+	});
+	</script>
+	<script type="text/javascript">    
+		MathJax.Hub.Config({    
+		extensions: ["tex2jax.js"],    
+		"HTML-CSS": { scale: 90}    
+		});    
+	</script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../../../Оболочка/images/background.jpg">
+	<tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../../../Оболочка/images/logo_new.png" width=117 align="middle"></td>
+	<tr> 
+     <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >Электронный
+         ресурс по учебной дисциплине<BR>
+         "Математика. Геометрия и Алгебра"<BR>
+         для специальности</H1>
+         1-40 04 01 «Информатика и технологии программирования».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../../../index.htm">Оглавление</A> | <A HREF="../../../Программа/program.htm" TITLE="Программа курса (Откроется в новом окне)">Программа</A> | <strong>Теория</strong> | <A HREF="../../../Практика/practice.htm">Практика</A> | <A HREF="../../../Контроль_знаний/test.htm">Контроль знаний</A> | <A HREF="../../../Об авторах/author.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+	<div class = "page">
+		<h1>Тема 7. Повехности второго порядка в пространстве</h1>
+		<h2>§7.1. Понятие поверхности второго порядка. Сфера</h2>
+		<p>
+			<strong>Определение 7.1.</strong> Поверхность, определяемая уравнением второй степени относительно <a href = "" class = "green">декартовых координат</a> $x, y, z$, 
+			называется <i>поверхностью второго порядка</i>.
+		</p>
+		<p>В этом и следующих параграфах перечислим и разберем все поверхности второго порядка.</p>
+		<p>
+			<strong id = "sphere">Определение 7.2.</strong> <i>Сферой</i> называется поверхность, все точки которой удалены на одинаковое <a href = "" class = "green">расстояние</a> $R$ <i>(радиус сферы)</i> 
+			от фиксированной точки $M_{0}(x_{0}, y_{0}, z_{0})$ , называемой <i>центром сферы</i>.
+		</p>
+		<p>В силу определения сферы, очевидно, ее уравнение имеет вид</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+			$
+				(x - x_{0})^{2} + (y - y_{0})^{2} + (z - z_{0})^{2} = R^{2} .
+			$
+			</td>
+			<td align="right">
+			$(7.1)$
+			</td>
+		</tr>
+		</table>	
+		<p>Легко видеть, что в уравнении (7.1) сферы:</p>
+		<p>1) коэффициенты при  $x^{2}, y^{2}, z^{2}$ равны и отличны от нуля;</p>
+		<p>2) коэффициенты при $xy, zx, zy$ равны 0.</p>
+		<p>
+			Как это было сделано при <a href = "" class = "green">исследовании уравнения окружности</a> в §5.4, можно показать, что любое уравнение второго порядка, удовлетворяющее условиям 1) и 2), 
+			задает в вещественном трехмерном пространстве $Oxyz$ либо сферу, либо точку, либо ничего.
+		</p>
+		
+		<h2>§7.2. Цилиндрические поверхности</h2>
+		<p>
+			<strong id = "cylindric_surface">Определение 7.3</strong>. Поверхность, составленная из всех прямых, пересекающих заданную линию $K$ и параллельных заданной прямой $L$, называется <i>цилиндрической</i>. 
+			При этом линия $K$ называется <i>направляющей цилиндрической поверхности</i>, а прямые, параллельные $L$ и составляющие поверхность, называются <i>образующими</i>.
+		</p>
+		<p>
+			Рассмотрим уравнение $F(x,y) = 0$. Это уравнение не содержит координаты $z$, следовательно, на нее не накладывается никаких связей и она может принимать любые значения. 
+			Обозначим через $S$ поверхность, определяемую уравнением $F(x,y) = 0$, и докажем, что это – цилиндрическая поверхность с образующими, параллельными оси $Oz$ (рис. 7.1).
+		</p>   
+		<div align = "center" alt = "Стройникова лучшая"><img src="../../images/lk7/gr2.png" ></div>
+		<p>
+			Пусть $M_{0}(x_{0}, y_{0}, z_{0})$ – произвольная точка $S$. Тогда $M_{0} \in S \Rightarrow F(x_{0}, y_{0})$, следовательно, координаты точки $M(x_{0}, y_{0}, z)$ удовлетворяют уравнению $F(x,y) = 0 \Rightarrow M \in S$ при любых $z$. 
+			Это означает, что на поверхности $S$ целиком лежит прямая, проходящая через точку $M_{0}$ и параллельная оси $Oz$.
+		</p>
+		<p>
+			Если $S$ – цилиндрическая поверхность, а уравнение $F(x,y)$ на плоскости $Оxy$ определяет направляющую этой поверхности, 
+			то в пространстве $Oxyz$ направляющая поверхности $S$ задается системой уравнений
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				z = 0\\ 
+				F(x,y) = 0 .
+			\end{cases} 
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Совершенно аналогично можно показать, что уравнения $F(y,z) = 0$ и $F(x,z) = 0$ определяют цилиндрические поверхности с образующими, 
+			параллельными соответственно осям $Ox$ и $Oy$.
+		</p>
+		<p>Рассмотрим <i>цилиндрические поверхности второго порядка</i>.</p>
+		<p>1.<i>Эллиптический цилиндр</i> с образующими, параллельными оси $Oz$ <br> (рис. 7.2):</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">  
+				$
+					\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = 1.
+				$
+			</td>
+		</tr>
+		</table>
+		<div align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr3.png" ></div>
+		<p>В частности, при $a = b$ получится <i>прямой круговой цилиндр</i>.</p>
+		<p>2.<i>Гиперболический цилиндр</i> с образующими, параллельными оси $Oz$ <br> (рис. 7.3):</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{a^{2}} - \dfrac{y^{2}}{b^{2}} = 1 .
+				$
+			</td>
+		</tr>
+		</table>
+		<div align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr4.png" ></div>
+		<p>3.<i>Параболический цилиндр</i> с образующими, параллельными оси $Oz$ <br> (рис. 7.4):</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				y^{2} = 2px .
+			$
+			</td>
+		</tr>
+		</table>
+		<div align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr5.png" ></div>
+		<p>Аналогично можно рассмотреть другие эллиптические, гиперболические и параболические цилиндры с образующими, параллельными осям $Ox$ и $Oy$.</p>
+		<h2>§7.3. Конические поверхности</h2>
+		<p>
+			<strong id = "conic_surface">Определение 7.4</strong>. Поверхность, составленная из всех прямых, пересекающих данную линию $K$ и проходящих через данную точку $P$, называется <i>конической поверхностью</i>. 
+			При этом $K$ называется <i>направляющей</i>, точка $P$ – вершиной, а каждая из прямых, составляющих поверхность, – <i>образующей конической поверхности</i>.
+		</p>
+		<p>Найдем уравнение конической поверхности с вершиной в начале координат $O(0,0,0)$ и направляющей $K$, заданной системой уравнений</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				z = c\\
+				
+				\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = \normalsize 1,
+			\end{cases} 
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">т. е. $K$ – это <a href = "" class = "green">эллипс</a> с <a href = "" class = "green">полуосями</a> $a$,$b$, лежащими в плоскости $z = c, \ c \neq 0$.</p>
+		<p>
+			Пусть $M(x,y,z)$ – любая точка этой поверхности. Проведем через нее образующую <i>OM</i>, пересекающуюся с направляющей в точке $N(X,Y,c)$. 
+			Тогда <a href = "" class = "green">канонические уравнения</a> прямой $OM$ имеют вид
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				 \dfrac{x - 0}{X - 0} = \dfrac{y - 0}{Y - 0} = \dfrac{z - 0}{c - 0}  \Rightarrow
+				 \dfrac{x}{X} = \dfrac{y}{Y} = \dfrac{z}{c}  \Rightarrow
+				 X =  \dfrac{cx}{z},  Y =  \dfrac{cy}{z}.
+			$
+			</td>
+		</tr>
+		</table>
+		<p>Подставим выражения $X$ и $Y$ во второе уравнение системы, задающей $K$, и получим</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					\dfrac{c^{2}x^{2}}{a^{2}z^{2}} + \dfrac{c^{2}y^{2}}{b^{2}z^{2}} = 1 .
+				$
+			</td>
+		</tr>
+		</table>
+		<p>Отсюда получаем уравнение искомой поверхности (см. <a href = "" class = "green">рис. 5.5</a>):</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} - \dfrac{z^{2}}{c^{2}} = 0 .
+				$
+			</td>
+			<td align="right">
+			$(7.2)$
+			</td>
+		</tr>
+		</table>
+		<p>Поверхность, заданную уравнением (7.2), называют <i>конусом втрого порядка</i>.</p>
+		<h2 id = "rotate_surface">§7.4. Поверхности вращения</h2>
+		<p>Пусть линия $K$, лежащая в плоскости $Oyz$, задана системой уравнений</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				z = 0\\ 
+				F(x,y) = 0 .
+			\end{cases} 
+			$
+			</td>
+		</tr>
+		</table>
+		<p>Рассмотрим поверхность, образованную вращением этой линии вокруг оси $Oz$ (рис. 7.5). Такая поверхность называется <i>поверхностью вращения</i>. Найдем ее уравнение.</p>
+		<div align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr6.png" ></div>
+		<p>
+			Возьмем любую точку $M(x,y,z)$ поверхности вращения. Через эту точку проведем плоскость, перпендикулярную оси $Oz$. Пусть $P$ – точка пересечения этой плоскости с осью $Oz$, $N$ – точка 
+			ее пересечения с кривой $K$ (см. рис. 7.5). Тогда $\left| \overrightarrow{PM} \right|$ и $\left| \overrightarrow{PN} \right|$ равны радиусу окружности вращения точки $N$ и, 
+			следовательно, $\left| \overrightarrow{PM} \right| = \left| \overrightarrow{PN} \right| $. Но $\left| \overrightarrow{PN}\right| = \mid Y \mid $, где $Y$ – ордината точки $N(X,Y,Z)$. Тогда
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				\mid Y \mid  = \left| \overrightarrow{PN} \right| = \sqrt{x^{2} + y^{2}} ,
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">или</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				Y = \pm \sqrt{x^{2} + y^{2}} .
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Кроме того, <a href = "" class = "green">координата</a> $Z$ точки $N$ равна координате $z$ точки $M$, т. е. $Z$ = $z$. Но координаты точки $N$ удовлетворяют системе уравнений, задающей $K$, 
+			следовательно, подставляя их выражения в эту систему, получаем, что координаты $x,y,z$ любой точки $M$ поверхности вращения удовлетворяют уравнению
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center id = "7.3">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+			$
+				F\left( \pm \sqrt{x^{2} + y^{2}}, z \right) = 0 . 
+			$
+			</td>
+			<td align="right">
+			$(7.3)$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Можно показать, что <a href = "" class = "green">координаты точек</a>, не лежащих на поверхности вращения, этому уравнению не удовлетворяют.
+		</p>
+		<p>
+			Таким образом, уравнение (7.3) является уравнением поверхности вращения относительно оси $Oz$ линии $K$, 
+			лежащей в координатной плоскости $Oyz$. Пример такой поверхности приведен также на <a href = "" class = "green">рис. 5.5</a>.
+		</p>
+		<p>
+			Аналогично можно получить уравнения поверхностей вращения кривой $K$ относительно оси $Oy$ или, когда кривая $K$ лежит в координатных 
+			плоскостях $Оxy$ или $Oxz$, а осью вращения будет соответственно $Ox$ или $Oy$, $Ox$ или $Oz$.
+		</p>
+		<p>
+			<i>Пример 1</i>. Найти поверхность, образованную вращением <a href = "" class = "green">параболы</a>
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\ 
+				y^{2} = 2pz
+			\end{cases} 
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue"> вокруг оси $Oz$.<p>
+		<p> Подставляя в уравнение </p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				Y^{2} = 2pZ
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">выражения</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				Y = \pm \sqrt{x^{2} + y^{2}}, Z = z, 
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">получаем уравнение поверхности вращения</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				x^{2} + y^{2} = 2pz .
+			$
+			</td>
+		</tr>
+		</table>
+		<p>Отметим, что данная поверхность называется <i>параболоидом вращения</i>.•</p>
+		
+		<h2 id = "ellips">§7.5. Эллипсоид</h2>
+		<p>
+			<strong>Определение 7.5</strong>. <i>Эллипсоидом</i> называется поверхность, которая в специально выбранной 
+			<a href ="" class = "green">декартовой прямоугольной системе координат</a> задается уравнением
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center id = "7.4">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} + \dfrac{z^{2}}{c^{2}} = 1.
+				$ 
+			</td>
+			<td align="right">
+			$(7.4)$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Уравнение (7.4) называют <i>каноническим уравнением эллипсоида</i>, а параметры $a,b,c$ – <i>полуосями эллипсоида</i>.
+		</p>
+		<p>
+			Исследуем форму эллипсоида. Из уравнения <a href = "#7.4" class = "blue">(7.4)</a>, включающего только четные степени $x,y,z$, 
+			следует, что эллипсоид имеет три плоскости симметрии, совпадающие с координатными плоскостями при сделанном выборе системы координат.
+		</p>
+		<p>
+			Рассмотрим <i>сечения</i> эллипсоида плоскостями, параллельными координатной плоскости $Oxy$.
+			Каждая из таких плоскостей задается уравнением $z = h$, а линия, которая получается в сечении, определяется системой уравнений
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center id = "7.5">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\
+				 \dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = \normalsize 1 -  \dfrac{h^{2}}{c^{2}} .
+			\end{cases}
+			$
+			</td>
+			<td align="right">
+			$(7.5)$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Тогда если $\mid h \mid < c$, то эта система уравнений задает <a href = "" class = "green">эллипс</a> $ \dfrac{x^{2}}{a^{2}_{h}} + \dfrac{y^{2}}{b^{2}_{h}} \normalsize = 1$
+			лежащий в плоскости $z = h$ и имеющий <a href = "" class = "green">полуоси</a>
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				a_{h} = a \sqrt{1 -  \dfrac{h^{2}}{c^{2}}} \normalsize , b_{h} = b \sqrt{1 -  \dfrac{h^{2}}{c^{2}}}.
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Как видно на рис. 7.6, этот эллипс расположен симметрично относительно плоскостей $Oxz$ и $Oyz$. 
+			Величины $a_{h}$ и $b_{h}$ имеют наибольшее значение при $h = 0$. В этом случае $a_{h} = a$ и $b_{h} = b$. 
+			То есть самый крупный эллипс получается при сечении эллипсоида координатной плоскостью $z = 0$.
+		</p>
+		<p>
+			При $h = \pm c$ система уравнений <a href = "#7.5" class = "blue">(7.5)</a> задает одну точку $(0,0,\pm c)$. То есть плоскости $z \pm c$ <i>касаются</i> эллипсоида.
+		</p>
+		<p>
+			При $\mid h \mid > c$ система уравнений <a href = "#7.5" class = "blue">(7.5)</a> ничего не задает в вещественном пространстве $Oxyz$, т. е. плоскость $z = h$ не пересекается с эллипсоидом.
+		</p>
+		<p>
+			Совершенно аналогичная картина получается при исследовании эллипсоида с помощью сечений плоскостями $x = h, y = h$. 
+			Отметим только, что сама плоскость $Oyz$ (т. е. $x = 0$) пересекает эллипсоид по эллипсу
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\
+				
+				\dfrac{y^{2}}{b^{2}} + \dfrac{z^{2}}{c^{2}} = 1 ,
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">а плоскость $Oxz$ (т. е. $y = 0$) – по эллипсу</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				y = 0\\
+				
+				\dfrac{x^{2}}{a^{2}} + \dfrac{z^{2}}{c^{2}} = 1 .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<div align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr7.png" ></div>
+		<p>
+			При $a = b$ эллипсоид можно рассматривать как <a href = "#7.3" class = "blue">поверхность вращения</a>, образованную вращением <a href = "" class = "green">эллипса</a>
+			$ \dfrac{y^{2}}{a^{2}} + \dfrac{z^{2}}{c^{2}} \normalsize = 1$ вокруг оси $Oz$. <br>
+		</p>
+		<p>
+		Если $a=b=c$, то эллипсоид является <a href = "#sphere" class = "blue">сферой</a> радиуса $a$.
+		</p>
+		
+		<h2 id = "hyperbol">§7.6. Гиперболоиды</h2>
+		<p>
+			<strong>Определение 7.6</strong>. Существует два типа <i>гиперболоидов</i>: <i>однополостный</i> и <i>двуполостный</i>. 
+			При соответствующем выборе <a href = "" class = "green">системы координат</a> эти поверхности определяются следующими <i>каноническими уравнениями</i>:
+		</p>
+		<p id = "one_line_hyperbol">
+			$  \dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} - \dfrac{z^{2}}{c^{2}} \normalsize =  1$ – однополостный гиперболоид <a href = "#pic7.7" class = "blue">(рис. 7.7)</a>;
+		</p>
+		<p id = "two_line_hyperbol">
+			$  \dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} - \dfrac{z^{2}}{c^{2}} \normalsize =  -1$ – двуполостный гиперболоид <a href = "pic7.8" class = "blue">(рис. 7.8)</a>;
+		</p>
+		<p>
+			Очевидно, оба гиперболоида имеют три взаимно перпендикулярные плоскости симметрии, совпадающие с координатными плоскостями. 
+			Исследуем форму гиперболоидов с помощью <i>метода сечений</i>.
+		</p>
+		<p>
+			Рассмотрим сечения однополостного гиперболоида координатными плоскостями $Oxz$ и $Oyz$. В первом случае в сечении получится <a href = "" class = "green">гипербола</a>
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				y = 0\\
+				
+				\dfrac{x^{2}}{a^{2}} - \dfrac{z^{2}}{c^{2}} \normalsize =  1 ,
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">во втором случае – <a href = "" class = "green">гипербола</a></p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\
+				\dfrac{y^{2}}{b^{2}} - \dfrac{z^{2}}{c^{2}} \normalsize = 1 .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<div id = "pic7.7" align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr8.png" ></div>
+		<p>Сечение однополостного гиперболоида плоскостью $z = h$ дает</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = 1 + \dfrac{h^{2}}{c^{2}} ,
+				$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">
+			т. е. <a href = "" class = "green">эллипс</a> с <a href = "" class = "green">полуосями</a> $a_{h} = a \sqrt{1 + \dfrac{h^{2}}{c^{2}}}, b_{h} = b \sqrt{1 + \dfrac{h^{2}}{c^{2}}}.$ . 
+			Причем, полуоси $a_{h}$ и $b_{h}$ этого эллипса принимают наименьшие значения $a_{h} = a$ и $b_{h} = b$ при $h = 0$. 
+			Иначе говоря, самый малый эллипс получается в сечении координатной плоскостью $z = 0$ (этот эллипс называют <i>горловым эллипсом однополостного гиперболоида</i>).
+		</p>
+		<p>
+			Очевидно, что при возрастании $\mid h \mid$ размеры эллипсов, получаемых в сечениях, возрастают. 
+			Таким образом, однополостный гиперболоид представляет собой что-то наподобие бесконечной трубки (см. <a href = "#pic7.7" class = "blue">рис. 7.7</a>), расширяющейся в обе стороны от горлового эллипса. 
+			Числа $a,b,c$ – <i>полуоси гиперболоида</i>. Если $a = b$, то гиперболоид является <a href = "#7.3" class = "blue">поверхностью вращения</a>, 
+			полученной вращением <a href = "" class = "green">гиперболы</a> $ \dfrac{y^{2}}{b^{2}} - \dfrac{z^{2}}{c^{2}} \normalsize = 1$ вокруг оси $Оz$.
+		</p>
+		<p>
+			Совершенно аналогично исследуется форма двуполостного гиперболоида (см. <a href = "#pic7.8" class = "blue">рис. 7.8</a>). 
+			При сечении его плоскостями $x = 0$ и $y = 0$ получаются соответственно следующие линии сечения:
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\
+				 \dfrac{y^{2}}{b^{2}} - \dfrac{z^{2}}{c^{2}} = -1
+			\end{cases}		\Leftrightarrow
+			\begin{cases}
+				x = 0\\
+				\dfrac{z^{2}}{c^{2}} - \dfrac{y^{2}}{b^{2}} =  1
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+
+		<p class = "p_continue">и</p>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				y = 0\\
+				 \dfrac{x^{2}}{a^{2}} - \dfrac{z^{2}}{c^{2}} \normalsize = -1
+			\end{cases}		\Leftrightarrow
+			\begin{cases}
+				y = 0\\
+				 \dfrac{z^{2}}{c^{2}} - \dfrac{x^{2}}{a^{2}} \normalsize = 1 .
+			\end{cases}	
+			$
+			</td>
+		</tr>
+		</table>
+		<p>То есть это <a href = "" class = "green">гиперболы</a> с <a href = "" class = "green">действительной осью</a> <i>Оz</i>.</p>
+		<div id = "pic7.8" align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr9.png" ></div>
+		<p>
+			Теперь рассмотрим сечения плоскостями, параллельными плоскости $Oxy(z = h)$:
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				z = h\\
+				 \dfrac{x^{2}}{a^{2}} + \dfrac{y^{2}}{b^{2}} = \dfrac{h^{2}}{c^{2}} \normalsize - 1 .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			При $\mid h \mid < c$ эти уравнения ничего не задают в вещественном пространстве $Оxyz$, т. е. секущая плоскость не пересекает гиперболоид.
+		</p>
+		<p>При $h \pm c$ секущая плоскость касается гиперболоида в точке $(0,0,\pm c)$.</p>
+		<p>
+			При $\mid h \mid > c$ в сечении получается <a href = "" class = "green">эллипс</a> $ \dfrac{x^{2}}{a^{2}_{h}} + \dfrac{y^{2}}{b^{2}_{h}} \normalsize = 1$ с 
+			<a href = "" class = "green">полуосями</a>, равными
+			$a_{h} = a \sqrt{1 -  \dfrac{h^{2}}{c^{2}} \normalsize}, b_{h} = b \sqrt{1 -  \dfrac{h^{2}}{c^{2}}}$.
+			Полуоси этого эллипса при возрастании $\mid h \mid$ все время возрастают.
+		</p>
+		<p>
+			На основании всего сказанного делаем вывод: двуполостный гиперболоид состоит из двух частей 
+			(<i>полостей</i>, каждая из которых имеет вид выпуклой чаши (см. <a href = "#pic7.8" class = "blue">рис. 7.8</a>).
+		</p>
+		<h2 id = "parabol">§7.7. Параболоиды</h2>
+		<p>
+			<strong>Определение 7.7</strong>. Существует два типа <i>параболоидов</i>: <i>эллиптический</i> и <i>гиперболический</i>. 
+			При соответствующем выборе <a href = "" class = "green">системы координат</a> эти поверхности определяются следующими <i>каноническими уравнениями</i>:
+		</p>
+		<p id = "elliptic_parabol">
+			$ \dfrac{x^{2}}{p} + \dfrac{y^{2}}{q} \normalsize = 2z$, где $p,q > 0$, – эллиптический параболоид (<a href = "#pic7.9" class = "blue">рис. 7.9</a>); 
+		</p>
+		<p id = "hyperic_parabol">
+			$ \dfrac{x^{2}}{p} - \dfrac{y^{2}}{q} \normalsize = 2z$, где $p,q > 0$, – гиперболический параболоид 
+			(<a href = "#pic7.10" class = "blue">рис. 7.10</a>, <br> <a href = "#pic7.11" class = "blue">рис. 7.11</a>).
+		</p>
+		<p>
+			Параболоиды имеют две взаимно пересекающиеся плоскости симметрии. Исследуем параболоиды методом сечений.
+		</p>
+		<p>
+			В сечениях эллиптического параболоида координатными плоскостями $x = 0$ и $y = 0$ получаются соответственно <a href = "" class = "green">параболы</a>
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\
+				y^{2} = 2qz,
+			\end{cases} \ \
+			\begin{cases}
+				y = 0\\
+				x^{2} = 2pz	.
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Обе параболы симметричны относительно оси $Oz$ и имеют вершины в начале координат.
+		</p>
+		<div id = "pic7.9" align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr10.png" ></div>
+		<p>
+			Рассмотрим теперь сечения эллиптического параболоида плоскостями, 
+			параллельными координатной плоскости $Oxy$ (т. е. $z = h$):
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{p} + \dfrac{y^{2}}{q} = 2h .
+				$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Если $h > 0$, то в сечении получится <a href = "" class = "green">эллипс</a> $ \dfrac{x^{2}}{a^{2}_{h}} + \dfrac{y^{2}}{b^{2}_{h}} = 1$ 
+			с <a href = "" class = "green">полуосями</a> $a_{h} = \sqrt{2ph}, b_{h} = \sqrt{2qh} $
+			Его размеры увеличиваются с ростом $h$. При $h = 0$ в сечении получается одна точка $O(0,0,0)$. 
+			При $h < 0$ секущая плоскость не пересекается с параболоидом. Таким образом, эллиптический параболоид имеет вид бесконечной выпуклой чаши 
+			(см. <a href = "#pic7.9" class = "blue">рис. 7.9</a>).	
+		</p>
+		<p>
+			Рассмотрим сечение гиперболического параболоида плоскостью $Oxz$ (т. е. $y = 0$). Это восходящая <a href = "" class = "green">парабола</a>
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+				x^{2} = 2pz
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">с вершиной в точке $(0,0,0)$ и симметричная относительно оси $Оz$.</p>
+		<p>
+			Сечение гиперболического параболоида плоскостью $x = h$ даст нисходящую, симметричную относительно оси $Oz$ <a href = "" class = "green">параболу</a>
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					-\dfrac{y^{2}}{q} + \dfrac{h^{2}}{p} = 2z,
+				$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">
+			поднятую на величину $ \dfrac{h^{2}}{2p}$ над плоскостью $Оxy$. Все такие параболы при различных значениях $h$ имеют одинаковый <a href = "" class = "green">параметр</a> $q$, 
+			следовательно, отличаются только положением в пространстве. Таким образом, гиперболический параболоид (см. <a href = "#pic7.10" class = "blue">рис. 7.10</a>) образован параболой
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				x = 0\\
+				-y^{2} = 2qz ,
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">скользящей вершиной по параболе</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				y = 0\\
+				x^{2} = 2pz .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<div id = "pic7.10" align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr11.png" ></div>
+		<p>
+			Рассмотрим сечение гиперболического параболоида плоскостью $z = h$ (см. <a href = "#pic7.11" class = "blue">рис.7.11</a>). Кривая, лежащая в сечении, задается уравнением
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{p} - \dfrac{y^{2}}{q} = 2h .
+				$
+			</td>
+		</tr>
+		</table>
+		<p>
+			При $h > 0$ это <a href = "" class = "green">гипербола</a> с действительной <a href = "" class = "green">осью</a>, параллельной оси $Ox$. 
+			При $h < 0$ это <a href = "" class = "green">гипербола</a> с действительной <a href = "" class = "green">осью</a>, параллельной оси $Oy$. 
+			При $h = 0$ получается пара пересекающихся <a href = "" class = "green">прямых</a>:
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				z = 0\\
+				 \dfrac{x}{\sqrt{p}} - \dfrac{y}{\sqrt{q}} \normalsize = 0,
+			\end{cases}
+			\begin{cases}
+				z = 0\\
+				 \dfrac{x}{\sqrt{p}} + \dfrac{y}{\sqrt{q}} \normalsize = 0 .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+
+		<div id = "pic7.11" align = "center" alt = "Стройникова лучшая"><img src = "../../images/lk7/gr12.png" ></div>
+
+		<h2>§7.8. Линейчатость поверхностей второго порядка</h2>
+		<p>
+			<a href = "#conic_surface" class = "blue">Коническая</a> и <a href = "#cylindric_surface" class = "blue">цилиндрическая</a> поверхности являются <i>линейчатыми</i>, 
+			т. е. составленными из прямых (не из отрезков, а из прямых!). 
+			Кроме цилиндра и конуса, линейчатыми являются <a href = "#one_line_hyperbol" class = "blue">однополостный гиперболоид</a> и <a href = "#hyperic_parabol" class = "blue">гиперболический параболоид</a>.
+		</p>
+		<p>
+			Рассмотрим <a href = "#one_line_hyperbol" class = "blue">однополостный гиперболоид</a>. Его каноническое уравнение перепишем в виде 
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+				$
+					\dfrac{x^{2}}{a^{2}} - \dfrac{z^{2}}{c^{2}} = 1 -\dfrac{y^{2}}{b^{2}} ,
+				$
+			</td>
+		</tr>
+		</table>
+
+		<p class = "p_continue">или</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center id = "7.6">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+			$
+				 \left( \dfrac{x}{a} + \dfrac{z}{c} \right) \left( \dfrac{x}{a} - \dfrac{z}{c} \right) = \left( \normalsize 1 +  \dfrac{y}{b} \right) \left( \normalsize 1  - \dfrac{y}{b} \right) .
+			$
+			</td>
+			<td align="right">
+			$(7.6)$
+			</td>
+		</tr>
+		</table>
+		
+		<p>Рассмотрим систему линейных уравнений</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center id = "7.7">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				 \texttt{&alpha;}  \left( \dfrac{x}{a} + \dfrac{z}{c} \right)  =  \texttt{&beta;}   \left( 1 + \dfrac{y}{b} \right) \\
+				 \texttt{&beta;}   \left( \dfrac{x}{a} - \dfrac{z}{c} \right)  =  \texttt{&alpha;}  \left( 1 - \dfrac{y}{b} \right) ,
+			\end{cases}
+			$
+			</td>
+			<td align="right">
+			$(7.7)$
+			</td>
+		</tr>
+		</table>
+		
+		<p class = "p_continue">где $\tt &alpha;, &beta;$ – некоторые числа, не равные одновременно нулю. </p>
+		<p>
+			Система <a href = "#7.7" class = "blue">(7.7)</a> задает пару <a href = "" class = "green">плоскостей</a>, которые, очевидно, пересекаются 
+			(поскольку коэффициенты при переменных не пропорциональны и, следовательно, <a href = "" class = "green">условие параллельности</a> не выполнено). 
+			Значит, при каждом наборе пары чисел $(\tt &alpha;, &beta;)$ система <a href = "#7.7" class = "blue">(7.7)</a> определяет некоторую 
+			<a href = "" class = "green">прямую</a> $L_{\tt &alpha; &beta;}$. 
+			Пусть оба числа $\tt &alpha;, &beta;$ отличны от нуля. Перемножим уравнения системы <a href = "#7.7" class = "blue">(7.7)</a>. 
+			После сокращения на $\tt &alpha; &beta;$ получается уравнение гиперболоида <a href = "#7.6" class = "blue">(7.6)</a>,
+			т. е. координаты всех точек прямой $L_{\tt &alpha; &beta;}$ удовлетворяют уравнению однополостного гиперболоида <a href = "#7.6" class = "blue">(7.6)</a>. 
+			Следовательно, эта прямая целиком лежит на однополостном гиперболоиде.
+		</p>
+		<p>
+			Если $\texttt{&alpha;} = 0, \texttt{&beta;} \neq 0$ , то система уравнений <a href = "#7.7" class = "blue">(7.7)</a> имеет вид
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				1  + \dfrac{y}{b} =  0 \\
+				\dfrac{x}{a} - \dfrac{z}{c} = 0 .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Координаты точек, удовлетворяющие такой системе уравнений, очевидно, удовлетворяют и уравнению гиперболоида <a href = "#7.6" class = "blue">(7.6)</a>. 
+			Аналогично рассматривается случай $\texttt{&alpha;} \neq 0, \texttt{&beta;} = 0$.
+		</p>
+		<p>
+			Таким образом, все семейство прямых  $\left\{ L_{ \tt &alpha; &beta; } \right\}$ лежит на гиперболоиде. 
+			Докажем обратное, что через любую точку $M_{0}(x_{0}, y_{0}, z_{0})$ однополостного гиперболоида проходит некоторая прямая этого семейства. 
+			То есть надо доказать, что для точки $M_{0}$ найдутся числа $\tt &alpha;, &beta;$, одновременно не равные нулю, такие, что <a href  = "" class = "green">координаты</a> 
+			этой точки удовлетворят системе <a href = "#7.7" class = "blue">(7.7)</a>. 
+			В итоге мы получаем систему уравнений
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center id = "7.8">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="90%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				 \left( \dfrac{x_{0}}{a} + \dfrac{z_{0}}{c} \right) \texttt{&alpha;} -  \left( \normalsize 1 +   \dfrac{y_{0}}{b} \right) \texttt{&beta;} = \normalsize 0 \\
+				 \left( \normalsize 1 -  \dfrac{y_{0}}{b} \right) \texttt{&alpha;} -  \left( \dfrac{x_{0}}{a} - \dfrac{z_{0}}{c} \right) \texttt{&beta;} = \normalsize 0
+			\end{cases}
+			$
+			</td>
+			<td align="right">
+			$(7.8)$
+			</td>
+		</tr>
+		</table>
+
+		<p class = "p_continue">относительно неизвестных $\tt &alpha;, &beta;$. Но <a href = "" class = "green">главный определитель</a> данной системы</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{vmatrix}
+				\dfrac{x_{0}}{a} + \dfrac{z_{0}}{c} & - \left(1 + \dfrac{y_{0}}{b} \right) \\
+				- \dfrac{y_{0}}{b} & - \left( \dfrac{x_{0}}{a} - \dfrac{z_{0}}{c} \right) 
+			\end{vmatrix}	= 
+			1  - \dfrac{x^{2}_{0}}{a^{2}} - \dfrac{y^{2}_{0}}{b^{2}} + \dfrac{z^{2}_{0}}{c^{2}} =  0 ,
+			$
+			</td>
+		</tr>
+		</table>
+		<p class = "p_continue">
+			поскольку точка $M_{0}$ лежит на гиперболоиде и, следовательно, ее координаты удовлетворяют его <a href = "#one_line_hyperbol" class = "blue">каноническому уравнению</a>. 
+			В таком случае <a href = "" class = "green">однородная система</a> <a href = "#7.8" class = "blue">(7.8)</a> имеет <a href = "" class = "green">ненулевые решения</a> и, следовательно, 
+			для точки $M_{0}$ найдется прямая семейства $\left\{ L_{\tt &alpha; &beta;} \right\}$ , на которой она лежит.
+		</p>
+		<p>
+			Мы показали, что однополостной гиперболоид является линейчатой поверхностью. Можно показать, что, более того, 
+			этот гиперболоид является <i>дважды</i> (!) <i>линейчатой поверхностью</i>. 
+			Это означает, что он обладает двумя семействами прямолинейных образующих. Второе семейство задается системой уравнений
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				\texttt{&alpha;}  \left( \dfrac{x}{a} + \dfrac{z}{c} \right) \normalsize = \texttt{&beta;} \left( \normalsize 1  - \dfrac{y}{b} \right) \\
+				\texttt{&beta;}  \left( \dfrac{x}{a} - \dfrac{z}{c} \right) \normalsize = \texttt{&alpha;} \left( \normalsize 1  + \dfrac{y}{b} \right) .
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+		<p>
+			Отметим, что <a href = "#hyperic_parabol" class = "blue">гиперболический параболоид</a> 
+			тоже является дважды линейчатой поверхностью. 
+			Он обладает двумя семействами прямолинейных образующих:
+		</p>
+		<table width="100%" border="0" cellpadding="0" cellspacing="3" align=center>
+		<tr>
+			<td width="100%" rowspan=2 align="center">
+			$
+			\begin{cases}
+				\texttt{&alpha;}  \left( \dfrac{x}{\sqrt{p}} + \dfrac{y}{\sqrt{q}} \right) = 2 \texttt{&beta;} z \\
+				\texttt{&beta;}  \left( \dfrac{x}{\sqrt{p}} - \dfrac{y}{\sqrt{q}} \right) = \texttt{&alpha;} ,
+			\end{cases}
+			\begin{cases}
+				\texttt{&alpha;}  \left( \dfrac{x}{\sqrt{p}} - \dfrac{y}{\sqrt{q}} \right) = 2 \texttt{&beta;} z \\
+				\texttt{&beta;}  \left( \dfrac{x}{\sqrt{p}} + \dfrac{y}{\sqrt{q}} \right)  = \texttt{&alpha;}.
+			\end{cases}
+			$
+			</td>
+		</tr>
+		</table>
+	</div>
+ </body> 
+</html>
